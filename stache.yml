@@ -1,0 +1,24 @@
+# Settings for Blackbaud Documentation Tool - Stache
+# https://www.npmjs.com/package/blackbaud-stache
+product_name_short: SKY UX
+product_name_long: Blackbaud <%= stache.config.product_name_short %>
+title: <%= stache.config.product_name_short %>
+omnibar_title: <%= stache.config.product_name_short %>
+markdown: false
+comments_key: blackbaudsky
+
+#partial_footer_internal: ../includes/partial-footer-internal.html
+#partial_header_search: ../includes/partial-header-search.html
+partial_jsdoc_header: ../includes/partial-jsdoc-header.hbs
+partial_jsdoc_body: ../includes/partial-jsdoc-body.hbs
+partial_jsdoc_footer: ../includes/partial-jsdoc-footer.hbs
+files:
+  css:
+    - /assets/css/animate.css
+    - /assets/css/custom.css
+  js:
+    - /assets/js/KitchenSink.js
+    - /assets/js/wow.min.js
+    - /assets/js/custom.js
+
+github: https://github.com/blackbaud/skyux/

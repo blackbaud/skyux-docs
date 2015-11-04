@@ -1,0 +1,229 @@
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * GLOBAL
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.content {
+  padding: 30px 0;
+}
+
+.header-with-button a,
+.header-with-button button {
+  float: none;
+  margin: 0;
+}
+
+.header-with-button .header-button {
+  float: right;
+  margin-top: 20px;
+}
+
+.tip {
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * HOME PAGE
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.welcome {
+  background: url(../img/sky-background.png) center center no-repeat;
+  background-size: cover;
+  max-height: 475px;
+}
+
+.welcome h2 {
+  color: #2f4050;
+  padding: 15px 0 70px 0;
+}
+
+.welcome-copyright a {
+  color: #949AA6;
+  display: block;
+  padding: 5px 0 0 0;
+  text-align: right;
+}
+
+.status {
+  background: rgba(255, 255, 255, .6);
+  bottom: 0;
+  padding: 0 0 15px 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.status-col {
+  display: inline-block;
+}
+
+@media (max-width: 487px) {
+  .status-col {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+}
+
+.status img {
+  padding: 15px 10px 0 10px;
+}
+
+.section-why-sky .fa-stack {
+  margin-top: 20px
+}
+
+.carousel-control {
+  background: none;
+  top: auto;
+}
+
+.carousel-indicators {
+  bottom: -49px;
+}
+
+.carousel-indicators li {
+  margin: 0 5px;
+}
+
+.carousel-indicators li.active {
+  margin: -1px 5px;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  margin-top: 15px
+}
+
+.stacked-white {
+  color: #FFF;
+}
+
+.stacked-grey {
+  color: #EFEFEF;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.section-padding-carousel {
+  padding-bottom: 90px;
+}
+
+.box-shadow-ui-screenshot {
+  box-shadow: 0 0 60px #ccc;
+}
+
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * COMPONENTS
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.demo {
+  margin-top: 20px
+}
+
+.demo .showcase {
+  padding-top: 40px;
+}
+
+a.panel-wrapper,
+a.panel-wrapper:hover,
+a.panel-wrapper:focus {
+  color: #676a6c;
+}
+
+a.panel-wrapper:hover .panel,
+a.panel-wrapper:focus .panel {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+}
+
+a.panel-wrapper.highlight .panel,
+a.panel-wrapper.highlight .panel {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255,255,0,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(255,255,0,1);
+  box-shadow: 0px 0px 10px 0px rgba(255,255,0,1);
+}
+
+.panel-header {
+  border-bottom: solid 1px #EFEFEF;
+}
+
+.row.has-query .panel-col.is-not-match {
+  display: none;
+}
+
+.row.has-query .panel-col.is-match {
+  display: inline;
+}
+
+.documentation-description {
+  padding-top: 30px;
+}
+
+.contribute {
+  padding: 20px 0;
+}
+
+@media (min-width: 992px) {
+  .row.equal .panel {
+    min-height: 166px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row.equal .panel {
+    min-height: 188px;
+  }
+}
+
+/*
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ * SkyUX Styles
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ */
+
+.color-container {
+  clear:both;
+  padding: 10px;
+}
+
+.swatch {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.color-text-container {
+  float:left;
+  padding-left: 10px;
+}
+
+.swatch-primary {
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.primary-divider {
+  margin: 5px;
+  padding: 5px;
+  clear: both;
+}
+
+.color-text {
+  float: left;
+  clear: both;
+}

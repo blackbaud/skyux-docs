@@ -1,0 +1,20 @@
+{{# if example-html }}
+  <div class="clearfix">
+    <h2 id="demo">Demo</h2>
+    {{# withNewline }}{{{ example-html }}}{{/ withNewline }}
+  </div>
+{{/ if }}
+
+{{# if example-html }}
+  <div class="clearfix">
+    <h2 id="markup">Markup</h2>
+    <pre><code class="language-markup" ng-non-bindable>{{# withNewline }}{{ example-html }}{{/ withNewline }}</pre></code>
+  </div>
+{{/ if }}
+
+{{# if example-js }}
+  <div class="clearfix">
+    <h2 id="js">JavaScript</h2>
+    <pre><code class="language-javascript" ng-non-bindable>{{ example-js }}</code></pre>
+  </div>
+{{/ if }}

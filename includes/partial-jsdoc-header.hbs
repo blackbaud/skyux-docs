@@ -1,0 +1,29 @@
+<div ng-controller="DocumentationController as documentation">
+
+  <div class="header-with-button">
+    <h1>{{ name }}</h1>
+    <ul class="header-button list-inline">
+      <li>
+        <a href="../" class="btn bb-btn-secondary">
+          <i class="fa fa-long-arrow-left"></i> Return to Components
+        </a>
+      </li>
+      {{# if example-html }}
+        <li>
+          <button type="button" class="btn btn-primary" ng-click="documentation.editInPlunker('.raw-markup', '.raw-js', '{{ stache.config.latest_sky_release }}')">
+            <i class="fa fa-pencil"></i> Try in Plunker
+          </button>
+        </li>
+      {{/ if }}
+    </ul>
+  </div>
+
+  {{# if example-html }}
+    <textarea class="raw-markup hide" ng-non-bindable>{{# withNewline }}{{ example-html }}{{/ withNewline }}</textarea>
+  {{/ if }}
+
+  {{# if example-js }}
+    <textarea class="raw-js hide" ng-non-bindable>{{ example-js }}</textarea>
+  {{/ if }}
+
+</div>

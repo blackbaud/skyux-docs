@@ -1,0 +1,9 @@
+.DS_Store
+.tmp/
+.tmp-docs/
+Thumbs.db
+vendor/
+build/
+serve/
+node_modules/
+static/bower_components/
