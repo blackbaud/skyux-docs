@@ -1,0 +1,25 @@
+<div id="ng-stache" ng-controller="NavController"  class="bb-navbar">
+  <bb-navbar>
+    <div class="{{ stache.config.bootstrap_container }}">
+      <div class="row">
+        <div class="col-sm-12">
+          {{{ include stache.config.partial_header_nav }}}
+          {{{ include stache.config.partial_header_admin }}}
+          {{{ include stache.config.partial_header_search }}}
+        </div>
+      </div>
+    </div>
+  </bb-navbar>
+</div>
+
+{{# isHome dest=page.dest }} {{ else }}
+<div class="alert-beta">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <strong><em>Hang Tight!</em></strong> The {{ stache.config.product_name_short }} documentation is currently a work in progress.  Stay tuned for updates.
+      </div>
+    </div>
+  </div>
+</div>
+{{/ isHome }}
