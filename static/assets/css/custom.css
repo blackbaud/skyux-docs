@@ -46,6 +46,14 @@
   max-height: 475px;
 }
 
+.skyux-logo-wrapper {
+  max-width: 547px;
+}
+
+.skyux-logo {
+  width: 100%;
+}
+
 .welcome h2 {
   color: #2f4050;
   padding: 15px 0 70px 0;
