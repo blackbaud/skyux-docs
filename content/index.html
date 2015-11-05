@@ -90,33 +90,27 @@ slides:
 <header class="welcome">
   <div class="text-vertical-center">
     <div class="container">
+      <div class="center-block skyux-logo-wrapper">
+        <h1><img src="assets/img/skyux-logo.svg" alt="Blackbaud Sky UX" class="skyux-logo"/></h1>
+      </div>
       <div class="row">
-        <div class="col-sm-12">
-          <h1><img src="assets/img/bbsky_logo.png" alt="Blackbaud Sky UX" class="center-block img-responsive"/></h1>
-          <div class="row">
-            <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-              <h2>A user experience framework for building web applications that leverage Blackbaud’s Sky UX patterns.</h2>
-            </div>
-          </div>
+        <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <h2>A user experience framework for building web applications that leverage Blackbaud’s Sky UX patterns.</h2>
         </div>
       </div>
     </div>
   </div>
   <div class="status text-center">
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <ul class="list-inline">
-            {{# each badges }}
-              <li>
-                <a href="{{ url }}" target="_blank">
-                  <img src="{{ img }}" alt="{{ title }}">
-                </a>
-              </li>
-            {{/ each }}
-          </ul>
-        </div>
-      </div>
+      <ul class="list-inline">
+        {{# each badges }}
+          <li>
+            <a href="{{ url }}" target="_blank">
+              <img src="{{ img }}" alt="{{ title }}">
+            </a>
+          </li>
+        {{/ each }}
+      </ul>
     </div>
   </div>
 </header>
@@ -161,31 +155,23 @@ slides:
 
 <section class="section-padding text-center bg-primary section-padding-carousel">
   <div class="container wow fadeIn" data-wow-delay=".2s">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>{{ stache.config.product_name_short }} in Action</h1>
-        <p class="lead">Blackbaud’s NXT products are already taking advantage of {{ stache.config.product_name_short }}’s design patterns.</p>
-        <div ng-controller="InActionController as carousel">
-          <carousel interval="carousel.interval">
-            {{# each slides }}
-              <slide>
-                <img ng-src="/assets/img/{{ img }}" class="img-responsive box-shadow" alt="{{ alt }}" />
-              </slide>
-            {{/ each }}
-          </carousel>
-        </div>
-      </div>
+    <h1>{{ stache.config.product_name_short }} in Action</h1>
+    <p class="lead">Blackbaud’s NXT products are already taking advantage of {{ stache.config.product_name_short }}’s design patterns.</p>
+    <div ng-controller="InActionController as carousel">
+      <carousel interval="carousel.interval">
+        {{# each slides }}
+          <slide>
+            <img ng-src="/assets/img/{{ img }}" class="img-responsive box-shadow" alt="{{ alt }}" />
+          </slide>
+        {{/ each }}
+      </carousel>
     </div>
   </div>
 </section>
 
 <section class="section-padding text-center bg-secondary section-why-sky">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1 id="why">Why {{ stache.config.product_name_short }}?</h1>
-      </div>
-    </div>
+    <h1 id="why">Why {{ stache.config.product_name_short }}?</h1>
     <div class="row">
       {{# each why }}
 
