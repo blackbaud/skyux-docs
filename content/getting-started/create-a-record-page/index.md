@@ -8,7 +8,7 @@ name: Create a record page
 
 <div class="bb-text-block">
 <p>
-  Now that you've learned how to get a <a href="../createproject">Sky app up and running</a>, let's build a page with some content.  There are two common page types in a Sky application, and one of those page types is a record page.  On a record page, information about a specific record is usually displayed in two distinct sections.
+  Now that you've learned how to get a <a href="../start-a-project">Sky app up and running</a>, let's build a page with some content.  There are two common page types in a Sky application, and one of those page types is a record page.  On a record page, information about a specific record is usually displayed in two distinct sections.
 </p>
 
 <h2>Summary section</h2>
