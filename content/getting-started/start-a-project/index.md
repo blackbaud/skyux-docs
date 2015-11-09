@@ -16,7 +16,7 @@ showNavDropdown: true
   <strong>Prerequisite:</strong> Keep in mind that the heart of {{ stache.config.product_name_short }} is <a href="https://angularjs.org/" class="alert-link">AngularJS</a> and <a href="http://getbootstrap.com/" class="alert-link">Bootstrap</a>, so you need to be familiar with these technologies before you get started.
 </p>
 
-<h2 id="start-a-project-create-first-page">Create Your First Page</h2>
+<h2>Create a page</h2>
 
 <p>
   Let's start with a basic HTML page that includes {{ stache.config.product_name_short }}.  First, create an empty folder and inside that folder add an HTML file called <code>index.html</code>.  Starting with the following boilerplate HTML will ensure your page renders properly in all modern browsers:
@@ -56,7 +56,7 @@ showNavDropdown: true
 
 <p>You should now be able to spin up a web server in your project's directory (the NPM package <a href="https://www.npmjs.com/package/http-server"><code>http-server</code></a> is very handy for this) and browse to it in a web browser.</p>
 
-<h2 id="start-a-project-add-content">Add Content</h2>
+<h2>Add content</h2>
 
 <h3>Simple HTML Elements</h3>
 
