@@ -58,7 +58,7 @@ showNavDropdown: true
 
 <h2>Add content</h2>
 
-<h3>Simple HTML Elements</h3>
+<h3>Simple HTML elements</h3>
 
 <p>Let's brighten things up a bit by adding a button to the page. {{ stache.config.product_name_short }} is based on Bootstrap, so we can use all the <a href="http://getbootstrap.com/css/">standard Bootstrap CSS classes</a>.  Add a <code>div</code> tag within your page's <code>&#60;body&#62;</code> element and use the <code>class</code> attribute to wrap the button in the Bootstrap CSS class <code>container-fluid</code> and the {{ stache.config.product_name_short }} CSS class <code>bb-page-content</code>.  These classes separate the content from the navbar and the edges of the browser window.</p>
 
@@ -79,7 +79,7 @@ showNavDropdown: true
 
 <p>While the button respects the Bootstrap <code>btn-primary</code> class, it looks a little different than the default Bootstrap button.  {{ stache.config.product_name_short }} overrides Bootstrap styles with its own styles to create a unique user interface that still takes advantage of the responsive nature of its Bootstrap core.</p>
 
-<h3>AngularJS Directives</h3>
+<h3>AngularJS directives</h3>
 
 <p>Of course, {{ stache.config.product_name_short }} is more than just CSS. It also features an <a href="../documentation">extensive library</a> of <a href="https://angularjs.org/">AngularJS</a> components. To use these, your page must define an Angular application.</p>
 
