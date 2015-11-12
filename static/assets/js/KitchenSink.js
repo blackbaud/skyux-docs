@@ -115,12 +115,12 @@
                     ' <head>',
                     '   <link rel="stylesheet" href="' + host + version + '/css/libs.css">',
                     '   <link rel="stylesheet" href="' + host + version + '/css/sky.css">',
-                    '   <script src="' + host + version + '/js/libs.js"></script>',
-                    '   <script src="' + host + version + '/js/sky.js"></script>',
-                    '   <script src="index.js"></script>',
                     ' </head>',
                     '<body>',
                     content,
+                    '<script src="' + host + version + '/js/libs.js"></script>',
+                    '<script src="' + host + version + '/js/sky.js"></script>',
+                    '<script src="index.js"></script>',
                     '</body>',
                     '</html>'
                 ].join('\n');
