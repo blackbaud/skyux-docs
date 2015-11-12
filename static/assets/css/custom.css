@@ -189,6 +189,10 @@ a.panel-wrapper.highlight .panel {
   margin: 10px 0;
 }
 
+.page-example .tab-content {
+  margin-top: 0;
+}
+
 pre[class*="language-"] {
   margin: 20px 0;
 }

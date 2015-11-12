@@ -1,0 +1,41 @@
+---
+layout: layout-sidebar
+order: 13
+name: Create a tabbed page
+files:
+  js:
+    - /assets/js/tabbedpage.js
+---
+
+<h1>{{ name }}</h1>
+
+<p>
+  In the previous step you learned how to <a href="../create-a-record-page/">create a record page</a>.  In this step you'll learn how to create the other common page type in Sky UX: the tabbed page.  While record pages are used to show data for individual records, a tabbed page usually serves as an overview of many records, such as a list of constituents or gifts.
+</p>
+
+<h2>Tabs component</h2>
+
+<p>
+  {{ stache.config.product_name_short }} uses the <a href="https://angular-ui.github.io/bootstrap/">UI Bootstrap</a> Tabs module to display tabs and adds more {{ stache.config.product_name_short }}-specific functionality with its own <a href="../components/tabset/">Tabset</a> module.  In this example we have two tabs.  Since each tab represents a list of records, the number of records in each list is displayed next to the tab header with the CSS class <code>.bb-tab-header-count</code>.  Also, since we want the tab content to go edge-to-edge but want the tabs themselves to have a margin, we will need to add the <code>.bb-page-tabs</code> CSS class.
+</p>
+
+<p class="alert alert-info">
+  This example shows grid data in each tab.  For more information on how to use grids, see the <a href="../components/grid/" class="alert-link">grid directive documentation</a>.
+</p>
+
+<div class="page-example" ng-controller="TabbedPageTutorialController as tabbedPage">
+  {{ include "includes/create-a-tabbed-page/tabs.html" }}
+</div>
+
+<pre><code class="language-markup" ng-non-bindable>{{ include "includes/create-a-tabbed-page/tabs.html" escape=true }}</code></pre>
+
+<p>
+  Now that we've covered the two basic page types, let's dive into some more detail about the components of each page.
+</p>
+
+<hr>
+
+<p>
+  <strong>Next step:</strong> <a href="../summary-sections/">Summary sections &raquo;</a>
+</p>
+</div>
