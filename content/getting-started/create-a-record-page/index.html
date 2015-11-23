@@ -1,17 +1,19 @@
 ---
 layout: layout-sidebar
 order: 12
-name: Create a record page
+name: Pages
 ---
 
 <h1>{{ name }}</h1>
+
+<h2>Create a Record Page</h2>
 
 <div class="bb-text-block">
 <p>
   Now that you've learned how to get a <a href="../start-a-project">Sky app up and running</a>, let's build a page with some content.  There are two common page types in a Sky application, and one of those page types is a record page.  On a record page, information about a specific record is usually displayed in two distinct sections.
 </p>
 
-<h2>Summary section</h2>
+<h3>Summary section</h3>
 
 <p>
   The first type of section is the summary section.  The summary section resides at the top of the page and provides a general overview of the record,
@@ -24,7 +26,7 @@ name: Create a record page
 
 <pre><code class="language-markup">{{ include "includes/create-a-record-page/summary-section.html" escape=true }}</code></pre>
 
-<h2>Tiles section</h2>
+<h3>Tiles section</h3>
 
 <p>
   The second type of section is the tile section.  This section usually consists of two columns of tiles (or one column on extra-small screen sizes like on mobile phones) that break out more specific information about the record into logical sections.  Each tile has a header that contains the tile's title and a body that contains the tile's content.  Tiles are collapsible and when used in conjunction with a <a href="../components/tiles">tile dashboard</a> can also be rearranged by the user.
@@ -48,3 +50,37 @@ name: Create a record page
   <strong>Next step:</strong> <a href="../create-a-tabbed-page">Create a tabbed page &raquo;</a>
 </p>
 </div>
+
+<h2>Create a Tabbed Page</h2>
+
+<p>
+  In the previous step you learned how to <a href="../create-a-record-page/">create a record page</a>.  In this step you'll learn how to create the other common page type in Sky UX: the tabbed page.  While record pages are used to show data for individual records, a tabbed page usually serves as an overview of many records, such as a list of constituents or gifts.
+</p>
+
+<h3>Tabs component</h3>
+
+<p>
+  {{ stache.config.product_name_short }} uses the <a href="https://angular-ui.github.io/bootstrap/">UI Bootstrap</a> Tabs module to display tabs and adds more {{ stache.config.product_name_short }}-specific functionality with its own <a href="../components/tabset/">Tabset</a> module.  In this example we have two tabs.  Since each tab represents a list of records, the number of records in each list is displayed next to the tab header with the CSS class <code>.bb-tab-header-count</code>.  Also, since we want the tab content to go edge-to-edge but want the tabs themselves to have a margin, we will need to add the <code>.bb-page-tabs</code> CSS class.
+</p>
+
+<p class="alert alert-info">
+  This example shows grid data in each tab.  For more information on how to use grids, see the <a href="../components/grid/" class="alert-link">grid directive documentation</a>.
+</p>
+
+<div class="page-example" ng-controller="TabbedPageTutorialController as tabbedPage">
+  {{ include "includes/create-a-tabbed-page/tabs.html" }}
+</div>
+
+<pre><code class="language-markup" ng-non-bindable>{{ include "includes/create-a-tabbed-page/tabs.html" escape=true }}</code></pre>
+
+<p>
+  Now that we've covered the two basic page types, let's dive into some more detail about the components of each page.
+</p>
+
+<hr>
+
+<p>
+  <strong>Next step:</strong> <a href="../summary-sections/">Summary sections &raquo;</a>
+</p>
+</div>
+
