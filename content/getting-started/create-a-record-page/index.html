@@ -1,22 +1,19 @@
 ---
 layout: layout-sidebar
 order: 12
-name: Create a record page
+name: Create a Record Page
 ---
 
 <h1>{{ name }}</h1>
 
 <div class="bb-text-block">
-<p>
-  Now that you've learned how to get a <a href="../start-a-project">Sky app up and running</a>, let's build a page with some content.  There are two common page types in a Sky application, and one of those page types is a record page.  On a record page, information about a specific record is usually displayed in two distinct sections.
-</p>
+<p>Now that you've learned how to get a <a href="../start-a-project">{{ stache.config.product_name_short }} app up and running</a>, let's build a page with some content. {{ stache.config.product_name_short }} applications feature two common page types: record pages and tabbed pages.</p>
 
-<h2>Summary section</h2>
+<p>On record pages, information about specific records is usually displayed in two distinct sections.</p>
 
-<p>
-  The first type of section is the summary section.  The summary section resides at the top of the page and provides a general overview of the record,
-  such as the record name, a description of the record, perhaps a profile picture, etc.  To add a summary section to your page, use a <code>div</code> with the <code>.bb-page-header</code> CSS class.  Here's an example of a summary section that displays a name, description and profile photo:
-</p>
+<h2>Summary Section</h2>
+
+<p>The first type of section is the summary section. The summary resides at the top of the page and provides a general overview of a record, such as the record name, description, perhaps a profile picture, etc. To add a summary section to your page, use a <code>div</code> with the <code>.bb-page-header</code> CSS class. Here's an example of a summary section that displays a name, description, and profile photo:</p>
 
 <div class="page-example">
   {{ include "includes/create-a-record-page/summary-section.html" }}
@@ -24,15 +21,11 @@ name: Create a record page
 
 <pre><code class="language-markup">{{ include "includes/create-a-record-page/summary-section.html" escape=true }}</code></pre>
 
-<h2>Tiles section</h2>
+<h2>Tiles Section</h2>
 
-<p>
-  The second type of section is the tile section.  This section usually consists of two columns of tiles (or one column on extra-small screen sizes like on mobile phones) that break out more specific information about the record into logical sections.  Each tile has a header that contains the tile's title and a body that contains the tile's content.  Tiles are collapsible and when used in conjunction with a <a href="../components/tiles">tile dashboard</a> can also be rearranged by the user.
-</p>
+<p>The second type of section is the tile section. This section usually consists of two columns of tiles (or one column for extra-small screen sizes like mobile phones) that break out more specific information about the record into logical sections. Each tile has a header for the tile's title and a body for the tile's content. Tiles are collapsible, and if they used in conjunction with a <a href="../components/tiles">tile dashboard</a>, tiles can also be rearranged by users.</p>
 
-<p class="alert alert-info">
-  This example shows a page with a static tile layout.  To define a dynamic tile layout from a configuration object (such as from user preferences) you can use the <a href="../components/tiles" class="alert-link">tile dashboard directive.</a>
-</p>
+<p class="alert alert-info">This example shows a page with a static tile layout. To define a dynamic tile layout from a configuration object (such as from user preferences) you can use the <a href="../components/tiles" class="alert-link">tile dashboard directive.</a></p>
 
 <div class="page-example">
   {{ include "includes/create-a-record-page/tile-section.html" }}
@@ -40,11 +33,8 @@ name: Create a record page
 
 <pre><code class="language-markup">{{ include "includes/create-a-record-page/summary-section.html" escape=true }}</code></pre>
 
-<p>
-  Tiles can display data in all kinds of formats, whether it's a list of fields and their values, a repeater view of records, a chart, or anything else you can imagine.  We'll get into more detail about the common data elements inside tiles later, but for now let's move on to the next kind of page.
-</p>
+<p>Tiles can display data in all kinds of formats, whether it's a list of fields and their values, a repeater view of records, a chart, or anything else you can imagine. You can find into more detail about the common data elements inside tiles in the <strong>Components</strong> section, but for now let's move on to the next kind of page.</p>
+
 <hr>
-<p>
-  <strong>Next step:</strong> <a href="../create-a-tabbed-page">Create a tabbed page &raquo;</a>
-</p>
+<p><strong>Next Step:</strong> <a href="../create-a-tabbed-page">Create a Tabbed Page &raquo;</a></p>
 </div>
