@@ -9,13 +9,15 @@ files:
 
 <h1>{{ name }}</h1>
 
-<p>The previous tutorial described how to <a href="../create-a-record-page/">create a record page</a>. Now, lets look at how to create the other common page type in {{ stache.config.product_name_short }}: the tabbed page. While record pages display data for individual records, tabbed pages usually serve as overviews for many records, such as a lists of constituents or gifts.</p>
+<p>Now that we know how to <a href="../create-a-record-page/">create a record page</a>, lets look at how to create the other common page type in {{ stache.config.product_name_short }}: a tabbed page. While record pages display data for individual records, tabbed pages usually serve as overviews for multiple records. For example, tabbed pages can display lists of constituents or gifts.</p>
 
 <h2>Tabs Component</h2>
 
-<p>{{ stache.config.product_name_short }} uses the <a href="https://angular-ui.github.io/bootstrap/">UI Bootstrap</a> Tabs module to display tabs and adds more {{ stache.config.product_name_short }}-specific functionality with its own <a href="../components/tabset/">Tabset</a> module. In this example, we have two tabs. Since each tab represents a list of records, the number of records in each list is displayed next to the tab header with the CSS class <code>.bb-tab-header-count</code>. Also, since we want the tab content to go edge-to-edge but want the tabs themselves to have a margin, we need to add the <code>.bb-page-tabs</code> CSS class.</p>
+<p>{{ stache.config.product_name_short }} uses the <a href="https://angular-ui.github.io/bootstrap/" target="blank">UI Bootstrap</a> Tabs module to display tabs. It adds {{ stache.config.product_name_short }}-specific functionality with its <a href="../../components/tabset/">tabset module</a>.</p>
 
-<p class="alert alert-info">This example shows grid data in each tab.  For more information about how to use grids, see the <a href="../components/grid/" class="alert-link">grid directive documentation</a>.</p>
+<p>In this example, we have two tabs. Each tab displays a list of records, and to display the number of records beside the tab headers, we use the <code>.bb-tab-header-count</code> CSS class. And to display tab content from edge to edge and give the tabs themselves a margin, we add the <code>.bb-page-tabs</code> CSS class.</p>
+
+<p class="alert alert-info">This example displays data in grids. For information about how to use grids, see the <a href="../components/grid/" class="alert-link">grid directive</a>.</p>
 
 <div class="page-example" ng-controller="TabbedPageTutorialController as tabbedPage">
   {{ include "includes/create-a-tabbed-page/tabs.html" }}
@@ -23,7 +25,7 @@ files:
 
 <pre><code class="language-markup" ng-non-bindable>{{ include "includes/create-a-tabbed-page/tabs.html" escape=true }}</code></pre>
 
-<p>Now that we've covered the two basic page types, let's dive into some more detail about the components of each page.</p>
+<p>Now that we've covered the two basic page types, we can proceed to the <a href="../../components">Components</a> section for more information about the components that we can include on each page type.</p>
 
 <hr>
 

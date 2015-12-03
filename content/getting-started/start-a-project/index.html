@@ -22,13 +22,17 @@ showNavDropdown: true
 <pre><code class="language-markup">{{ include "includes/start-a-project/html-basic.html" escape=true }}</code></pre>
 </li>
 
-<p>Next, to add {{ stache.config.product_name_short }} to the page, point to {{ stache.config.product_name_short }} via the Blackbaud Sky CDN.</p>
+<p>Next, to add {{ stache.config.product_name_short }} to the page, point to {{ stache.config.product_name_short }} via the Blackbaud SKY CDN.</p>
 
-<p class="alert alert-info">If you wish to host {{ stache.config.product_name_short }} yourself, you may install it via <a href="http://bower.io/" class="alert-link">Bower</a> instead of pointing to the CDN. See the <a href="{{ stache.config.github }}" class="alert-link">{{ stache.config.product_name_short }} GitHub page</a> for instructions on installing via Bower.</p>
+<p class="alert alert-info">If you wish to host {{ stache.config.product_name_short }} yourself, you may install it via <a href="http://bower.io/" class="alert-link" target="blank">Bower</a> instead of pointing to the CDN. See the <a href="{{ stache.config.github }}" class="alert-link" target="blank">{{ stache.config.product_name_short }} GitHub page</a> for instructions on installing via Bower.</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/html-with-sky.html" escape=true }}</code></pre>
 
 <p>You should now be able to spin up a web server in your project's directory (the NPM package <a href="https://www.npmjs.com/package/http-server" target="blank"><code>http-server</code></a> is very handy for this) and browse to it in a web browser.</p>
+
+<!--
+<p class="alert alert-info">You can also open the file directly in a browser, but the browser will put restrictions on how JavaScript runs when you do that.</p>
+-->
 
 <h2>Add Content to the Page</h2>
 
@@ -53,7 +57,7 @@ showNavDropdown: true
 
 <h3>AngularJS Directives</h3>
 
-<p>Of course, {{ stache.config.product_name_short }} is more than just CSS. It also features an <a href="../components">extensive library</a> of <a href="https://angularjs.org/" target="blank">AngularJS</a> components. To use these, your page must define an Angular application.</p>
+<p>Of course, {{ stache.config.product_name_short }} is more than just CSS. It also features an <a href="../../components">extensive library</a> of <a href="https://angularjs.org/" target="blank">AngularJS</a> components. To use these, your page must define an Angular application.</p>
 
 <p>In the page's <code>html</code> element, add an <code>ng-app</code> attribute, but don't refresh your browser just yet.</p>
 
@@ -73,7 +77,7 @@ showNavDropdown: true
   angular.module('skytutorial', ['sky']);
 }());</code></pre>
 
-<p>Now that our page is a proper Angular application, we can add Angular components. Let's start with the navbar. Don't worry too much about what all this HTML does for now. I just copied it from the <a href="../documentation/navbar/">navbar documentation</a> and pasted it here as-is. Copy the following HTML and paste it immediately after your opening <code>&#60;body&#62;</code> tag.</p>
+<p>Now that our page is a proper Angular application, we can add Angular components. Let's start with the navbar. Don't worry too much about what all this HTML does for now. I just copied it from the <a href="../../components/navbar/">navbar documentation</a> and pasted it here as-is. Copy the following HTML and paste it immediately after your opening <code>&#60;body&#62;</code> tag.</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/navbar.html" escape=true }}</code></pre>
 
