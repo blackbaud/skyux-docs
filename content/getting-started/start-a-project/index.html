@@ -15,26 +15,30 @@ showNavDropdown: true
 
 <h2>Create a Page</h2>
 
-<p>Let's start with a basic HTML page that includes {{ stache.config.product_name_short }}.  First, create an empty folder and inside that folder add an HTML file called <code>index.html</code>.  Starting with the following boilerplate HTML will ensure your page renders properly in all modern browsers:</p>
+<p>Let's start with a basic HTML page that includes {{ stache.config.product_name_short }}.</p>
+    
+<p>First, create a folder and then add an HTML file called <code>index.html</code>. To ensure that the page renders properly in all modern browsers, start with the following boilerplate HTML:</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/html-basic.html" escape=true }}</code></pre>
 </li>
 
-<p>Next we'll add {{ stache.config.product_name_short }} to the page by pointing to {{ stache.config.product_name_short }} via the Blackbaud Sky CDN.</p>
+<p>Next, to add {{ stache.config.product_name_short }} to the page, point to {{ stache.config.product_name_short }} via the Blackbaud Sky CDN.</p>
 
 <p class="alert alert-info">If you wish to host {{ stache.config.product_name_short }} yourself, you may install it via <a href="http://bower.io/" class="alert-link">Bower</a> instead of pointing to the CDN. See the <a href="{{ stache.config.github }}" class="alert-link">{{ stache.config.product_name_short }} GitHub page</a> for instructions on installing via Bower.</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/html-with-sky.html" escape=true }}</code></pre>
 
-<p>You should now be able to spin up a web server in your project's directory (the NPM package <a href="https://www.npmjs.com/package/http-server"><code>http-server</code></a> is very handy for this) and browse to it in a web browser.</p>
+<p>You should now be able to spin up a web server in your project's directory (the NPM package <a href="https://www.npmjs.com/package/http-server" target="blank"><code>http-server</code></a> is very handy for this) and browse to it in a web browser.</p>
 
-<h2>Add Content</h2>
+<h2>Add Content to the Page</h2>
 
 <h3>Simple HTML Elements</h3>
 
-<p>Let's brighten things up a bit by adding a button to the page. {{ stache.config.product_name_short }} is based on Bootstrap, so we can use all the <a href="http://getbootstrap.com/css/">standard Bootstrap CSS classes</a>.  Add a <code>div</code> tag within your page's <code>&#60;body&#62;</code> element and use the <code>class</code> attribute to wrap the button in the Bootstrap CSS class <code>.container-fluid</code> and the {{ stache.config.product_name_short }} CSS class <code>.bb-page-content</code>.  These classes separate the content from the navbar and the edges of the browser window.</p>
+<p>Let's brighten things up a bit by adding a button to the page. {{ stache.config.product_name_short }} is based on Bootstrap, so we can use all <a href="http://getbootstrap.com/css/" target="blank">standard Bootstrap CSS classes</a>.</p>
 
-<p class="alert alert-info">For brevity's sake the remaining code samples will omit the boilerplate HTML and just show the code that goes in your page's <code>&#60;body&#62;</code> element.</p>
+<p>Add a <code>div</code> tag within your page's <code>&#60;body&#62;</code> element and use the <code>class</code> attribute to wrap the button in the Bootstrap CSS class <code>.container-fluid</code> and the {{ stache.config.product_name_short }} CSS class <code>.bb-page-content</code>. These classes separate the content from the navbar and the edges of the browser window.</p>
+
+<p class="alert alert-info">For brevity, the remaining code samples omit the boilerplate HTML and just show the code to add to your page's <code>&#60;body&#62;</code> element.</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/hello-world-button.html" escape=true }}</code></pre>
 
@@ -49,7 +53,7 @@ showNavDropdown: true
 
 <h3>AngularJS Directives</h3>
 
-<p>Of course, {{ stache.config.product_name_short }} is more than just CSS. It also features an <a href="../documentation">extensive library</a> of <a href="https://angularjs.org/">AngularJS</a> components. To use these, your page must define an Angular application.</p>
+<p>Of course, {{ stache.config.product_name_short }} is more than just CSS. It also features an <a href="../components">extensive library</a> of <a href="https://angularjs.org/" target="blank">AngularJS</a> components. To use these, your page must define an Angular application.</p>
 
 <p>In the page's <code>html</code> element, add an <code>ng-app</code> attribute, but don't refresh your browser just yet.</p>
 
@@ -69,11 +73,11 @@ showNavDropdown: true
   angular.module('skytutorial', ['sky']);
 }());</code></pre>
 
-<p>Now that our page is a proper Angular application, we can add Angular components. Let's start with the navbar. Don't worry too much about what all this HTML does for now. I've just copied it from the <a href="../documentation/navbar/">Navbar documentation</a> and pasted it as-is here. Copy the following HTML and paste it immediately after your opening <code>&#60;body&#62;</code> tag.</p>
+<p>Now that our page is a proper Angular application, we can add Angular components. Let's start with the navbar. Don't worry too much about what all this HTML does for now. I just copied it from the <a href="../documentation/navbar/">navbar documentation</a> and pasted it here as-is. Copy the following HTML and paste it immediately after your opening <code>&#60;body&#62;</code> tag.</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/navbar.html" escape=true }}</code></pre>
 
-<p>By now your HTML file should look like this:</p>
+<p>At this point, your HTML file should look like this:</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/full-page.html" escape=true }}</code></pre>
 
