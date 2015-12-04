@@ -16,7 +16,7 @@ showNavDropdown: true
 <h2>Create a Page</h2>
 
 <p>Let's start with a basic HTML page that includes {{ stache.config.product_name_short }}.</p>
-    
+
 <p>First, create a folder and then add an HTML file called <code>index.html</code>. To ensure that the page renders properly in all modern browsers, start with the following boilerplate HTML:</p>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/html-basic.html" escape=true }}</code></pre>
@@ -65,8 +65,7 @@ showNavDropdown: true
 
 <p>To define <code>skytutorial</code> as an Angular module in JavaScript so that Angular knows what to wire up to your HTML page, create an <code>index.js</code> file next to <code>index.html</code> at the root of your project. Add a reference to your <code>index.js</code> to the bottom of the <code>&#60;body&#62;</code> element.</p>
 
-<pre><code class="language-markup">&lt;script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/libs.min.js"&gt;&lt;/script&gt;
-&lt;script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/sky.min.js"&gt;&lt;/script&gt;
+<pre><code class="language-markup">&lt;script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/sky-bundle.min.js"&gt;&lt;/script&gt;
 &lt;script src="index.js"&gt;&lt;/script&gt;</code></pre>
 
 <p>In the <code>index.js</code> file, add the <code>sky</code> module as a dependency on your <code>skytutorial</code> module by putting it in brackets as the second argument to <code>angular.module()</code>. This ensures that all {{ stache.config.product_name_short }} functionality is available to your Angular application.</p>
