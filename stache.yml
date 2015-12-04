@@ -6,6 +6,7 @@ title: <%= stache.config.product_name_short %>
 omnibar_title: <%= stache.config.product_name_short %>
 markdown: false
 comments_key: blackbaudsky
+cdn: https://sky.blackbaudcdn.net/skyux/
 
 #partial_footer_internal: ../includes/partial-footer-internal.html
 #partial_header_search: ../includes/partial-header-search.html

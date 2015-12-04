@@ -183,10 +183,18 @@ a.panel-wrapper.highlight .panel {
   padding: 20px 0;
 }
 
-@media (min-width: 992px) {
-  .row.equal .panel {
-    min-height: 166px;
-  }
+.page-example {
+  border: solid 3px #f2f2f2;
+  background-color: #f2f2f2;
+  margin: 10px 0;
+}
+
+.page-example .tab-content {
+  margin-top: 0;
+}
+
+pre[class*="language-"] {
+  margin: 20px 0;
 }
 
 @media (min-width: 1200px) {
