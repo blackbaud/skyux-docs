@@ -1,71 +1,72 @@
 ---
 layout: layout-sidebar
-order: 16
-name: Managing records
+order: 1
+name: Manage Records
+description: "Manage records blurb..."
 ---
 
 <h1>{{ name }}</h1>
 
 <div class="bb-text-block">
-    <h2>Adding records</h2>
+    <h2>Add records</h2>
     <p>
     There are three general scenarios for adding records.
     </p>
-    <h3>From lists or tiles</h3>
+    <h3>From Lists or Tiles</h3>
     <div class="page-example"><img src="/assets/img/patterns/add from list.png" /></div>
     <div class="page-example"><img src="/assets/img/patterns/add from tile.png" /></div>
     <p>
     Adding a record is often an important action for a list or tile. In these cases, use an add button on the left side of the action bar for that component. 
     </p>
-    <h3>From lookup fields</h3>
+    <h3>From Lookup Fields</h3>
     <div class="page-example"><img src="/assets/img/patterns/add from lookup.png" /></div>
     <p>
     When you need to allow the user to add records on the fly when they are performing a lookup, use an add button to the right of the lookup field.
     </p>
-    <h3>From collection fields</h3>
+    <h3>From Collection Fields</h3>
     <div class="page-example"><img src="/assets/img/patterns/add from collection field.png" /></div>
     <p>
     When you need to allow the user to add values of a field type quickly and the data that needs to be entered is simple, use an add link below the list of already-added records.  
     </p>
-    <h2>Editing records</h2>
+    <h2>Edit Records</h2>
     <p>
     In general, editing a record should happen in a <a href="">modal</a> form to allow the user to focus on the task of making the edit. The complexity of the form will depend on the nature of the data being edited, and the context in which an edit is likely to take place. If the user will tend to make a targeted change a concise form with just the necessary fields can be used. If there is a likelihood that the user will make a set of changes, or will need to reference related information while making a change, the full record-edit form should be used.
     </p>
-    <h2>Removing records</h2>
+    <h2>Remove Records</h2>
     <p>There are several scenarios for removing records.</p>
-    <h3>Removing records stored in the database</h3>
+    <h3>Remove Records Stored in the Database</h3>
     <p>
     The operation of removing a record will differ depending on the nature of the information.
     </p>
-    <h4>Deleting</h4>
+    <h4>Delete</h4>
     <p>
     Use delete when it's okay to permanently delete a record. Keep in mind that features that reference the deleted item will not function as usual.
     </p>
     <p>
     When deleting an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been deleted.”
     </p>
-    <h4>Archiving</h4>
+    <h4>Archive</h4>
     <p>
     Use archive when an item will no longer be used, but where features will need to continue to reference the archived item. When an item is archived, the state is not permanent (the item can be become un-archived via "restore"). Features that reference the archived item will function as usual.
     </p>
     <p>
     When archiving an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been archived.”
     </p>
-    <h4>Deactivating</h4>
+    <h4>Deactivate</h4>
     <p>
     Deactivate lives somewhere between archiving and deleting. You can deactivate an item where you no longer want features tied to it to continue to function going forward, but where you want past usage of the item to still function. The state is not permanent (the item can be become active again via "restore"). Features that reference the deactivated item will not function as usual.
     </p>
     <p>
     When deactivating an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been deactivated.”
     </p>
-    <h4>Ignoring</h4>
+    <h4>Ignore</h4>
     <p>
     Ignore can be used when an item from the system no longer needs to be used, but the item cannot be deleted from the system for auditing or technical reasons. The state is not permanent (the item can be become un-ignored via "restore"). Features that reference the ignored item will not function as usual.
     </p>
     <p>
     When ignoring an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been ignored.”
     </p>
-    <h3>Removing ancillary information</h3>
+    <h3>Remove Ancillary Information</h3>
     <p>
     There are some cases where the items being removed are either not true records or are ancillary to the main record. In these cases the cost of accidentally removing the item is low, so there is no need for the user to confirm the action or to display a toast after the action is complete. 
     </p>

@@ -1,7 +1,8 @@
 ---
 layout: layout-sidebar
-order: 16
-name: Validation and error handling
+order: 7
+name: Validation and Error-handling
+description: "Validation and error-handling blurb..."
 ---
 
 <h1>{{ name }}</h1>
@@ -10,7 +11,7 @@ name: Validation and error handling
     <p>
     The first step in validation and error handling is to ensure we’ve helped the user avoid making a mistake in the first place. Descriptive text, hint text, masked fields and sophisticated custom controls should be used when the scenario calls for it. Usually these are not needed, but keep an eye out for cases where they will provide significant value to the user.
     </p>
-    <h2>Form errors</h2>
+    <h2>Form Errors</h2>
     <p>
     When a user is filling out a form, they should be notified as soon as possible to errors so they can be corrected within the flow of their task rather than being collected until they think they are finished. If possible a field should be validated when focus has left the field. Sometimes this is not possible, in which case the validation will run when the form is submitted.  
     </p>
@@ -27,7 +28,7 @@ name: Validation and error handling
     <p>
     In cases where a field is validated on focus loss, re-run the validation for a field triggering an error if the field value has been changed. This will ensure that the user immediately knows whether their change will be successful.  
     </p>
-    <h2>Page errors</h2>
+    <h2>Page Errors</h2>
     <p>
     There are a variety of page-level errors that can happen, usually due to a system failure rather than a user action. Generic <a href="">error messaging</a> is available for these scenarios, although the content can be customized if it needs to be more precise or prescriptive. 
     </p>
