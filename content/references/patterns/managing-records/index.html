@@ -10,7 +10,7 @@ description: "Manage records blurb..."
 <div class="bb-text-block">
     <h2>Add records</h2>
     <p>
-    There are three general scenarios for adding records.
+    There are three general scenarios for adding records. This should be done via a <a href="../../../components/modal/">modal</a> add <a href="../../layout/forms/">form</a>.
     </p>
     <h3>From Lists or Tiles</h3>
     <div class="page-example"><img src="/assets/img/patterns/add from list.png" /></div>
@@ -21,7 +21,7 @@ description: "Manage records blurb..."
     <h3>From Lookup Fields</h3>
     <div class="page-example"><img src="/assets/img/patterns/add from lookup.png" /></div>
     <p>
-    When you need to allow the user to add records on the fly when they are performing a lookup, use an add button to the right of the lookup field.
+    When the user needs to to add records on the fly when they are performing a lookup, use an add button to the right of the lookup field.
     </p>
     <h3>From Collection Fields</h3>
     <div class="page-example"><img src="/assets/img/patterns/add from collection field.png" /></div>
@@ -30,7 +30,7 @@ description: "Manage records blurb..."
     </p>
     <h2>Edit Records</h2>
     <p>
-    In general, editing a record should happen in a <a href="">modal</a> form to allow the user to focus on the task of making the edit. The complexity of the form will depend on the nature of the data being edited, and the context in which an edit is likely to take place. If the user will tend to make a targeted change a concise form with just the necessary fields can be used. If there is a likelihood that the user will make a set of changes, or will need to reference related information while making a change, the full record-edit form should be used.
+    In general, editing a record should happen in a <a href="../../../components/modal/">modal</a> form to allow the user to focus on the task of making the edit. The complexity of the form will depend on the nature of the data being edited, and the context in which an edit is likely to take place. If the user will tend to make a targeted change a concise form with just the necessary fields can be used. If there is a likelihood that the user will make a set of changes, or will need to reference related information while making a change, the full record-edit form should be used.
     </p>
     <h2>Remove Records</h2>
     <p>There are several scenarios for removing records.</p>
@@ -43,28 +43,28 @@ description: "Manage records blurb..."
     Use delete when it's okay to permanently delete a record. Keep in mind that features that reference the deleted item will not function as usual.
     </p>
     <p>
-    When deleting an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been deleted.”
+    When deleting an item, confirm the action with a <a href="../../../components/toast/">toast</a> saying “&lt;Item name&gt; has been deleted.”
     </p>
     <h4>Archive</h4>
     <p>
     Use archive when an item will no longer be used, but where features will need to continue to reference the archived item. When an item is archived, the state is not permanent (the item can be become un-archived via "restore"). Features that reference the archived item will function as usual.
     </p>
     <p>
-    When archiving an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been archived.”
+    When archiving an item, confirm the action with a <a href="../../../components/toast/">toast</a> saying “&lt;Item name&gt; has been archived.”
     </p>
     <h4>Deactivate</h4>
     <p>
     Deactivate lives somewhere between archiving and deleting. You can deactivate an item where you no longer want features tied to it to continue to function going forward, but where you want past usage of the item to still function. The state is not permanent (the item can be become active again via "restore"). Features that reference the deactivated item will not function as usual.
     </p>
     <p>
-    When deactivating an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been deactivated.”
+    When deactivating an item, confirm the action with a <a href="../../../components/toast/">toast</a> saying “&lt;Item name&gt; has been deactivated.”
     </p>
     <h4>Ignore</h4>
     <p>
     Ignore can be used when an item from the system no longer needs to be used, but the item cannot be deleted from the system for auditing or technical reasons. The state is not permanent (the item can be become un-ignored via "restore"). Features that reference the ignored item will not function as usual.
     </p>
     <p>
-    When ignoring an item, confirm the action with a <a href="">toast</a> saying “&lt;Item name&gt; has been ignored.”
+    When ignoring an item, confirm the action with a <a href="../../../components/toast/">toast</a> saying “&lt;Item name&gt; has been ignored.”
     </p>
     <h3>Remove Ancillary Information</h3>
     <p>
