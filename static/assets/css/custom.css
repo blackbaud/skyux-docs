@@ -197,6 +197,12 @@ pre[class*="language-"] {
   margin: 20px 0;
 }
 
+@media (min-width: 992px) {
+  .row.equal .panel {
+    min-height: 166px;
+  }
+}
+
 @media (min-width: 1200px) {
   .row.equal .panel {
     min-height: 188px;
