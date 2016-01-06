@@ -5,6 +5,7 @@ product_name_long: Blackbaud <%= stache.config.product_name_short %>
 title: <%= stache.config.product_name_short %>
 omnibar_title: <%= stache.config.product_name_short %>
 markdown: false
+comments: false
 comments_key: blackbaudsky
 cdn: https://sky.blackbaudcdn.net/skyux/
 
