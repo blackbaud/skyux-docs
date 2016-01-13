@@ -1,7 +1,7 @@
 ---
 layout: layout-blog-post
 author: Blackbaud-PaulCrowder
-name: Welcome to the Sky blog
+name: Welcome to the <%= stache.config.product_name_short %> Blog
 pubDate: Monday, January 4, 2016
 ---
 
