@@ -34,6 +34,10 @@
   padding: 10px;
 }
 
+.bb-navbar .nav.navbar-nav li a.navbar-github-link {
+  padding: 12px 8px 6px 12px
+}
+
 /*
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * HOME PAGE
