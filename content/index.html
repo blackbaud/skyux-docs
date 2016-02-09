@@ -158,13 +158,13 @@ slides:
     <h1>{{ stache.config.product_name_short }} in Action</h1>
     <p class="lead">Blackbaud’s NXT products are already taking advantage of {{ stache.config.product_name_short }}’s design patterns.</p>
     <div ng-controller="InActionController as carousel">
-      <carousel interval="carousel.interval">
+      <uib-carousel interval="carousel.interval">
         {{# each slides }}
-          <slide>
+          <uib-slide>
             <img ng-src="/assets/img/{{ img }}" class="img-responsive box-shadow" alt="{{ alt }}" />
-          </slide>
+          </uib-slide>
         {{/ each }}
-      </carousel>
+      </uib-carousel>
     </div>
   </div>
 </section>
