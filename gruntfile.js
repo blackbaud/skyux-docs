@@ -12,7 +12,11 @@ module.exports = function (grunt) {
     // Add our necessary configuration information
     grunt.config.merge({
         stache: {
-            preStacheHooks: 'getLatestSkyRelease',
+            hooks: {
+                preStache: [
+                    'getLatestSkyRelease'
+                ]
+            },
             pages: [{
                 url: skySrcPath + '<%= stache.config.latest_sky_release %>.json',
                 dest: 'components/',

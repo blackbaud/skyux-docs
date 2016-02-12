@@ -3,7 +3,8 @@
 product_name_short: SKY UX
 product_name_long: Blackbaud <%= stache.config.product_name_short %>
 title: <%= stache.config.product_name_short %>
-omnibar_title: <%= stache.config.product_name_short %>
+omnibar:
+  serviceName: <%= stache.config.product_name_short %>
 markdown: false
 comments: false
 comments_key: blackbaudsky
