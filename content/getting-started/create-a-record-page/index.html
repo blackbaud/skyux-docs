@@ -13,7 +13,7 @@ name: Create a Record Page
 
 <h2>Summary Section</h2>
 
-<p>The summary section resides at the top of the page to provide a general overview of a record. For example, it can display information such as a record name, description, and profile picture. To add a summary section to your page, use a <code>div</code> with the <code>.bb-page-header</code> CSS class. Here's an example of a summary section with a name, description, and profile photo:</p>
+<p>The summary section resides at the top of the page to provide a general overview of a record. For example, it can display information such as a record name, description, and profile picture. To add a summary section to your page, use the <a href="../../components/pagesummary">page summary directive</a>. Here's an example of a summary section with a name, description, and profile photo:</p>
 
 <div class="page-example">
   {{ include "includes/create-a-record-page/summary-section.html" }}
@@ -23,9 +23,9 @@ name: Create a Record Page
 
 <h2>Tiles Section</h2>
 
-<p>The tiles section usually consists of two columns of tiles (or one column for extra-small screen sizes like mobile phones) that displays more information about a record in logical sections. Each tile includes a header and body for the tile's title and content. Tiles are collapsible, and if they are used in conjunction with a <a href="../../components/tile">tiles dashboard</a>, users can rearrange them.</p>
+<p>The tiles section usually consists of two columns of tiles (or one column for extra-small screen sizes like mobile phones) that displays more information about a record in logical sections. Each tile includes a header and body for the tile's title and content. Tiles are collapsible, and if they are used in conjunction with a <a href="../../components/tiles">tiles dashboard</a>, users can rearrange them.</p>
 
-<p class="alert alert-info">This example shows a page with a static tile layout. To define a dynamic tile layout from a configuration object such as user preferences, you can use the <a href="../../components/tile" class="alert-link">tile dashboard directive.</a></p>
+<p class="alert alert-info">This example shows a page with a static tile layout. To define a dynamic tile layout from a configuration object such as user preferences, you can use the <a href="../../components/tiles" class="alert-link">tile dashboard directive.</a></p>
 
 <div class="page-example">
   {{ include "includes/create-a-record-page/tile-section.html" }}
