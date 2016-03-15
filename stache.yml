@@ -26,3 +26,6 @@ files:
     - /assets/js/custom.js
 
 github: https://github.com/blackbaud/skyux/
+modules:
+  - stache
+  - ngMessages
