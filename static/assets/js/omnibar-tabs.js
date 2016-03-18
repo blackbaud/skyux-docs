@@ -4,11 +4,11 @@
 
     function OmnibarDocsConfig($stateProvider) {
         $stateProvider
-            .state('TabNative', {
-                url: 'native'
-            })
             .state('TabAngularJS', {
                 url: 'angularjs'
+            })
+            .state('TabNative', {
+                url: 'native'
             });
     }
 
