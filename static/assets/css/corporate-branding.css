@@ -1,0 +1,15 @@
+.welcome {
+  background: rgb(0, 180, 241);
+}
+
+.status {
+  background: #f3f3f4;
+}
+
+i.fa.text-primary {
+  color: rgb(0, 180, 241);
+}
+
+.bg-primary {
+  background: rgb(114, 191, 68);
+}
