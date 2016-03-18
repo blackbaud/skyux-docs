@@ -1,6 +1,6 @@
 ---
 icon: bars
-summary: The Omnibar provides a common UI element for Blackbaud products so users have a seamless experience as they navigate through the Blackbaud ecosystem.
+summary: The Omnibar provides a common UI element for Blackbaud products, which enables seamless navigation for users.
 markdown: false
 files:
   js:
