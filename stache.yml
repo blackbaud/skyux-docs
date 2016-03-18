@@ -1,7 +1,7 @@
 # Settings for Blackbaud Documentation Tool - Stache
 # https://www.npmjs.com/package/blackbaud-stache
 product_name_short: SKY UX
-product_name_long: Blackbaud <%= stache.config.product_name_short %>
+product_name_long: <%= stache.config.product_name_short %>
 title: <%= stache.config.product_name_short %>
 omnibar:
   serviceName: <%= stache.config.product_name_short %>
