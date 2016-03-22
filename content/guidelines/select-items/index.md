@@ -14,9 +14,9 @@ Use radio buttons when:
 
 * There are 2-3 options and the user can only select one value
 
-## Select Field
+## HTML &lt;select&gt; field
 
-Use an HTML Select field when:
+Use an HTML &lt;select&gt; field when:
 
 * The values are system-defined, there are 4-20 values and the user does not need to search for an item
 
@@ -26,9 +26,9 @@ Use a checkbox when:
 
 * There are 2-5 values and the user can select multiple
 
-## [Checklist](../../components/checklist)
+## [SkyUX Search Field component](../../components/searchfield)
 
-Use a checklist when:
+Use a SkyUX Search Field when:
 
 * The values are user-defined
 * The values are system-defined, the user can select multiple and there are > 5 values
