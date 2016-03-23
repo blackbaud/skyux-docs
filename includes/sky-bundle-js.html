@@ -1,1 +1,1 @@
-<script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/sky-bundle.min.js"></script>
+{{#if stache.config.latest_sky_sri}}<script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/sky-bundle.min.js" integrity="{{ stache.config.latest_sky_sri.[@dist/js/sky-bundle.min.js].integrity }}" crossorigin="anonymous"></script>{{else}}<script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/sky-bundle.min.js"></script>{{/if}}

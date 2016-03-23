@@ -1,1 +1,1 @@
-<link rel="stylesheet" href="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/css/sky-bundle.css">
+{{#if stache.config.latest_sky_sri}}<link rel="stylesheet" href="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/css/sky-bundle.css" integrity="{{ stache.config.latest_sky_sri.[@dist/css/sky-bundle.css].integrity }}" crossorigin="anonymous">{{else}}<link rel="stylesheet" href="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/css/sky-bundle.css">{{/if}}
