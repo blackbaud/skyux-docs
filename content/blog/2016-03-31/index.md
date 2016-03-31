@@ -50,5 +50,5 @@ We know that designing a SkyUX-consistent application when you are just starting
 ### [Wizard](https://github.com/blackbaud/skyux/issues/360)
 Adding an option for number-only steps as the responsive solution and for use in cases where the steps are not conducive to naming. 
 
-### [Card layout](https://github.com/blackbaud/skyux/issues/124)
+### [Repeater layout](https://github.com/blackbaud/skyux/issues/124)
 Add options for accordion-style and multi-open expandable repeater views.
