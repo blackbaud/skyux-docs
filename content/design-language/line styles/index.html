@@ -1,0 +1,68 @@
+---
+name: Line styles
+description: Types of lines used for dividing content areas.
+---
+
+<h1 class="bb-page-heading">Line styles</h1>
+
+<p>SKY UX uses various line styles to bound, divide, and highlight content. The lines are designed to maintain visual hierarchy regardless of how complex pages become or how many nested containers they include.</p>
+<p>As with other types of formatting or decoration in SKY UX, use lines minimally. Remember that white space and positioning can group or highlight content without extra subdivisions or boundaries.</p>
+<p>SKY UX uses a total of 6 line styles:</p>
+<ul>
+    <li>A light separator to organize and divide blocks of content within a container</li>
+    <li>A dark separator to indicate borders and boundaries for components</li>
+    <li>4 prescriptive, "isolated" line styles:
+        <ul>
+            <li>Navigation selection underline</li>
+            <li>Tab underline</li>
+            <li>Tile crown</li>
+            <li>Row separator</li>
+        </ul>
+    </li>
+</ul>
+
+<h2 class="bb-section-heading">Light separator</h2>
+<p>The light separator is a very light gray, single-pixel line. It subdivides content within a container, but do not use it at the edge of a container. Only use it when it is adjacent to white space on both sides.</p>
+<div class="bb-subsection-heading">Usage</div>
+<p>SkyUX currently uses this style for:</p>
+<ul>
+    <li>Subsection dividers within containers such as tiles</li>
+    <li>Top boundaries for the action bars on dialogues</li>
+</ul>
+<div class="bb-subsection-heading">Styling</div>
+<div><code>border-bottom: 1px solid $border-color;</code></div>
+<p>When this line style subdivides content within a container, use a 15px margin on both ends.</p>
+
+<h2 class="bb-section-heading">Dark separator</h2>
+<p>The dark separator is a moderate gray, single-pixel line. This heavier stroke holds up between two different colors, which makes it ideal for borders and boundaries. It also frequently separates active content from passive content. For example, it can separate a toolbar and the content that the toolbar acts on.</p>
+<div class="bb-subsection-heading">Usage</div>
+<p>SkyUX currently uses this style for:</p>
+<ul>
+    <li>Borders on buttons</li>
+    <li>Top and bottom boundaries for toolbars</li>
+    <li>Column dividers for header rows in grids</li>
+    <li>Borders for cards</li>
+    <li>Built-in data visualization axes</li>
+</ul>
+<div class="bb-subsection-heading">Styling</div>
+<div><code>border-bottom: 1px solid #ccc;</code></div>
+<p>When this line style bounds or divides an element horizontally or vertically, extend the line to the edges of the element.</p>
+
+<h2 class="bb-section-heading">Isolated styles</h2>
+<p>Isolated line styles are specific to certain parts of SKY UX and are defined as part of the component that they belong to. For the most part, they should not proliferate to other SKY UX elements.</p>
+
+<h3 class="bb-subsection-heading">Navigation selection underline</h3>
+<p>This line style highlights the active navigation area in the navigation menu. It aligns to the bottom of the navigation affordance and stretches to its full width.</p>
+<div><code>border-bottom: $bb-nav-selected-border-width solid $bb-color-blue;</code></div>
+
+<h3 class="bb-subsection-heading">Tab underline</h3>
+<p>This line style separates tab controls from their contents. It aligns to the bottom of the tab controls and stretches to the full width of the container.</p>
+<div><code>border-bottom: 2px solid $bb-color-blue;</code></div>
+
+<h3 class="bb-subsection-heading">Tile crown</h3>
+<p>This line affixes to the top of tiles on SKY UX pages. It extends above the top of the tile and stretches to its full width.</p>
+<div><code>border-top: 4px solid $border-color;</code></div>
+
+<h3 class="bb-subsection-heading">Row separator</h3>
+<p>This line separates members of a homogenous set. Use it between the rows in a grid, list, or repeater container. While the dotted style lowers its visual weight, the use of a moderate gray allows it to work with or without row striping on the list rows. It stretches the full width of the rows (not the width of the container that holds the rows).</p>
+<div><code>border-bottom: 1px dotted #ccc;</code></div>
