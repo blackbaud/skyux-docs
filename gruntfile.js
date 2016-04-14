@@ -32,7 +32,10 @@ module.exports = function (grunt) {
     grunt.registerTask('getLatestSkyRelease', function () {
         var file = 'includes/latest-release.txt',
             key = 'stache.config.latest_sky_release',
-            v = grunt.config.get(key);
+            sriFile,
+            v;
+
+        v = grunt.config.get(key);
 
         if (grunt.file.exists(file)) {
             v = grunt.file.read(file, 'utf8').replace(/(\r\n|\n|\r)/gm, '');
@@ -45,6 +48,12 @@ module.exports = function (grunt) {
             }
         } else {
             grunt.log.writeln('Latest sky release not specified.  Defaulting to: ' + v);
+        }
+
+        sriFile = 'sky-sri/sky-' + v + '.json';
+
+        if (grunt.file.exists(sriFile)) {
+            grunt.config.set('stache.config.latest_sky_sri', grunt.file.readJSON(sriFile));
         }
     });
 
