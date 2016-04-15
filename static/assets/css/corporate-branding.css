@@ -1,9 +1,14 @@
 .welcome {
-  background: rgb(0, 180, 241);
+  background: rgb(0, 180, 241) url(../img/skyux-background.jpg) center 20% no-repeat;
 }
 
-.status {
-  background: #f3f3f4;
+.welcome h2 {
+  padding: 0 0 70px 0;
+  color: #fff;
+}
+
+.skyux-logo {
+  max-width: 300px;
 }
 
 i.fa.text-primary {
@@ -12,4 +17,8 @@ i.fa.text-primary {
 
 .bg-primary {
   background: rgb(114, 191, 68);
+}
+
+.product-carousel {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }

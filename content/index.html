@@ -50,7 +50,7 @@ why:
     title: Supportive
     description: <%= stache.config.product_name_short %> provides guidance and direction, while still offering flexibility.
 
-  - icon: star #icon: cloud
+  - icon: bed #icon: cloud
     animate: fadeInDown
     title: Comfortable
     description: <%= stache.config.product_name_short %> is tailored but not rigid. Like an elastic waist, it grows to fit your needs.
@@ -90,13 +90,8 @@ slides:
 <header class="welcome">
   <div class="text-vertical-center">
     <div class="container">
-      <!--
       <div class="center-block skyux-logo-wrapper">
-        <h1><img src="assets/img/skyux-logo.svg" alt="Blackbaud Sky UX" class="skyux-logo"/></h1>
-      </div>
-      -->
-      <div class="center-block">
-        <h1><img src="assets/img/SKY_UX_Light.png" alt="Blackbaud Sky UX" /></h1>
+        <h1><img src="assets/img/skyux-logo.svg" alt="Blackbaud Sky UX" class="skyux-logo" /></h1>
       </div>
       <div class="row">
         <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
@@ -162,11 +157,11 @@ slides:
   <div class="container wow fadeIn" data-wow-delay=".2s">
     <h1>{{ stache.config.product_name_short }} in Action</h1>
     <p class="lead">Blackbaud’s NXT products are already taking advantage of {{ stache.config.product_name_short }}’s design patterns.</p>
-    <div ng-controller="InActionController as carousel">
+    <div ng-controller="InActionController as carousel" class="product-carousel">
       <uib-carousel interval="carousel.interval">
         {{# each slides }}
           <uib-slide>
-            <img ng-src="/assets/img/{{ img }}" class="img-responsive box-shadow" alt="{{ alt }}" />
+            <img ng-src="/assets/img/{{ img }}" class="img-responsive" alt="{{ alt }}" />
           </uib-slide>
         {{/ each }}
       </uib-carousel>
