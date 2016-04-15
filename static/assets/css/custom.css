@@ -38,6 +38,10 @@
   padding: 12px 8px 6px 12px
 }
 
+.bb-navbar {
+  border-bottom: none;
+}
+
 /*
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * HOME PAGE
