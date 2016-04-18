@@ -4,9 +4,9 @@ description: How motion is used
 markdown: true
 ---
 
-#Motion
+<h1 class="bb-page-heading">Motion</h1>
 
-##Principles
+<h2 class="bb-section-heading">Principles</h2>
 
 Motion, by its nature, catches the eye. Our brains are well-practiced at interpreting motion and we can use the smallest details to learn about objects, relationships between them, and the forces at work when things change.
 
@@ -23,7 +23,7 @@ SKY does NOT use animations for:
 * Drawing attention to a primary action
 * Distraction or diversion
 
-##Physics
+<h2 class="bb-section-heading">Physics</h2>
 
 Like other properties of visual design, motion takes advantage of the observer's expectations to simulate physical space in a digital picture. Just like the way shadows suggest depth and perspective, the details of motion imply properties about objects and the forces between them. SKY follows some basic rules to keep motions looking natural and realistic, and to best demonstrate context to our users.
 
@@ -41,11 +41,11 @@ Like other properties of visual design, motion takes advantage of the observer's
 	* Trajectory
 
 
-##Examples
+<h2 class="bb-section-heading">Examples</h2>
 
 SKY uses a set of metaphor-based motion effects. For the most part, these patterns should be included in the definitions of SKY components and not invoked directly.
 
-###Slide
+<h3 class="bb-subsection-heading">Slide</h3>
 
 [Slide example](https://blackbaudinc.box.com/s/w7cs2wperphvbdhauhcnlz3vmprkl3y6)
 
@@ -67,7 +67,7 @@ _Slide_ should follow these guidelines:
 	* **300ms** for wizard steps, tabs, and other effects where one set of content is completely replaced by another
 	* **200ms** for sidebars and other patterns where one set of content is partially covered by another
 
-###Expand/collapse
+<h3 class="bb-subsection-heading">Expand/collapse</h3>
 
 [Expand example](https://blackbaudinc.box.com/s/0ush0ig0pf39f4mkj9n354q8r2lqc0vr)
 
@@ -87,7 +87,7 @@ _Expand/collapse_ should follow these guidelines:
 * Use a duration of **300** milliseconds
 	* If it necessary to _slide_ other content, use a 300ms duration for that movement as well (with the same acceleration curve)
 
-###Emerge/recede
+<h3 class="bb-subsection-heading">Emerge/recede</h3>
 
 [Emerge example](https://blackbaudinc.box.com/s/xkyl455v5sy5qm2wcu23th66l3o07pcj)
 
@@ -112,7 +112,7 @@ _Emerge/recede_ should follow these guidelines:
 	* **300ms** for toasts and modal dialogues
 * If a modal dialogue also uses a translucent mask behind it, the mask does not need the full _emerge_ effect. Simply increase the mask's alpha from 0 to its final value using the same acceleration and duration as the other transitions.
 
-###Drill (native mobile only)
+<h3 class="bb-subsection-heading">Drill (native mobile only)</h3>
 
 [Drill example](https://blackbaudinc.box.com/s/80utgc92xegxsfd8qztq4hd57diwt2ra)
 
