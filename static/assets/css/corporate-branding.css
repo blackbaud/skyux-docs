@@ -1,5 +1,6 @@
 .welcome {
-  background: rgb(0, 180, 241) url(../img/skyux-background.jpg) center 20% no-repeat;
+  background: rgb(0, 180, 241) url(../img/skyux-background.jpg) no-repeat fixed center 20%;
+  background-size: cover;
 }
 
 .welcome h2 {
