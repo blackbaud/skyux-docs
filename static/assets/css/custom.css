@@ -49,7 +49,7 @@
  */
 
 .welcome {
-  background: url(../img/sky-background.png) center center no-repeat;
+  background: rgb(0, 180, 241) url(../img/skyux-background.jpg) no-repeat fixed center 20%;
   background-size: cover;
   max-height: 475px;
 }
@@ -60,11 +60,12 @@
 
 .skyux-logo {
   width: 100%;
+  max-width: 300px;
 }
 
 .welcome h2 {
-  color: #2f4050;
-  padding: 15px 0 70px 0;
+  color: #fff;
+  padding: 0 0 70px 0;
 }
 
 .welcome-copyright a {
@@ -135,6 +136,18 @@
 
 .box-shadow-ui-screenshot {
   box-shadow: 0 0 60px #ccc;
+}
+
+i.fa.text-primary {
+  color: rgb(0, 180, 241);
+}
+
+.bg-primary {
+  background: rgb(114, 191, 68);
+}
+
+.product-carousel {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
 
 /*
