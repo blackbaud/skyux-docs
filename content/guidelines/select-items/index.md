@@ -4,29 +4,29 @@ description: Which controls to use based on the type of items and context of use
 markdown: true
 ---
 
-# Selecting items from a list
+<h1 class="bb-page-heading">Selecting items from a list</h1>
 
 In an effort to have a consistent experience when choosing items, use the following guidelines when choosing between the controls that can be used for selecting items from a list.
 
-## [Radio buttons](../../components/check)
+<h2 class="bb-section-heading"><a href="../../components/check">Radio buttons</a></h2>
 
 Use radio buttons when:
 
 * There are 2-3 options and the user can only select one value
 
-## HTML &lt;select&gt; field
+<h2 class="bb-section-heading">HTML &lt;select&gt; field</h2>
 
 Use an HTML &lt;select&gt; field when:
 
 * The values are system-defined, there are 4-20 values and the user does not need to search for an item
 
-## [Checkboxes](../../components/check)
+<h2 class="bb-section-heading"><a href="../../components/check">Checkboxes</a></h2>
 
 Use a checkbox when:
 
 * There are 2-5 values and the user can select multiple
 
-## [SkyUX Search Field component](../../components/searchfield)
+<h2 class="bb-section-heading"><a href="../../components/selectfield">SkyUX Select Field component</a></h2>
 
 Use a SkyUX Search Field when:
 
