@@ -57,10 +57,10 @@ To create a pleasant the user experience for screen sizes that do not have space
 ### bbOmnibarConfig Settings
 
 - `afterLoad` &mdash; Specifies a function to be called after the omnibar loads. This is useful when binding events to the omnibar's search box.
-- `appLookupUrl` &mdash; Specifies the URL for the Application Lookup Service that provides applicable database and product links for the current user. Default is the production instance.
+- `appLookupUrl` &mdash; Specifies the URL for the Application Lookup Service that provides applicable database and product links for the current user. The default is URL for the production instance.
 - `contentKey` &mdash; Indicates that the omnibar should supply this content key when redirecting the user to the Authentication Service.
-- `enableHelp` &mdash; Controls whether to display a help button in the omnibar. Use this setting in conjunction with [the `bbHelp` component](../help/).
-- `enableSearch` &mdash; Controls whether to display a search box in the omnibar. You must still handle binding to the UI events for the search box.
+- `enableHelp` &mdash; Indicates whether to display a help button in the omnibar. Use this setting in conjunction with [the `bbHelp` component](../help/).
+- `enableSearch` &mdash; Indicates whether to display a search box in the omnibar. You must still handle binding to the UI events for the search box.
 - `productId` &mdash; Specifies an ID for a product that is registered with the omnibar service to display that product's logo in the omnibar header. This property is reserved for internal implementations. For external implementations or to display text instead of a product logo, use the `serviceName` property instead.
 - `searchPlaceholder` &mdash; Specifies placeholder text to display in the search box.
 - `serviceName` &mdash; Specifies text to display in the omnibar header. For internal implementations, you can use the `productId` property to display a registered product logo instead.
@@ -74,7 +74,7 @@ To create a pleasant the user experience for screen sizes that do not have space
   -  blackbaud-test.com
 - `tenantId` &mdash; When a user has access to multiple databases for a product, the omnibar may show the current database name to provide context. If this database is well-known from the Application Lookup Service, then providing the omnibar with the current tenant ID will let it match up the current context with that well-known link and know what database name to show. Alternatively, if the tenant ID cannot be matched or is not provided, the omnibar can be provided with a database name directly and it may display that.
 - `url` &mdash; Specifies the URL for the omnibar service JavaScript widget.
-- `userLoaded` &mdash; Specifies a function to be called after loading the current user profile information. The function is passed a user object that contains the following properties:
+- `userLoaded` &mdash; Specifies a function to be called after loading the current user profile. The function is passed a user object that contains the following properties:
   - `id` &mdash; The user ID for the Unique Authentication Service. If the user is not logged in, this property is null.
   - `emailAddress` &mdash; The user's email address. If the user is not logged in, this property is null.
   - `firstName` &mdash; The user's first name. If the first name is unknown, the property may be null.
@@ -139,7 +139,7 @@ After the JavaScript library prerequisites are in place, you include an omnibar.
 
 ### Initialize the Omnibar
 
-After you load the omnibar JavaScript file, you include a few lines of HTML to create a placeholder element for the omnibar and to load the JavaScript with custom settings. Create an empty `div` element to hold the omnibar. Then execute the script function `BBAUTH.Omnibar.load` to initialize the omnibar. The first parameter to the function is the DOM element that was created for holding the omnibar. The second parameter is an object that defines options for the omnibar. The most important option is `serviceName`, which specifies the display name for the current service. Below is an example of including this on the page.
+After you load the omnibar JavaScript file, you include a few lines of HTML on the page to create a placeholder element for the omnibar and to load the JavaScript with custom settings. Create an empty `div` element to hold the omnibar, and then execute the script function `BBAUTH.Omnibar.load` to initialize the omnibar. The first parameter to the function is the DOM element that holds the omnibar. The second parameter is an object that defines options for the omnibar. The most important option is `serviceName`, which specifies the display name for the current service.
 
 ```markup
 <div id="omnibar" />
@@ -155,7 +155,7 @@ The omnibar JavaScript file automatically loads special CSS content to style the
 
 The omnibar caches information about users such as name, email, and product/database links. The omnibar caches these items on the client for the duration of the authentication session. Users can log out and log back in to update this information in the omnibar.
 
-Alternatively, the product can call a well-known JavaScript function to prompt the omnibar to refresh this data without waiting for users to log out and log back in:
+Alternatively, the product can call a well-known JavaScript function to prompt the omnibar to refresh data without waiting for users to log out and log back in.
 
 ```js
 BBAUTH.Omnibar.refreshUserData(successCallback, failureCallback);
