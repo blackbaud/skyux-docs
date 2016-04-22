@@ -45,7 +45,7 @@ To avoid `z-index` issues, place the `bb-omnibar` directive at the bottom of the
 
 ### Mobile Meta Tag
 
-The omnibar automatically renders different for small mobile devices in order to create a pleasant experience when there is not room for multiple fly outs from the bar. The omnibar was created with the following meta-tags included to optimize how the page works on a mobile device. For ideal consumption of the omnibar, the page should include the following meta tag in its `<head>`.
+The omnibar automatically renders different for small mobile devices in order to create a pleasant experience when there is not room for multiple fly outs from the bar. The omnibar was created with the following meta-tags included to optimize how the page works on a mobile device. For ideal consumption of the omnibar, the page should include the following `meta` tag in its `<head>`.
 
 To create a pleasant the user experience for screen sizes that do not have space for multiple flyouts, the omnibar automatically renders differently at different media breakpoints. To optimize how the omnibar works at smaller screen sizes, include the following `meta` tag in the page's `head` element.
 
@@ -57,25 +57,25 @@ To create a pleasant the user experience for screen sizes that do not have space
 ### bbOmnibarConfig Settings
 
 - `afterLoad` &mdash; Specifies a function to be called after the omnibar loads. This is useful when binding events to the omnibar's search box.
-- `appLookupUrl` &mdash; Specifies the URL for the Application Lookup Service that provides applicable database and product links for the current user. The default is URL for the production instance.
-- `contentKey` &mdash; Indicates that the omnibar should supply this content key when redirecting the user to the Authentication Service.
+- `appLookupUrl` &mdash; Specifies the URL for the application lookup service that provides database and product links for the current user. The default is URL for the production instance.
+- `contentKey` &mdash; Specifies the content key for the omnibar to use when redirecting users to the authentication service.
 - `enableHelp` &mdash; Indicates whether to display a help button in the omnibar. Use this setting in conjunction with [the `bbHelp` component](../help/).
 - `enableSearch` &mdash; Indicates whether to display a search box in the omnibar. You must still handle binding to the UI events for the search box.
-- `productId` &mdash; Specifies an ID for a product that is registered with the omnibar service to display that product's logo in the omnibar header. This property is reserved for internal implementations. For external implementations or to display text instead of a product logo, use the `serviceName` property instead.
+- `productId` &mdash; Specifies an ID for a product that is registered with the omnibar service in order to display that product's logo in the omnibar header. This property is for internal Blackaud use only. For products that are not registered with the omnibar or to display text in place of a product logo, use the `serviceName` property instead.
 - `searchPlaceholder` &mdash; Specifies placeholder text to display in the search box.
-- `serviceName` &mdash; Specifies text to display in the omnibar header. For internal implementations, you can use the `productId` property to display a registered product logo instead.
-- `signInUrl` &mdash; Specifies where to redirect users after they sign in. The target domain must be a valid relying party from the following list:
+- `serviceName` &mdash; Specifies text to display in the omnibar header. This property is an alternative to the `productId` property that displays product logos for registered products only.
+- `signInUrl` &mdash; Specifies where to redirect users after they sign in. The valid target domains include:
   -  blackbaud.com
   -  blackbaud-dev.com
   -  blackbaud-test.com
-- `signOutUrl` &mdash; Specifies where to redirect users after they sign out. The target domain must be a valid relying party from the following list:
+- `signOutUrl` &mdash; Specifies where to redirect users after they sign out. The valid target domains include:
   -  blackbaud.com
   -  blackbaud-dev.com
   -  blackbaud-test.com
-- `tenantId` &mdash; When a user has access to multiple databases for a product, the omnibar may show the current database name to provide context. If this database is well-known from the Application Lookup Service, then providing the omnibar with the current tenant ID will let it match up the current context with that well-known link and know what database name to show. Alternatively, if the tenant ID cannot be matched or is not provided, the omnibar can be provided with a database name directly and it may display that.
+- `tenantId` &mdash; When a user has access to multiple databases for a product, the omnibar may show the current database name to provide context. If this database is well-known from the application lookup service, then providing the omnibar with the current tenant ID will let it match up the current context with that well-known link and know what database name to show. Alternatively, if the tenant ID cannot be matched or is not provided, the omnibar can be provided with a database name directly and it may display that.
 - `url` &mdash; Specifies the URL for the omnibar service JavaScript widget.
 - `userLoaded` &mdash; Specifies a function to be called after loading the current user profile. The function is passed a user object that contains the following properties:
-  - `id` &mdash; The user ID for the Unique Authentication Service. If the user is not logged in, this property is null.
+  - `id` &mdash; The user ID for the authentication service. If the user is not logged in, this property is null.
   - `emailAddress` &mdash; The user's email address. If the user is not logged in, this property is null.
   - `firstName` &mdash; The user's first name. If the first name is unknown, the property may be null.
   - `lastName` &mdash; The user's last name. If the last name is unknown, the property may be null.
@@ -128,7 +128,7 @@ In addition to creating the omnibar with the `bb-omnibar` directive, you can als
 
 ### Required JavaScript Libraries
 
-The omnibar depends on several third-party JavaScript libraries. To include the omnibar on your site, you must first include [jQuery](http://jquery.com) and [easyXDM](http://easyxdm.net). The omnibar also automatically includes “json2” if your site  does not already include it. Any basic version of jQuery is acceptable. The omnibar dynamically includes a higher version of jQuery if it does not find the minimum required version on the page. However, it uses some minimum version to bootstrap this process.
+The omnibar depends on several third-party JavaScript libraries. To include the omnibar on your site, you must first include [jQuery](http://jquery.com) and [easyXDM](http://easyxdm.net). The omnibar also automatically includes “json2” if your site does not already include it.
 
 ### Omnibar JavaScript File
 
@@ -137,23 +137,22 @@ After the JavaScript library prerequisites are in place, you include an omnibar.
 - <https://signin.blackbaud.com/omnibar.js> &mdash; Debug version
 - <https://signin.blackbaud.com/omnibar.min.js> &mdash; Minified version for production use
 
-### Initialize the Omnibar
+The omnibar JavaScript file automatically loads special CSS content to style the omnibar. The omnibar automatically docks at the top of the page and floats there when users scroll down.
 
-After you load the omnibar JavaScript file, you include a few lines of HTML on the page to create a placeholder element for the omnibar and to load the JavaScript with custom settings. Create an empty `div` element to hold the omnibar, and then execute the script function `BBAUTH.Omnibar.load` to initialize the omnibar. The first parameter to the function is the DOM element that holds the omnibar. The second parameter is an object that defines options for the omnibar. The most important option is `serviceName`, which specifies the display name for the current service.
+### Omnibar Placeholder Element
+
+After you load the omnibar JavaScript file, you need a few lines of HTML on the page to create a placeholder element for the omnibar and some JavaScript to initialize the omnibar. Create an empty `div` element to hold the omnibar, and then execute the script function `BBAUTH.Omnibar.load` to initialize the omnibar. The first parameter to the function is the DOM element that holds the omnibar. The second parameter is an object that defines options for the omnibar. The most important option is `serviceName`, which allows you to specify text to display in the omnibar header.
 
 ```markup
-<div id="omnibar" />
+<div id="omnibar"></div>
 <script>
 BBAUTH.Omnibar.load(document.getElementById("omnibar"), { serviceName: "Omnibar Test Page" });
 </script>
 ```
-### Omnibar Styling
-
-The omnibar JavaScript file automatically loads special CSS content to style the omnibar. The omnibar automatically docks at the top of the page and floats there when users scroll down.
 
 ### Refresh User Data
 
-The omnibar caches information about users such as name, email, and product/database links. The omnibar caches these items on the client for the duration of the authentication session. Users can log out and log back in to update this information in the omnibar.
+The omnibar caches information about users such as name, email, and product and database links. The omnibar caches these items on the client for the duration of the authentication session. Users can log out and log back in to update this information in the omnibar.
 
 Alternatively, the product can call a well-known JavaScript function to prompt the omnibar to refresh data without waiting for users to log out and log back in.
 
