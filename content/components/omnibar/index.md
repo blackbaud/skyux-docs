@@ -45,10 +45,9 @@ To avoid `z-index` issues, place the `bb-omnibar` directive at the bottom of the
 
 ### Mobile Meta Tag
 
-The omnibar automatically renders different for small mobile devices in order to create a pleasant experience when there is not room for multiple fly outs from the bar. The omnibar was created with the following meta-tags included to optimize how the page works on a mobile device. For ideal consumption of the omnibar, the page should include the following `meta` tag in its `<head>`.
-
 To create a pleasant the user experience for screen sizes that do not have space for multiple flyouts, the omnibar automatically renders differently at different media breakpoints. To optimize how the omnibar works at smaller screen sizes, include the following `meta` tag in the page's `head` element.
 
+To specify the menu items for the omnibar's dropdown menu on smaller screens, use the `bb-omnibar-`menu` property within the `bb-omnibar` element.
 
 ```markup
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -57,7 +56,7 @@ To create a pleasant the user experience for screen sizes that do not have space
 ### bbOmnibarConfig Settings
 
 - `afterLoad` &mdash; Specifies a function to be called after the omnibar loads. This is useful when binding events to the omnibar's search box.
-- `appLookupUrl` &mdash; Specifies the URL for the application lookup service that provides database and product links for the current user. The default is URL for the production instance.
+- `appLookupUrl` &mdash; Specifies the URL for the application lookup service that provides database and product links for the current user. The default is the URL for the production instance.
 - `contentKey` &mdash; Specifies the content key for the omnibar to use when redirecting users to the authentication service.
 - `enableHelp` &mdash; Indicates whether to display a help button in the omnibar. Use this setting in conjunction with [the `bbHelp` component](../help/).
 - `enableSearch` &mdash; Indicates whether to display a search box in the omnibar. You must still handle binding to the UI events for the search box.
