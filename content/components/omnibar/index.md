@@ -1,4 +1,5 @@
 ---
+layout: layout-container
 icon: bars
 summary: The Omnibar provides a common UI element for Blackbaud products, which enables seamless navigation for users.
 markdown: false
