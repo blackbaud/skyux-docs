@@ -20,7 +20,6 @@ files:
   css:
     - /assets/css/animate.css
     - /assets/css/custom.css
-    - /assets/css/corporate-branding.css
   js:
     - /assets/js/KitchenSink.js
     - /assets/js/wow.min.js
