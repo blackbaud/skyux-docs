@@ -119,7 +119,7 @@ slides:
   <div class="container">
     <div class="row">
       <div class="col-sm-5">
-        <img src="/assets/img/renxt.png" class="img-responsive box-shadow-ui-screenshot" alt="RENXT" />
+        <img src="{{ stache.config.base }}assets/img/renxt.png" class="img-responsive box-shadow-ui-screenshot" alt="RENXT" />
       </div>
       <div class="col-sm-6 col-sm-offset-1">
         <h1>Create a Seamless User Interface</h1>
@@ -161,7 +161,7 @@ slides:
       <uib-carousel interval="carousel.interval">
         {{# each slides }}
           <uib-slide>
-            <img ng-src="/assets/img/{{ img }}" class="img-responsive" alt="{{ alt }}" />
+            <img ng-src="{{ ../stache.config.base }}assets/img/{{ img }}" class="img-responsive" alt="{{ alt }}" />
           </uib-slide>
         {{/ each }}
       </uib-carousel>

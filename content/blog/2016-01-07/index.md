@@ -14,11 +14,11 @@ This is meant to be a fairly high-level overview.  The example workflow shown on
 
 **Example contributing workflow**
 
-![Travis Pull Request](/assets/img/blog/travis-pull-request.png)
+![Travis Pull Request]({{ stache.config.base }}assets/img/blog/travis-pull-request.png)
 
 **Example releasing workflow**
 
-![Travis Push](/assets/img/blog/travis-push.png)
+![Travis Push]({{ stache.config.base }}assets/img/blog/travis-push.png)
 
 ### Contributing
 

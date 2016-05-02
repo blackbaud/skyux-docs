@@ -18,12 +18,12 @@ partial_jsdoc_body: ../includes/partial-jsdoc-body.hbs
 partial_jsdoc_footer: ../includes/partial-jsdoc-footer.hbs
 files:
   css:
-    - /assets/css/animate.css
-    - /assets/css/custom.css
+    - <%= stache.config.base %>assets/css/animate.css
+    - <%= stache.config.base %>assets/css/custom.css
   js:
-    - /assets/js/KitchenSink.js
-    - /assets/js/wow.min.js
-    - /assets/js/custom.js
+    - <%= stache.config.base %>assets/js/KitchenSink.js
+    - <%= stache.config.base %>assets/js/wow.min.js
+    - <%= stache.config.base %>assets/js/custom.js
 
 github: https://github.com/blackbaud/skyux/
 modules:
