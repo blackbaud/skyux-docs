@@ -1,6 +1,6 @@
 ---
 name: Motion
-description: How motion is used
+description: The principles, physics and examples of how motion is used.
 markdown: true
 ---
 
@@ -10,14 +10,14 @@ markdown: true
 
 Motion, by its nature, catches the eye. Our brains are well-practiced at interpreting motion and we can use the smallest details to learn about objects, relationships between them, and the forces at work when things change.
 
-SKY uses motion to shed light on the nature of changes in the system. With subtle cues, we use animations to illustrate:
+SKY UX uses motion to shed light on the nature of changes in the system. With subtle cues, we use animations to illustrate:
 
 * Changes in context, such as entering or exiting a modal dialogue
 * The consequences of actions the user takes
 * Connections between different pieces of content
 * Changes in the state of the system or content
 
-SKY does NOT use animations for:
+SKY UX does NOT use animations for:
 
 * Emphasizing some content over others
 * Drawing attention to a primary action
@@ -25,7 +25,7 @@ SKY does NOT use animations for:
 
 <h2 class="bb-section-heading">Physics</h2>
 
-Like other properties of visual design, motion takes advantage of the observer's expectations to simulate physical space in a digital picture. Just like the way shadows suggest depth and perspective, the details of motion imply properties about objects and the forces between them. SKY follows some basic rules to keep motions looking natural and realistic, and to best demonstrate context to our users.
+Like other properties of visual design, motion takes advantage of the observer's expectations to simulate physical space in a digital picture. Just like the way shadows suggest depth and perspective, the details of motion imply properties about objects and the forces between them. SKY UX follows some basic rules to keep motions looking natural and realistic, and to best demonstrate context to our users.
 
 * Use natural acceleration curves in animations
 	* Avoid linear animations, especially for any position translations
@@ -43,7 +43,7 @@ Like other properties of visual design, motion takes advantage of the observer's
 
 <h2 class="bb-section-heading">Examples</h2>
 
-SKY uses a set of metaphor-based motion effects. For the most part, these patterns should be included in the definitions of SKY components and not invoked directly.
+SKY UX uses a set of metaphor-based motion effects. For the most part, these patterns should be included in the definitions of SKY UX components and not invoked directly.
 
 <h3 class="bb-subsection-heading">Slide</h3>
 
@@ -51,7 +51,7 @@ SKY uses a set of metaphor-based motion effects. For the most part, these patter
 
 This behavior is used for moving content (horizontally or vertically) without altering its other visual properties (scale, transparency, etc.) at the same time. 
 
-Primarily, SKY employs _slide_ to **show/hide additional content for sidebars or similar patterns that use "off-stage" content with an affordance for calling it into view**.
+Primarily, SKY UX employs _slide_ to **show/hide additional content for sidebars or similar patterns that use "off-stage" content with an affordance for calling it into view**.
 
 * Show/hide filters (sidebar)
 * Show/hide held panel
@@ -73,7 +73,7 @@ _Slide_ should follow these guidelines:
 
 A close relative of _Slide_, this behavior is used to change the dimensions of containers that toggle between expanded and collapsed views of their content. Expand/collapse does not affect the z-order of the container, which means that surrounding content needs to be moved (using _Slide_) at the same time in order to make room (or reclaim vacated space).
 
-Primarily, SKY employs _expand/collapse_ to **show/hide additional content that is hidden "on-stage" as part of a progressive disclosure pattern**.
+Primarily, SKY UX employs _expand/collapse_ to **show/hide additional content that is hidden "on-stage" as part of a progressive disclosure pattern**.
 
 * Tiles
 * Accordion repeaters
@@ -93,7 +93,7 @@ _Expand/collapse_ should follow these guidelines:
 
 This behavior is used to show content that is called or dismissed as a direct consequence of user action. It uses an eye-catching combination of scale, translation, and transparency transformations. This gives the affected content immediate prominence and also draws a clear relationship between the content and the initiating action the user just performed. Content that _emerges_ is elevated above its surroundings (and calling affordance) in the z-order with a shadow or even a mask over the rest of the page. When the interaction that began with the _emerge_ effect is completed (or abandoned), the content _recedes_ back into its related affordance with a reverse animation.
 
-Primarily, SKY employs _emerge/recede_ for **initiating modal dialogues or other interactions that require the user to complete a task before moving on with anything else**.
+Primarily, SKY UX employs _emerge/recede_ for **initiating modal dialogues or other interactions that require the user to complete a task before moving on with anything else**.
 
 * Modal dialogues
 * Menus
@@ -118,7 +118,7 @@ _Emerge/recede_ should follow these guidelines:
 
 This behavior is used when navigating _into_ a child record from a parent container. It combines scale and translation to "drill into" the child record, clearly illustrating the change in the scope of the displayed content before and after the transition. The sum of the effects makes the selected child rise above the rest of the page in the z-order, then expand to fill the space of the parent (sometimes the full page). When navigating back to the parent page, the effect reverses.
 
-Primarily, SKY employs _drill_ for **navigating to a page that contains content specific to a child member of the previous page**.
+Primarily, SKY UX employs _drill_ for **navigating to a page that contains content specific to a child member of the previous page**.
 
 * Grid or table members
 * Cards

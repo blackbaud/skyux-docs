@@ -1,13 +1,15 @@
 ---
 name: Color
-description: Base colors
+description: The base colors from which we derive background, border and text colors.
 ---
 
 <h1 class="bb-page-heading">Color</h1>
 
-<p>As a general rule in SkyUX color is used to convey meaning, not as pure decoration. Colors should rarely need to be applied directly to an element; rather, components incorporate color as applicable. If a situation arises where color is needed outside of a component that provides it, there is likely a need for a new component to cover the scenario.</p>
+<p>As a general rule in SKY UX color is used to convey meaning, not as pure decoration. Colors should rarely need to be applied directly to an element; rather, components incorporate color as applicable. If a situation arises where color is needed outside of a component that provides it, there is likely a need for a new component to cover the scenario.</p>
 
-<div class="alert alert-info">Percentage tints are used to lighten or darken these base colors as appropriate.</div>
+<p>Background, border and text colors are derived from these base colors through tinting and shading. Colors used for information visualizations can be found in the <a href="../../components/palette">Palette</a> component</p>
+
+<div class="alert alert-warning">In any situation where text is involved, ensure that the contrast in color between the text and the background is at least 4.5:1 to meet WCAG 2.0 AA accessibility standards.</div>
 
 <div class="definition-table" style="display: flex; border-bottom: 1px dotted #ccc;">
     <div class="definition-item" style="margin: 10px 10px 10px 0;">
@@ -146,3 +148,4 @@ description: Base colors
         </div>
     </div>
 </div>
+
