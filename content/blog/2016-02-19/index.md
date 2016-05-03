@@ -6,17 +6,17 @@ pubDate: Friday, February 19, 2016
 markdown: true
 ---
 
-Design-oriented updates in SkyUX versions 1.5.0 - 1.5.9
+Design-oriented updates in SKY UX versions 1.5.0 - 1.5.9
 
 <!-- more -->
 
 ## Recently completed
 
 ### [Page summary](http://skyux.developer.blackbaud.com/components/pagesummary/)
-We have begun to create layout directives to streamline the design and development of features using core SkyUX layout patterns. The first of these is the Page Summary.
+We have begun to create layout directives to streamline the design and development of features using core SKY UX layout patterns. The first of these is the Page Summary.
 
 ### [Alert](http://skyux.developer.blackbaud.com/components/alert/)
-We wrapped the Bootstrap Alert component to simplify making alerts dismissible and follow SkyUX styling. 
+We wrapped the Bootstrap Alert component to simplify making alerts dismissible and follow SKY UX styling. 
 
 ### [Avatar](http://skyux.developer.blackbaud.com/components/avatar/)
 This allows for uploading and displaying an image to identify a record. 

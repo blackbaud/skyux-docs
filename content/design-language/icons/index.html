@@ -1,12 +1,34 @@
 ---
 name: Icons
-description: Icons
+description: The dictionary of currently-used icons and their meanings.
 ---
 
 <h1 class="bb-page-heading">Icons</h1>
 
-<p>The following table provides a complete list of icons that are available in SKY UX. You should rarely apply icons directly to elements because components incorporate icons as necessary. If a need for an icon arises outside of a component, you likely need to create a new component for that scenario. Note that the table includes all icons that SkyUX currently uses, which means that multiple icons are used for some scenarios. We intend to consolidate the icons to a single option wherever possible.</p>
+<p>Icons are pictorial representations of objects, important not only for aesthetic reasons as part of the visual identity of a program, but also for utilitarian reasons as shorthand for conveying meaning that users perceive almost instantaneously. SKY UX  uses glyphic mono-color icons to facilitate, guide and inform users.</p>
 
+<h2 class="bb-section-heading">Usage</h2>
+
+<h3 class="bb-subsection-heading">Context for usage</h3>
+<ul>
+    <li>Provide quick recognition of common actions and tasks.</li>
+    <li>Quickly give added information to a record.</li>
+    <li>Denote type or status.</li>
+</ul>
+
+<h3 class="bb-subsection-heading">Icon selection</h3>
+<ul>
+    <li>If you need an icon for a new component, determine if it is currently recommended in SKY UX, and consider where and how to make sure that the meaning you prescribe to it is the same.</li>
+    <li>Don't repurpose an established icon for a different action.</li> 
+    <li>Be mindful of how icons are used in specific components, like list and tile
+    toolbars, buttons, and forms.</li>
+    <li>If an icon does not add to or facilitate the user experience, then it is best not to use one.</li>
+</ul>
+
+<h2 class="bb-section-heading">Dictionary</h2>
+
+<p>The following table provides a complete list of icons that are recommended for use in SKY UX. At present all of the icons we use are from <a href="https://fortawesome.github.io/Font-Awesome/">FontAwesome</a> as we have found that if FontAwesome does not have a particular icon there is probably not one in common enough use to be immediately obvious to the user.</p>
+    
 <div class="definition-table" style="display: flex; border-bottom: 1px dotted #ccc;">
     <div class="definition-item" style="width: 50px; margin: 10px 10px 10px 0;">
         <i class="fa fa-plus-circle" style="font-size: 36px;"></i>
@@ -1160,3 +1182,7 @@ description: Icons
         </div>
     </div>
 </div>
+
+<h2 class="bb-section-heading">Styling</h2>
+
+<p>Icons will usually inherit their size and color from their parent element, particularly when they are used inline. If you are using icons in a non-inline context and need a different size, FontAwesome provides size multiplier classes. Use the smallest size multiple that accomplishes your goals. If you are applying a different color to an icon, be sure if follows the usage as described in the <a href="../color/index.html">Color</a> documentation.</p>
