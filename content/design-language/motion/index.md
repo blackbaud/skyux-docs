@@ -47,8 +47,6 @@ Like other properties of visual design, motion takes advantage of the observer's
 
 <h3 class="bb-subsection-heading">Slide</h3>
 
-[Slide example](https://blackbaudinc.box.com/s/w7cs2wperphvbdhauhcnlz3vmprkl3y6)
-
 This behavior is used for moving content (horizontally or vertically) without altering its other visual properties (scale, transparency, etc.) at the same time. 
 
 Primarily, {{ stache.config.product_name_short }} employs _slide_ to **show/hide additional content for sidebars or similar patterns that use "off-stage" content with an affordance for calling it into view**.
@@ -69,8 +67,6 @@ _Slide_ should follow these guidelines:
 
 <h3 class="bb-subsection-heading">Expand/collapse</h3>
 
-[Expand example](https://blackbaudinc.box.com/s/0ush0ig0pf39f4mkj9n354q8r2lqc0vr)
-
 A close relative of _Slide_, this behavior is used to change the dimensions of containers that toggle between expanded and collapsed views of their content. Expand/collapse does not affect the z-order of the container, which means that surrounding content needs to be moved (using _Slide_) at the same time in order to make room (or reclaim vacated space).
 
 Primarily, {{ stache.config.product_name_short }} employs _expand/collapse_ to **show/hide additional content that is hidden "on-stage" as part of a progressive disclosure pattern**.
@@ -88,8 +84,6 @@ _Expand/collapse_ should follow these guidelines:
 	* If it necessary to _slide_ other content, use a 300ms duration for that movement as well (with the same acceleration curve)
 
 <h3 class="bb-subsection-heading">Emerge/recede</h3>
-
-[Emerge example](https://blackbaudinc.box.com/s/xkyl455v5sy5qm2wcu23th66l3o07pcj)
 
 This behavior is used to show content that is called or dismissed as a direct consequence of user action. It uses an eye-catching combination of scale, translation, and transparency transformations. This gives the affected content immediate prominence and also draws a clear relationship between the content and the initiating action the user just performed. Content that _emerges_ is elevated above its surroundings (and calling affordance) in the z-order with a shadow or even a mask over the rest of the page. When the interaction that began with the _emerge_ effect is completed (or abandoned), the content _recedes_ back into its related affordance with a reverse animation.
 
@@ -113,8 +107,6 @@ _Emerge/recede_ should follow these guidelines:
 * If a modal dialogue also uses a translucent mask behind it, the mask does not need the full _emerge_ effect. Simply increase the mask's alpha from 0 to its final value using the same acceleration and duration as the other transitions.
 
 <h3 class="bb-subsection-heading">Drill (native mobile only)</h3>
-
-[Drill example](https://blackbaudinc.box.com/s/80utgc92xegxsfd8qztq4hd57diwt2ra)
 
 This behavior is used when navigating _into_ a child record from a parent container. It combines scale and translation to "drill into" the child record, clearly illustrating the change in the scope of the displayed content before and after the transition. The sum of the effects makes the selected child rise above the rest of the page in the z-order, then expand to fill the space of the parent (sometimes the full page). When navigating back to the parent page, the effect reverses.
 
