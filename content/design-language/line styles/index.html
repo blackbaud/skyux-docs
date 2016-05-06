@@ -5,9 +5,9 @@ description: The styles of lines used for surrounding and dividing content areas
 
 <h1 class="bb-page-heading">Line styles</h1>
 
-<p>SKY UX uses various line styles to bound, divide, and highlight content. The lines are designed to maintain visual hierarchy regardless of how complex pages become or how many nested containers they include.</p>
-<p>As with other types of formatting or decoration in SKY UX, use lines minimally. Remember that white space and positioning can group or highlight content without extra subdivisions or boundaries.</p>
-<p>SKY UX uses a total of 6 line styles:</p>
+<p>{{ stache.config.product_name_short }} uses various line styles to bound, divide, and highlight content. The lines are designed to maintain visual hierarchy regardless of how complex pages become or how many nested containers they include.</p>
+<p>As with other types of formatting or decoration in {{ stache.config.product_name_short }}, use lines minimally. Remember that white space and positioning can group or highlight content without extra subdivisions or boundaries.</p>
+<p>{{ stache.config.product_name_short }} uses a total of 6 line styles that can be applied via a <a href="https://github.com/blackbaud/skyux/blob/master/scss/_mixins.scss">SASS mixin</a>:</p>
 <ul>
     <li>A light separator to organize and divide blocks of content within a container</li>
     <li>A dark separator to indicate borders and boundaries for components</li>
@@ -31,7 +31,7 @@ description: The styles of lines used for surrounding and dividing content areas
         <div class="definition-usage" style="max-width: 400px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Usage</div>
             <p>The light separator is a very light gray, single-pixel line. It subdivides content within a container, but do not use it at the edge of a container. Only use it when it is adjacent to white space on both sides.</p>
-            <p>SKY UX currently uses this style for:</p>
+            <p>{{ stache.config.product_name_short }} currently uses this style for:</p>
             <ul>
                 <li>Subsection dividers within containers such as tiles</li>
                 <li>Top boundaries for the action bars on <a href="../../components/modal">dialogues</a></li>
@@ -39,7 +39,7 @@ description: The styles of lines used for surrounding and dividing content areas
         </div>
         <div class="definition-code" style="width: 200px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Code</div>
-            <div><code>border-bottom: 1px solid #e7eaec</code></div>
+            <div><code>@include bb-border(light)</code></div>
         </div>
         <div class="definition-styling" style="width: 200px; margin: 10px 10px 10px 0">
             <div class="bb-field-label">Styling</div>
@@ -59,7 +59,7 @@ description: The styles of lines used for surrounding and dividing content areas
         <div class="definition-usage" style="max-width: 400px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Usage</div>
             <p>The dark separator is a moderate gray, single-pixel line. This heavier stroke holds up between two different colors, which makes it ideal for borders and boundaries. It also frequently separates active content from passive content. For example, it can separate a toolbar and the content that the toolbar acts on.</p>
-            <p>SKY UX currently uses this style for:</p>
+            <p>{{ stache.config.product_name_short }} currently uses this style for:</p>
             <ul>
                 <li>Borders on buttons</li>
                 <li>Top and bottom boundaries for toolbars</li>
@@ -70,7 +70,7 @@ description: The styles of lines used for surrounding and dividing content areas
         </div>
         <div class="definition-code" style="width: 200px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Code</div>
-            <div><code>border-bottom: 1px solid $gray-lighter</code></div>
+            <div><code>@include bb-border(dark)</code></div>
         </div>
         <div class="definition-styling" style="width: 200px; margin: 10px 10px 10px 0">
             <div class="bb-field-label">Styling</div>
@@ -83,7 +83,7 @@ description: The styles of lines used for surrounding and dividing content areas
 </div>
 
 <h2 class="bb-section-heading">Isolated styles</h2>
-<p>Isolated line styles are specific to certain parts of SKY UX and are defined as part of the component that they belong to. For the most part, they should not proliferate to other SKY UX elements.</p>
+<p>Isolated line styles are specific to certain parts of {{ stache.config.product_name_short }} and are defined as part of the component that they belong to. For the most part, they should not proliferate to other {{ stache.config.product_name_short }} elements.</p>
 
 <div class="definition-table" style="display: flex; border-bottom: 1px dotted #ccc;">
     <div class="definition-item" style="width: 100px; margin: 10px 10px 10px 0;">
@@ -96,7 +96,7 @@ description: The styles of lines used for surrounding and dividing content areas
             </div>
         <div class="definition-code" style="width: 200px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Code</div>
-            <div><code>border-bottom: $bb-nav-selected-border-width solid $bb-color-blue</code></div>
+            <div><code>@include bb-border(nav)</code></div>
         </div>
         <div class="definition-styling" style="width: 200px; margin: 10px 10px 10px 0">
             <div class="bb-field-label">Styling</div>
@@ -118,7 +118,7 @@ description: The styles of lines used for surrounding and dividing content areas
             </div>
         <div class="definition-code" style="width: 200px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Code</div>
-            <div><code>border-bottom: 2px solid $bb-color-blue</code></div>
+            <div><code>@include bb-border(tab)</code></div>
         </div>
         <div class="definition-styling" style="width: 200px; margin: 10px 10px 10px 0">
             <div class="bb-field-label">Styling</div>
@@ -140,7 +140,7 @@ description: The styles of lines used for surrounding and dividing content areas
             </div>
         <div class="definition-code" style="width: 200px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Code</div>
-            <div><code>border-top: 4px solid #e7eaec</code></div>
+            <div><code>@include bb-border(tile)</code></div>
         </div>
         <div class="definition-styling" style="width: 200px; margin: 10px 10px 10px 0">
             <div class="bb-field-label">Styling</div>
@@ -162,7 +162,7 @@ description: The styles of lines used for surrounding and dividing content areas
             </div>
         <div class="definition-code" style="width: 200px; margin: 10px 10px 10px 0;">
             <div class="bb-field-label">Code</div>
-            <div><code>border-bottom: 1px dotted $gray-lighter</code></div>
+            <div><code>@include bb-border(row)</code></div>
         </div>
         <div class="definition-styling" style="width: 200px; margin: 10px 10px 10px 0">
             <div class="bb-field-label">Styling</div>
