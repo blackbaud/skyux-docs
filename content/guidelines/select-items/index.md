@@ -26,9 +26,9 @@ Use a checkbox when:
 
 * There are 2-5 values and the user can select multiple
 
-<h2 class="bb-section-heading"><a href="../../components/selectfield">SKY UX Select Field component</a></h2>
+<h2 class="bb-section-heading"><a href="../../components/selectfield">{{ stache.config.product_name_short }} Select Field component</a></h2>
 
-Use a SKY UX Search Field when:
+Use a {{ stache.config.product_name_short }} Search Field when:
 
 * The values are user-defined (user-defined fields often end up accumulating a large number of values over time and can become cumbersome with the other controls)
 * The user can select multiple and there are > 5 values
