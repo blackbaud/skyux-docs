@@ -1,5 +1,6 @@
 ---
 name: Motion
+layout: layout-container
 description: The principles, physics and examples of how motion is used.
 markdown: true
 ---
@@ -47,7 +48,7 @@ Like other properties of visual design, motion takes advantage of the observer's
 
 <h3 class="bb-subsection-heading">Slide</h3>
 
-This behavior is used for moving content (horizontally or vertically) without altering its other visual properties (scale, transparency, etc.) at the same time. 
+This behavior is used for moving content (horizontally or vertically) without altering its other visual properties (scale, transparency, etc.) at the same time.
 
 Primarily, {{ stache.config.product_name_short }} employs _slide_ to **show/hide additional content for sidebars or similar patterns that use "off-stage" content with an affordance for calling it into view**.
 

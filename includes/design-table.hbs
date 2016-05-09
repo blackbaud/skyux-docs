@@ -1,0 +1,51 @@
+{{# each items }}
+  <div class="
+    definition-table
+    {{# if ../itemsNarrow }}definition-table-narrow{{/ if }}
+    {{# if styling }}definition-table-wide{{/ if }}">
+    <div class="definition-item">
+      {{# if example }}
+        {{{ example }}}
+      {{ else }}
+        {{{ code }}}
+      {{/ if }}
+    </div>
+    <div class="definition-props">
+      <div class="definition-usage">
+        <div class="bb-field-label">Usage</div>
+        {{# isArray usage }}
+          <ul class="list-unstyled">
+            {{# each usage }}
+              <li>{{{ this }}}</li>
+            {{/ each }}
+          </ul>
+        {{ else }}
+          <p>{{{ usage }}}</p>
+        {{/ isArray }}
+      </div>
+      <div class="definition-code">
+        <div class="bb-field-label">Code</div>
+        {{# if codeDesc }}
+          <p>{{ codeDesc }}
+        {{/ if }}
+        {{# if code }}
+          <code>{{ code }}</code>
+        {{/ if }}
+      </div>
+      {{# if styling }}
+        <div class="definition-styling">
+          <div class="bb-field-label">Styling</div>
+          {{# isArray styling }}
+            <ul class="list-unstyled">
+              {{# each styling }}
+                <li>{{ this }}</li>
+              {{/ each }}
+            </ul>
+          {{ else }}
+            <p>{{ styling }}</p>
+          {{/ isArray }}
+        </div>
+      {{/ if }}
+    </div>
+  </div>
+{{/ each }}

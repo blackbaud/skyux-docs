@@ -2,6 +2,7 @@
 name: Selecting items
 description: Which controls to use based on the type of items and context of use.
 markdown: true
+layout: layout-container
 ---
 
 <h1 class="bb-page-heading">Selecting items from a list</h1>
@@ -34,4 +35,3 @@ Use a {{ stache.config.product_name_short }} Search Field when:
 * The user can select multiple and there are > 5 values
 * The user can only select one value, but there are > 20 values
 * The items need to be displayed with a title and a description
-
