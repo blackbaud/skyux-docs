@@ -1,0 +1,19 @@
+---
+name: Text colors
+description: Styling to represent the status of text content.
+layout: layout-container
+items:
+  - name: Success text
+    usage: This is used to convey a good result, such as an appeal donation total that is 10% higher than the goal. It should be used to highlight exceptional data in order to maintain maximum visual and informational impact; if too much text is considered "successful" the stlying will carry less meaning.
+    code: <span class="text-success">Success text</span>
+
+  - name: Warning text
+    usage: This is used when the user should be aware that something is wrong, but they might not need to take immediate action. For example, the due date of a bill that needs to be paid within the next week.
+    code: <span class="text-warning">Warning text</span>
+
+  - name: Danger text
+    usage: This is used when the user must be aware that something is wrong, and they should take immediate action. For example, a bill is past due and needs to be paid now to avoid late fees. These should often be accompanied by other ways of informing a user that something needs attention, such as through a to-do list.
+    code: <span class="text-danger">Danger text</span>
+---
+
+{{ include 'includes/layout-components-ux.hbs' }}

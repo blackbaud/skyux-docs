@@ -6,7 +6,7 @@ pubDate: Thursday, March 31, 2016
 markdown: true
 ---
 
-Design-oriented updates in SkyUX versions 1.5.10 - 1.5.13
+Design-oriented updates in SKY UX versions 1.5.10 - 1.5.13
 
 <!-- more -->
 
@@ -37,13 +37,13 @@ Added four types to use depending on the type of message being delivered.
 ## In the works
 
 ### [Sortable list](https://github.com/blackbaud/skyux/issues/330)
-RE NXT is building a sortable list component for cases when the user needs to be able to set an explicit order on a list of items. Many thanks to them for being the first team outside of SkyUX to contribute a full component! 
+RE NXT is building a sortable list component for cases when the user needs to be able to set an explicit order on a list of items. Many thanks to them for being the first team outside of SKY UX to contribute a full component! 
 
 ### [Card layout](https://github.com/blackbaud/skyux/issues/286)
 The next in our project to create templates to help make consistent layouts easier. This particular work will facilitate future work on a card carousel and listbuilder card view.
 
 ### Design guide
-We know that designing a SkyUX-consistent application when you are just starting to work with SkyUX is not the easiest task in the world. As part of the effort to change that we are building out the documentation library with more design-oriented information. You’ll be seeing this new content over the next few months so keep an eye on this site.
+We know that designing a SKY UX-consistent application when you are just starting to work with SKY UX is not the easiest task in the world. As part of the effort to change that we are building out the documentation library with more design-oriented information. You’ll be seeing this new content over the next few months so keep an eye on this site.
 
 ## Recently approved designs
 

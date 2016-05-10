@@ -1,0 +1,63 @@
+---
+name: Typography
+layout: layout-container
+description: Semantically-defined font classes to use instead of direct styling.
+items:
+  - name: Page heading
+    usage: This is used for text that identifies the page, such as a page title or record name. There should only be one element with this class on a page.
+    code: <h1 class="bb-page-heading">Page heading</h1>
+    styling: Oswald Light 32px #292a2b
+
+  - name: Section heading
+    usage: This is used for text that identifies subdivisions of a page, such as tile titles.
+    code: <h2 class="bb-section-heading">Section heading</h2>
+    styling: Oswald Light 24px #292a2b
+
+  - name: Subsection heading
+    usage: This is used for text that identifies subsections with a larger container. For example, a tile containing contact information would have sections for addresses, email addresses and phone numbers.
+    code: <div class="bb-subsection-heading">Subsection heading</div>
+    styling: Open Sans Regular 17px #707374
+
+  - name: Headline
+    usage: This is used to call out key always-relevant pieces of information on page, such as a constituent’s total giving or the number of records in a list. It should be used sparingly or else the attention-drawing aspect will be diluted.
+    code: <div class="bb-headline">Headline</div>
+    styling: Oswald Regular 20px #292a2b
+
+  - name: Emphasized body copy
+    usage: This is used to call out pieces of information that are important but not always what the user is looking for, such as a constituent’s name in a list of contact cards. It should be used sparingly or else the attention-drawing aspect will be diluted.
+    code: <div class="bb-emphasized">Emphasized body copy</div>
+    styling: Open Sans Semibold 14px #292a2b
+
+  - name: Regular body copy
+    usage: The default font, used when the data being presented does not semantically fall under one of the defined types.
+    codeDesc: This is used when no other class is specified.
+    example: Regular body copy
+    styling: Oswald Light 32px #292a2b
+
+  - name: De-emphasized body copy
+    usage: This is used for information that is sometimes relevant but that you want the user to be able to visually skip over, such as placeholder text.
+    code: <div class="bb-deemphasized">De-emphasized body copy</div>
+    styling: Open Sans Italic 13px #707374
+
+  - name: Field label
+    usage: This is used to label fields on views. It is a muted color since the label is important in identifying the related field, but is less important than the actual content.
+    code: <div class="bb-field-label">Field label</div>
+    styling: Open Sans Regular 13px #707374
+
+  - name: Form input label
+    usage: This is used to label input fields on forms. It is darker than view field labels to help the text stand out alongside visually-heavier input controls.
+    code: <div class="control-label">Form input label</div>
+    styling: Open Sans Regular 13px #292a2b
+---
+
+<h1 class="bb-page-heading">Typography</h1>
+
+<p>In order to ensure consistent usage and maintain visual hierarchy of type {{ stache.config.product_name_short }} supports a set of semantically-defined classes to be applied to text. Styling should generally not be applied directly to text elements; instead use these CSS classes based on what you are trying to communicate.</p>
+
+<p>The {{ stache.config.product_name_short }} font system is based on the <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> and <a href="https://www.google.com/fonts/specimen/Oswald">Oswald</a> typefaces.</p>
+
+<p>{{ stache.config.product_name_short }} defines 7 CSS classes for general use in addition to base body copy.</p>
+
+<div class="alert alert-warning">Note that styling values are for reference only, and should not be applied directly; styling should be applied through the use of classes.</div>
+
+{{ include 'includes/design-table.hbs' }}

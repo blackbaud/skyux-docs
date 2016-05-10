@@ -1,0 +1,59 @@
+---
+name: Color
+layout: layout-container
+description: The base colors from which we derive background, border and text colors.
+
+# Colors will eventually be computed after updates to SKY UX
+items:
+  - usage: Indicates primary or highlighted actions and states.
+    code: $bb-color-blue
+    styling:
+      - 'Hex: #1c84c6'
+      - 'RGB: R28, G132, B198'
+    example: '<div class="swatch" style="background-color: #1c84c6"></div>'
+
+  - usage: Call out key elements of a page or indicate success.
+    code: $bb-color-green
+    styling:
+      - 'Hex: #1ab394'
+      - 'RGB: R26, G179, B148'
+    example: '<div class="swatch" style="background-color: #1ab394"></div>'
+
+  - usage: Accent color to add visual emphasis where appropriate.
+    code: $bb-color-aqua
+    styling:
+      - 'Hex: #23c6c8'
+      - 'RGB: R35, G198, B200'
+    example: '<div class="swatch" style="background-color: #23c6c8"></div>'
+
+  - usage: Accent color to add visual emphasis where appropriate or indicate caution.
+    code: $bb-color-yellow
+    styling:
+      - 'Hex: #f8ac59'
+      - 'RGB: R248, G172, B89'
+    example: '<div class="swatch" style="background-color: #f8ac59"></div>'
+
+  - usage: Accent color to add visual emphasis where appropriate or indicate danger.
+    code: $bb-color-red
+    styling:
+      - 'Hex: #ed5565'
+      - 'RGB: R237, G85, B101'
+    example: '<div class="swatch" style="background-color: #ed5565"></div>'
+
+  - usage: Base font color.
+    code: $text-color
+    styling:
+      - 'Hex: #292a2b'
+      - 'RGB: R41, G42, B43'
+    example: '<div class="swatch" style="background-color: #292a2b"></div>'
+---
+
+<h1 class="bb-page-heading">{{ name }}</h1>
+
+<p>As a general rule in {{ stache.config.product_name_short }} color is used to convey meaning, not as pure decoration. Colors should rarely need to be applied directly to an element; rather, components incorporate color as applicable. If a situation arises where color is needed outside of a component that provides it, there is likely a need for a new component to cover the scenario.</p>
+
+<p>Background, border and text colors are derived from these base colors through tinting and shading. Colors used for information visualizations can be found in the <a href="../../components/palette">Palette</a> component</p>
+
+<div class="alert alert-warning">In any situation where text is involved, ensure that the contrast in color between the text and the background is at least 4.5:1 to meet WCAG 2.0 AA accessibility standards.</div>
+
+{{ include 'includes/design-table.hbs' }}
