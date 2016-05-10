@@ -1,0 +1,23 @@
+---
+name: Buttons
+description: The options for buttons to use based on design context.
+layout: layout-container
+items:
+  - name: Primary
+    usage: This is used to trigger the most important or most commonly-used action on a page, which takes place in the context of the current page. As a general rule there should only be one primary button per page to ensure that it draws the user's attention.
+    code: <button type="button" class="btn btn-primary">Primary</button>
+
+  - name: Secondary
+    usage: These are used for actions that are less important or less commonly needed, and that take place in the context of the current page. Since they are not always relevant, their visual weight is lower such that they are noticeable if needed but not attention-drawing.
+    code: <button type="button" class="btn bb-btn-secondary">Secondary</button>
+
+  - name: Link button
+    usage: There are two major use cases for link buttons. First, they are used for actions that will take the user to another page. Second, they are used for actions that drop the user out of a task, such as a Cancel button.
+    code: <button type="button" class="btn btn-link">Link button</button>
+
+  - name: Inline link
+    usage: These have similar usage to link buttons, with altered styling to fit inline.
+    code: <button type="button" class="btn bb-btn-link-inline">Inline link</button>
+---
+
+{{ include 'includes/layout-components-ux.hbs' }}

@@ -1,0 +1,28 @@
+---
+name: Calling out information
+description: How to call out important information depending on what you need to communicate.
+layout: layout-container
+---
+
+<h1 class="bb-page-heading">Calling out information</h1>
+
+<p>
+The optimal method for notifying a user of information will differ based on the context and content of that information.
+</p>
+<h2 class="bb-section-heading">Messages critical for the user to see when viewing a page</h2>
+<p>
+If there is information that a user must absolutely see when viewing a page, use an <span class="bb-emphasized"><a href="../../components/alert">alert</a></span>. Depending on the nature of the message in the alert you can specify it to be dismissible or not. In general if it is information that the user only needs to see once you can make it dismissible (although you may want to include a way for the user to re-access the message). If it is important that it be seen every time, or if it is triggered by a certain set of underlying data, it should not be dismissible.
+</p>
+<h2 class="bb-section-heading">Key pieces of summarized data</h2>
+<p>
+While users will sometimes need to pore over dense sets of data, the important points of that data can often be summarized for the user. If you need to call out these important points, style the information as a <span class="bb-emphasized"><a href="../../core-design/typography">headline</a></span>. They draw the user’s attention, and based on the information the user can then make a decision about whether they need to dig into the underlying data or if the high level understanding is sufficient.
+</p>
+<h2 class="bb-section-heading">Item status</h2>
+<p>
+If you need to communicate status of a record and status is an important aspect of the information, use a <span class="bb-emphasized"><a href="../../components/labels">label</a></span>. The styling is bold enough to catch the eye without being overly distracting. In general labels should communicate binary information or values from a small, system-defined list. It’s important when using labels to evaluate whether the information is important enough to warrant the bold treatment – if there are too many labels on the page they become distracting and lose their attention-grabbing power.
+</p>
+<h2 class="bb-section-heading">Background task updates</h2>
+<p>If you need to communicate messages triggered by background processes, use a <span class="bb-emphasized"><a href="../../components/toast">toast</a></span>. This may include processes that the user initiates which run in the background instead of on the page, or system processes that the user needs to be aware of.
+</p>
+<p>Depending on the nature of the message in the toast you can specify it to automatically fade or require the user to click the toast to dismiss it. In general neutral and success messages can automatically fade, while warning and danger messages should require a manual dismissal since they will often necessitate the user taking a follow-up action.
+</p>

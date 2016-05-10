@@ -10,7 +10,7 @@ comments: false
 comments_key: blackbaudsky
 cdn: https://sky.blackbaudcdn.net/skyux/
 
-#partial_footer_internal: ../includes/partial-footer-internal.html
+showBreadcrumbs: true
 partial_header_search: ../includes/partial-header-search.html
 header: ../includes/partial-header.html
 partial_jsdoc_header: ../includes/partial-jsdoc-header.hbs
