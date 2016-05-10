@@ -7,7 +7,7 @@
   "description": "Sky Docs",
   "private": true,
   "dependencies": {
-    "blackbaud-stache": "latest",
+    "blackbaud-stache": "blackbaud/stache#ignore-web-config",
     "bower": "^1.4.1",
     "grunt": "^0.4.5",
     "grunt-jsdoc-to-markdown": "^1.0.0"
