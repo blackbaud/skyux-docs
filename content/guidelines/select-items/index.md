@@ -1,37 +1,32 @@
 ---
-name: Selecting items
-description: Which controls to use based on the type of items and context of use.
+name: Select Items from Lists
+icon: hand-pointer-o
+description: A variety of controls are available to select items from a list.
 markdown: true
 layout: layout-container
 ---
 
-<h1 class="bb-page-heading">Selecting items from a list</h1>
+<h1 class="bb-page-heading">Select Items from Lists</h1>
 
-In an effort to have a consistent experience when choosing items, use the following guidelines when choosing between the controls that can be used for selecting items from a list.
+To provide a consistent experience for users when they select items from lists, use the following guidelines to determine which control to use when you create a list.
 
-<h2 class="bb-section-heading"><a href="../../components/check">Radio buttons</a></h2>
+<h2 class="bb-section-heading"><a href="../../components/check">Radio Buttons</a></h2>
 
-Use radio buttons when:
+Use <a href="../../components/check">radio buttons</a> when you have 2-5 options and users can only select one value.
 
-* There are 2-5 options and the user can only select one value
+<h2 class="bb-section-heading">HTML &lt;select&gt; Field</h2>
 
-<h2 class="bb-section-heading">HTML &lt;select&gt; field</h2>
-
-Use an HTML &lt;select&gt; field when:
-
-* There are 6-20 values and the user does not need to search for an item
+Use an HTML <code>&lt;select&gt;</code> field when you have 6-20 values and users do not need to search for items.
 
 <h2 class="bb-section-heading"><a href="../../components/check">Checkboxes</a></h2>
 
-Use a checkbox when:
+Use <a href="../../components/check">checkboxes</a> when you have 2-5 values and users can select multiple values.
 
-* There are 2-5 values and the user can select multiple
+<h2 class="bb-section-heading"><a href="../../components/selectfield">{{ stache.config.product_name_short }} Select Field Component</a></h2>
 
-<h2 class="bb-section-heading"><a href="../../components/selectfield">{{ stache.config.product_name_short }} Select Field component</a></h2>
+Use a {{ stache.config.product_name_short }} select field when:
 
-Use a {{ stache.config.product_name_short }} Search Field when:
-
-* The values are user-defined (user-defined fields often end up accumulating a large number of values over time and can become cumbersome with the other controls)
-* The user can select multiple and there are > 5 values
-* The user can only select one value, but there are > 20 values
-* The items need to be displayed with a title and a description
+* You have user-defined values because user-defined fields often accumulate many values and become too cumbersome for the other controls.
+* You have more than 5 values and users can select multiple values.
+* You have more than 20 values and users can only select one value.
+* You need to display items with titles and descriptions.

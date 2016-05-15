@@ -1,7 +1,7 @@
 ---
 name: Motion
 layout: layout-container
-description: The principles, physics and examples of how motion is used.
+description: The motion guidelines explain the principles and physics of how to use motion in SKY UX animations.
 markdown: true
 ---
 
