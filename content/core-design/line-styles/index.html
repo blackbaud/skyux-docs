@@ -4,7 +4,7 @@ layout: layout-container
 description: Line styles provide guidance on how to bound, divide, and highlight content and maintain visual hierarchy.
 
 itemsGeneric:
-  - usage: '<p>The light separator is a very light gray, single-pixel line. It subdivides content within a container, but do not use it at the edge of a container. Only use it when it is adjacent to white space on both sides.</p><p><%= stache.config.product_name_short %> currently uses this style for:</p><ul><li>Subsection dividers within containers such as tiles</li><li>Top boundaries for the action bars on <a href="../../components/modal">dialogues</a></li></ul>'
+  - usage: '<p>The light separator is a very light gray, single-pixel line that subdivides content within a container. Do not use it at the edge of a container. Only use it when it is adjacent to white space on both sides.</p><p><%= stache.config.product_name_short %> uses this style for:</p><ul><li>Subsection dividers within containers such as <a href="../../components/tiles">tiles</a></li><li>Top boundaries for action bars on <a href="../../components/modal">dialogues</a></li></ul>'
     code: '@include bb-border(light)'
     example: '<div class="bb-subsection-heading" style="border-bottom: 1px solid #e7eaec;">Light separator</div>'
     styling:
@@ -12,13 +12,13 @@ itemsGeneric:
       - When this line style subdivides content within a container, use a 15px margin on both ends.
 
   - usage:
-    - '<p>The dark separator is a moderate gray, single-pixel line. This heavier stroke holds up between two different colors, which makes it ideal for borders and boundaries. It also frequently separates active content from passive content. For example, it can separate a toolbar and the content that the toolbar acts on.</p><p>SKY UX currently uses this style for:</p><ul><li>Borders on buttons</li><li>Top and bottom boundaries for toolbars</li><li>Column dividers for header rows in grids</li><li>Borders for <a href="../../components/card">cards</a></li><li>Built-in data visualization axes</li></ul>'
+    - '<p>The dark separator is a moderate gray, single-pixel line. This heavier stroke holds up between two different colors, which makes it ideal for borders and boundaries. It also frequently separates active content from passive content. For example, it can separate a toolbar from the content that the toolbar acts on.</p><p>SKY UX uses this style for:</p><ul><li>Borders on <a href="../../components/buttons">buttons</a></li><li>Top and bottom boundaries for toolbars</li><li>Column dividers for header rows in <a href="../../components/grids">grids</a></li><li>Borders for <a href="../../components/card">cards</a></li><li>Built-in data visualization axes</li></ul>'
     code: '@include bb-border(dark)'
     example: '<div class="bb-subsection-heading" style="border-bottom: 1px solid #ccc;">Dark separator</div>'
     styling: '1px solid #ccc'
 
 itemsIsolated:
-  - usage: This line style highlights the active navigation area in the <a href="../../components/navbar">navigation</a> menu. It aligns to the bottom of the navigation affordance and stretches to its full width.
+  - usage: This line style highlights the active navigation area in the <a href="../../components/navbar">navbar</a>. It aligns to the bottom of the navigation affordance and stretches to its full width.
     code: '@include bb-border(nav)'
     example: '<div class="bb-subsection-heading" style="border-bottom: 4px solid #1c84c6;">Navigation selection underline</div>'
     styling: '4px solid #1c84c6'
@@ -33,18 +33,18 @@ itemsIsolated:
     example: '<div class="bb-subsection-heading" style="border-bottom: 4px solid #e7eaec;">Tile crown</div>'
     styling: '4px solid #e7eaec'
 
-  - usage: This line separates members of a homogenous set. It is used between the rows in a grid, list, or <a href="../../components/repeater">repeater</a> container. While the dotted style lowers its visual weight, the use of a moderate gray allows it to work with or without row striping on the list rows. It stretches the full width of the rows (not the width of the container that holds the rows).
+  - usage: This line separates members of a homogenous set. It separates the rows in <a href="../../components/grids">grid</a>, list, or <a href="../../components/repeater">repeater</a> containers. The dotted style lowers its visual weight, and the moderate gray allows it to work with or without row striping on the list rows. It stretches to the full width of the rows (not the width of the container that holds the rows).
     code: '@include bb-border(row)'
     example: '<div class="bb-subsection-heading" style="border-bottom: 1px dotted #ccc;">Row separator</div>'
     styling: '1px dotted #ccc'
 
 ---
 
-<h1 class="bb-page-heading">Line styles</h1>
+<h1 class="bb-page-heading">Line Styles</h1>
 
 <p>{{ stache.config.product_name_short }} uses various line styles to bound, divide, and highlight content. The lines are designed to maintain visual hierarchy regardless of how complex pages become or how many nested containers they include.</p>
 <p>As with other types of formatting or decoration in {{ stache.config.product_name_short }}, use lines minimally. Remember that white space and positioning can group or highlight content without extra subdivisions or boundaries.</p>
-<p>{{ stache.config.product_name_short }} uses a total of 6 line styles that can be applied via a <a href="https://github.com/blackbaud/skyux/blob/master/scss/_mixins.scss">SASS mixin</a>:</p>
+<p>{{ stache.config.product_name_short }} uses 6 line styles that you can apply with a <a href="https://github.com/blackbaud/skyux/blob/master/scss/_mixins.scss">SASS mixin</a>.</p>
 <ul>
     <li>A light separator to organize and divide blocks of content within a container</li>
     <li>A dark separator to indicate borders and boundaries for components</li>
@@ -58,9 +58,9 @@ itemsIsolated:
     </li>
 </ul>
 
-<h2 class="bb-section-heading">Generic styles</h2>
+<h2 class="bb-section-heading">Generic Styles</h2>
 {{ include 'includes/design-table.hbs' items=itemsGeneric }}
 
-<h2 class="bb-section-heading">Isolated styles</h2>
-<p>Isolated line styles are specific to certain parts of {{ stache.config.product_name_short }} and are defined as part of the component that they belong to. For the most part, they should not proliferate to other {{ stache.config.product_name_short }} elements.</p>
+<h2 class="bb-section-heading">Isolated Styles</h2>
+<p>Isolated line styles are specific to certain parts of {{ stache.config.product_name_short }} and are defined as part of the component that they belong to. They should not proliferate to other {{ stache.config.product_name_short }} elements.</p>
 {{ include 'includes/design-table.hbs' items=itemsIsolated }}
