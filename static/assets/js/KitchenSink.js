@@ -127,7 +127,7 @@
             wrapJs = function (content) {
                 return [
                     'angular',
-                    '.module("stache", ["sky", "ui.bootstrap", "ui.select"])',
+                    '.module("stache", ["sky", "ui.bootstrap"])',
                     '.run(["$rootScope", "bbWait", function ($rootScope, bbWait) { ',
                     '   $rootScope.$on("bbBeginWait", function (e, opts) {',
                     '       e.stopPropagation();',
