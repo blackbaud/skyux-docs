@@ -86,6 +86,7 @@
     function InActionController() {
         var vm = this;
         vm.interval = 6000;
+        vm.active = 0;
     }
 
     /**
