@@ -1,19 +1,24 @@
 ---
-name: Text colors
-description: Styling to represent the status of text content.
+name: Text Colors
+icon: paint-brush
+description: The text color components provide styling to highlight the status of text content.
 layout: layout-container
 items:
   - name: Success text
-    usage: This is used to convey a good result, such as an appeal donation total that is 10% higher than the goal. It should be used to highlight exceptional data in order to maintain maximum visual and informational impact; if too much text is considered "successful" the stlying will carry less meaning.
+    usage: Success text conveys a positive result such as an appeal donation total that exceeds the goal. It should only highlight exceptional data to maximize visual and informational impact. If you use too much success text, the stlying carries less weight.
     code: <span class="text-success">Success text</span>
 
   - name: Warning text
-    usage: This is used when the user should be aware that something is wrong, but they might not need to take immediate action. For example, the due date of a bill that needs to be paid within the next week.
+    usage: Warning text conveys that something is wrong but that users might not need to take immediate action. For example, warning text can highlight the due date of a bill that needs to be paid within the next week.
     code: <span class="text-warning">Warning text</span>
 
   - name: Danger text
-    usage: This is used when the user must be aware that something is wrong, and they should take immediate action. For example, a bill is past due and needs to be paid now to avoid late fees. These should often be accompanied by other ways of informing a user that something needs attention, such as through a to-do list.
+    usage: Danger text conveys that something is wrong and that users should take immediate action. For example, danger text can highlight a bill that is past due and must be paid immediately to avoid late fees. Danger text should accompany other ways to inform users that something requires attention, such as to-do lists.
     code: <span class="text-danger">Danger text</span>
 ---
 
-{{ include 'includes/layout-components-ux.hbs' }}
+<h1 class="bb-page-heading">{{ name }}</h1>
+
+<p>{{ stache.config.product_name_short }} uses the Bootstrap convention for contextual text colors, but it only uses three sub-classes to convey the status of text contents.</p>
+
+{{ include 'includes/design-table.hbs' }}

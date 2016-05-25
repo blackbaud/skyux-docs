@@ -1,7 +1,7 @@
 ---
 name: Color
 layout: layout-container
-description: The base colors from which we derive background, border and text colors.
+description: The color guidelines provide base colors that convey meaning in backgrounds, borders, and text.
 
 # Colors will eventually be computed after updates to SKY UX
 items:
@@ -12,35 +12,35 @@ items:
       - 'RGB: R28, G132, B198'
     example: '<div class="swatch" style="background-color: #1c84c6"></div>'
 
-  - usage: Call out key elements of a page or indicate success.
+  - usage: Calls out key elements on a page or indicates success.
     code: $bb-color-green
     styling:
       - 'Hex: #1ab394'
       - 'RGB: R26, G179, B148'
     example: '<div class="swatch" style="background-color: #1ab394"></div>'
 
-  - usage: Accent color to add visual emphasis where appropriate.
+  - usage: Provides an accent color to add visual emphasis.
     code: $bb-color-aqua
     styling:
       - 'Hex: #23c6c8'
       - 'RGB: R35, G198, B200'
     example: '<div class="swatch" style="background-color: #23c6c8"></div>'
 
-  - usage: Accent color to add visual emphasis where appropriate or indicate caution.
+  - usage: Provides an accent color to add visual emphasis or indicate caution.
     code: $bb-color-yellow
     styling:
       - 'Hex: #f8ac59'
       - 'RGB: R248, G172, B89'
     example: '<div class="swatch" style="background-color: #f8ac59"></div>'
 
-  - usage: Accent color to add visual emphasis where appropriate or indicate danger.
+  - usage: Provides an accent color to add visual emphasis or indicate danger.
     code: $bb-color-red
     styling:
       - 'Hex: #ed5565'
       - 'RGB: R237, G85, B101'
     example: '<div class="swatch" style="background-color: #ed5565"></div>'
 
-  - usage: Base font color.
+  - usage: Provides the base font color.
     code: $text-color
     styling:
       - 'Hex: #292a2b'
@@ -50,10 +50,10 @@ items:
 
 <h1 class="bb-page-heading">{{ name }}</h1>
 
-<p>As a general rule in {{ stache.config.product_name_short }} color is used to convey meaning, not as pure decoration. Colors should rarely need to be applied directly to an element; rather, components incorporate color as applicable. If a situation arises where color is needed outside of a component that provides it, there is likely a need for a new component to cover the scenario.</p>
+<p>As a general rule, {{ stache.config.product_name_short }} uses color to convey meaning and not as pure decoration. You should rarely apply colors directly to elements because components incorporate colors as necessary. If a need for color arises outside of a component, you likely need for to create a component for that scenario.</p>
 
-<p>Background, border and text colors are derived from these base colors through tinting and shading. Colors used for information visualizations can be found in the <a href="../../components/palette">Palette</a> component</p>
+<p>Background, border, and text colors are derived from base colors through tinting and shading. Colors for information visualizations can be found in <a href="../../components/palette">the palette component</a></p>.
 
-<div class="alert alert-warning">In any situation where text is involved, ensure that the contrast in color between the text and the background is at least 4.5:1 to meet WCAG 2.0 AA accessibility standards.</div>
+<div class="alert alert-warning">For text, ensure that the contrast in color between the text and the background is at least 4.5:1 to meet Web Content Accessibility Guidelines 2.0 level AA.</div>
 
 {{ include 'includes/design-table.hbs' }}
