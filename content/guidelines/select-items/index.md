@@ -1,6 +1,6 @@
 ---
 name: Select items from lists
-description: A variety of controls are available to select items from a list.
+description: A variety of controls are available to present lists and allow users to select list items.
 markdown: true
 layout: layout-container
 ---
@@ -21,11 +21,11 @@ Use an HTML <code>&lt;select&gt;</code> field when you have 6-20 values and user
 
 Use <a href="../../components/check">checkboxes</a> when you have 2-5 values and users can select multiple values.
 
-<h2 class="bb-section-heading"><a href="../../components/selectfield">{{ stache.config.product_name_short }} select field component</a></h2>
+<h2 class="bb-section-heading"><a href="../../components/selectfield">{{ stache.config.product_name_short }} select field</a></h2>
 
-Use a {{ stache.config.product_name_short }} select field when:
+Use a {{ stache.config.product_name_short }} <a href="../../components/selectfield">select field</a> component when:
 
-* You have user-defined values because user-defined fields often accumulate many values and become too cumbersome for the other controls.
+* You have user-defined values that can accumulate and become too cumbersome for the other controls.
 * You have more than 5 values and users can select multiple values.
 * You have more than 20 values and users can only select one value.
 * You need to display items with titles and descriptions.

@@ -1,7 +1,7 @@
 ---
 name: Color
 layout: layout-container
-description: The color guidelines provide base colors that convey meaning in backgrounds, borders, and text.
+description: The color guidelines provide base colors to convey meaning in backgrounds, borders, and text.
 
 # Colors will eventually be computed after updates to SKY UX
 items:
@@ -40,7 +40,7 @@ items:
       - 'RGB: R237, G85, B101'
     example: '<div class="swatch" style="background-color: #ed5565"></div>'
 
-  - usage: Provides the base font color.
+  - usage: Provides the base font color in SKY UX.
     code: $text-color
     styling:
       - 'Hex: #292a2b'
@@ -52,8 +52,8 @@ items:
 
 <p>As a general rule, {{ stache.config.product_name_short }} uses color to convey meaning and not as pure decoration. You should rarely apply colors directly to elements because components incorporate colors as necessary. If a need for color arises outside of a component, you likely need for to create a component for that scenario.</p>
 
-<p>Background, border, and text colors are derived from base colors through tinting and shading. Colors for information visualizations can be found in <a href="../../components/palette">the palette component</a></p>.
+<p>Background, border, and text colors are derived from base colors through tinting and shading. Colors for information visualizations can be found in <a href="../../components/palette">the palette component</a>.</p>
 
-<div class="alert alert-warning">For text, ensure that the contrast in color between the text and the background is at least 4.5:1 to meet Web Content Accessibility Guidelines 2.0 level AA.</div>
+<div class="alert alert-warning">For text, ensure that the contrast between the text color and the background color is at least 4.5:1 to meet Web Content Accessibility Guidelines 2.0 level AA.</div>
 
 {{ include 'includes/design-table.hbs' }}
