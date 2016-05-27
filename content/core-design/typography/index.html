@@ -40,12 +40,12 @@ items:
     styling: Open Sans Italic 13px #707374
 
   - name: Field label
-    usage: This class formats labels for fields on views. It uses a muted color because the label that identifies the field is less important than the content.
+    usage: This class formats labels for read-only fields that do not accept input. It uses a muted color because the label that identifies the field is less important than the content.
     code: <div class="bb-field-label">Field label</div>
     styling: Open Sans Regular 13px #707374
 
   - name: Form input label
-    usage: This class formats labels for input fields on forms. It is darker than labels in views to help the text stand out alongside visually-heavier input controls.
+    usage: This class formats labels for input fields. It is darker than labels for read-only fields to help the text stand out they alongside visually heavier input controls.
     code: <div class="control-label">Form input label</div>
     styling: Open Sans Regular 13px #292a2b
 ---
@@ -56,7 +56,7 @@ items:
 
 <p>The {{ stache.config.product_name_short }} font system is based on the <a href="https://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> and <a href="https://www.google.com/fonts/specimen/Oswald">Oswald</a> typefaces.</p>
 
-<p>{{ stache.config.product_name_short }} defines 8 CSS classes for general use in addition to base body copy.</p>
+<p>{{ stache.config.product_name_short }} defines CSS classes for general use in addition to base body copy.</p>
 
 <div class="alert alert-warning">Styling values are for reference only, and you should apply them directly. Instead, components should apply styling through the use of classes.</div>
 
