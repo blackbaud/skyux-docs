@@ -13,7 +13,7 @@ Motion, by its nature, catches the eye. Our brains are well-practiced at interpr
 
 {{ stache.config.product_name_short }} uses motion to shed light on the nature of changes in the system. It uses subtle animation cues to illustrate:
 
-* Changes in context, such as entering or exiting a modal dialogue
+* Changes in context, such as entering or exiting a <a href="../../components/modal">modal dialogue</a>
 * The results of user actions
 * Connections between different pieces of content
 * Changes in the state of the system or content
@@ -54,8 +54,8 @@ This behavior moves content horizontally or vertically without altering other vi
 
 * Show/hide filters (sidebar)
 * Show/hide held panel
-* Move between adjacent steps in a wizard
-* Move between tabs **(native mobile only)**
+* Move between adjacent steps in a <a href="../../components/wizard">wizard</a>
+* Move between <a href="../../components/tabsref">tabs</a> **(native mobile only)**
 * Moving surrounding content during an _expand/collapse_ effect (see below)
 
 _Slide_ should follow these guidelines:
@@ -72,7 +72,7 @@ A close relative of _slide_, this behavior changes the dimensions of containers 
 
 {{ stache.config.product_name_short }} primarily employs _expand/collapse_ to **show/hide content that is hidden "on-stage" as part of a progressive disclosure pattern**.
 
-* Tiles
+* <a href="../../components/tiles">Tiles</a>
 * Accordion repeaters
 * Search fields that collapse to icons
 
@@ -90,10 +90,10 @@ This behavior shows content that is called or dismissed as a direct consequence 
 
 {{ stache.config.product_name_short }} primarily employs _emerge/recede_ to **initiate modal dialogues or other interactions that require users to complete tasks before moving on**.
 
-* Modal dialogues
-* Menus
+* <a href="../../components/modal">Modal dialogues</a>
+* <a href="../../components/contextmenu">Menus</a>
 * Dropdown/select controls
-* Toasts
+* <a href="../../components/toast">Toasts</a>
 
 _Emerge/recede_ should follow these guidelines:
 
@@ -113,6 +113,6 @@ This behavior navigates _into_ a child record from a parent container. It combin
 
 {{ stache.config.product_name_short }} primarily employs _drill_ to **navigate to a page that contains content specific to a child member of the previous page**.
 
-* Grid or table members
-* Cards
-* Repeater members
+* <a href="../../components/grids">Grid</a> or table members
+* <a href="../../components/card">Cards</a>
+* <a href="../../components/repeater">Repeater</a> members

@@ -7,7 +7,7 @@ layout: layout-container
 
 <h1 class="bb-page-heading">Select items from lists</h1>
 
-To provide a consistent experience for users when they select items from lists, use the following guidelines to determine which control to use when you create a list.
+To provide a consistent experience for users to select items from lists, follow these guidelines to determine which control to use to create a list.
 
 <h2 class="bb-section-heading"><a href="../../components/check">Radio buttons</a></h2>
 
