@@ -1,7 +1,7 @@
 ---
 layout: layout-blog-post
 author: Blackbaud-PaulCrowder
-name: Welcome to the <%= stache.config.product_name_short %> Blog
+name: Welcome to the <%= stache.config.product_name_short %> blog
 pubDate: Monday, January 4, 2016
 ---
 

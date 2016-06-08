@@ -24,7 +24,7 @@ This allows for uploading and displaying an image to identify a record.
 ### [Error](http://skyux.developer.blackbaud.com/components/error/)
 We created a standard layout and styling for error messaging. Now that this core piece is in place we can create a set of standard content for common error types. 
 
-### [Date range picker](http://skyux.developer.blackbaud.com/components/daterangepicker/)
+### [Date-range picker](http://skyux.developer.blackbaud.com/components/daterangepicker/)
 We extended this control to allow a “Specific date range” option in cases where the predefined date ranges are insufficient. 
 
 ### Accessibility
