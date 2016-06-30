@@ -86,6 +86,7 @@
     function InActionController() {
         var vm = this;
         vm.interval = 6000;
+        vm.active = 0;
     }
 
     /**
@@ -127,7 +128,7 @@
             wrapJs = function (content) {
                 return [
                     'angular',
-                    '.module("stache", ["sky", "ui.bootstrap", "ui.select"])',
+                    '.module("stache", ["sky", "ui.bootstrap"])',
                     '.run(["$rootScope", "bbWait", function ($rootScope, bbWait) { ',
                     '   $rootScope.$on("bbBeginWait", function (e, opts) {',
                     '       e.stopPropagation();',

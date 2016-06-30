@@ -1,7 +1,7 @@
 ---
 layout: layout-blog-post
 author: Blackbaud-PaulCrowder
-name: Sky UX CDN Fallback Strategy
+name: Sky UX CDN fallback strategy
 pubDate: Wednesday, January 6, 2016
 markdown: true
 ---
@@ -20,7 +20,7 @@ Once you've downloaded Fallback JS you can include it on your page.  For simplic
 
 `<script src="/bower_components/fallback/fallback.min.js"></script>`
 
-##Importing the Sky UX Library
+##Importing the Sky UX library
 
 Now that you've added the Fallback JS library it's time to add Sky UX to your page.  You'll need to download and host Sky UX on the same server where Fallback JS and your web application are hosted.  This is where Fallback JS will load Sky UX from in the case the CDN is unavailable.
 
@@ -64,13 +64,13 @@ The two CSS resources that are loaded are the Sky UX CSS file (aliased as `sky_c
 
 ###Loading JavaScript
 
-In addition to the two CSS resources, we're also loading two JavaScript files: Sky UX's JS file and your web application's CSS file.  Unlike the CSS resources that are aliased using arbitrary names, each JavaScript alias must be an object that the JavaScript file adds to the global `window` object.  Since the Sky UX bundle also loads AngularJS, and since AngularJS adds an `angular` object to `window`, we'll use `angular` as the alias.  For the application's JS I've just added the line `window.MYAPP_READY = true;` to the bottom of my application's JS code so I can reference it here.
+In addition to the two CSS resources, we're also loading two JavaScript files: Sky UX's JS file and your web application's JS file.  Unlike the CSS resources that are aliased using arbitrary names, each JavaScript alias must be an object that the JavaScript file adds to the global `window` object.  Since the Sky UX bundle also loads AngularJS, and since AngularJS adds an `angular` object to `window`, we'll use `angular` as the alias.  For the application's JS I've just added the line `window.MYAPP_READY = true;` to the bottom of my application's JS code so I can reference it here.
 
-###Specifying Load Order
+###Specifying load order
 
 The second parameter passed to `fallback.load()` consists of a `shim` property which you can use to define the load order of the JavaScript and CSS files.  Each property on the `shim` object is named after the corresponding resource's alias and is set to an array of other resources that must be loaded before that resource is loaded.  In our example we've stated that our own app's JS and CSS depend on Sky UX's JS and CSS, ensuring Sky UX loads before our app's resources load.
 
-##Dealing With CDN Failures
+##Dealing with CDN failures
 
 The option parameter's `callback` property can be used to specify a function that is called after all resources have been loaded.  This callback accepts `success` and `failed` parameters, the latter of which can be used to determine which requests failed.  Even though the fallback functionality should keep your app working properly when the CDN fails to load, you might want to know about failures so that you can include them in any instrumentation you are keeping for your application.
 

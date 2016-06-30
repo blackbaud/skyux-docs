@@ -1,0 +1,28 @@
+---
+name: Buttons
+icon: square-o
+description: The button components create buttons to trigger actions.
+layout: layout-container
+items:
+  - name: Primary
+    usage: The primary button triggers the most important or most frequently used action on a page. As a general rule, you should only include one primary button per page to ensure that it draws user attention.
+    code: <button type="button" class="btn btn-primary">Primary</button>
+
+  - name: Secondary
+    usage: Secondary buttons trigger less important or less frequently used actions. Since secondary buttons are less important than primary buttons, SKY UX reduces the visual weight to make them noticeable but not attention-drawing.
+    code: <button type="button" class="btn bb-btn-secondary">Secondary</button>
+
+  - name: Link
+    usage: Link buttons can trigger actions that take users to other pages. They can also trigger actions that end tasks or exit modals. For example, you can use this option to create a Cancel button.
+    code: <button type="button" class="btn btn-link">Link button</button>
+
+  - name: Inline link
+    usage: Inline link buttons trigger the same type of actions as link buttons, but the styling is altered so that the buttons fit inline.
+    code: <button type="button" class="btn bb-btn-link-inline">Inline link</button>
+---
+
+<h1 class="bb-page-heading">{{ name }}</h1>
+
+<p>{{ stache.config.product_name_short }} uses a mix of <a href="http://getbootstrap.com/css/#buttons" target="_blank">Bootstrap</a> and custom button classes, but it provides fewer button classes than Bootstrap.</p>
+
+{{ include 'includes/design-table.hbs' }}
