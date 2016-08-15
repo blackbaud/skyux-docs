@@ -2,7 +2,7 @@
 name: Select items from lists
 description: A variety of controls are available to present lists and allow users to select list items.
 markdown: true
-layout: layout-container
+layout: layout-sidebar
 ---
 
 <h1 class="bb-page-heading">Select items from lists</h1>
