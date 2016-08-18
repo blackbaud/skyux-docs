@@ -8,8 +8,9 @@ order: 4
 # Accessibility
 
 
+<i class="fa fa-universal-access fa-5x" style="float: right; margin: 0 1em 1em;"></i>
 <p class="lead">Creating an accessible UX framework is an important part of Blackbaud’s commitment to deliver solutions that do good and help to drive positive change in the world.</p>
-Happy Birthday!:  <i class="fa fa-birthday-cake"></i> <i class="fa fa-universal-access"></i>
+
 
 We try our darnedest to meet the success criteria of the W3C’s Web Content Accessibility Guidelines 2.0 Level AA and build support for accessibility features into SKY UX.  This page outlines some of the practices and approaches we use and you'll need to follow if you'd like to contribute to SKY UX. Accessibility is a work-in-progress so you'll also find some of our known issues.
 
