@@ -64,7 +64,7 @@ The two CSS resources that are loaded are the Sky UX CSS file (aliased as `sky_c
 
 ###Loading JavaScript
 
-In addition to the two CSS resources, we're also loading two JavaScript files: Sky UX's JS file and your web application's CSS file.  Unlike the CSS resources that are aliased using arbitrary names, each JavaScript alias must be an object that the JavaScript file adds to the global `window` object.  Since the Sky UX bundle also loads AngularJS, and since AngularJS adds an `angular` object to `window`, we'll use `angular` as the alias.  For the application's JS I've just added the line `window.MYAPP_READY = true;` to the bottom of my application's JS code so I can reference it here.
+In addition to the two CSS resources, we're also loading two JavaScript files: Sky UX's JS file and your web application's JS file.  Unlike the CSS resources that are aliased using arbitrary names, each JavaScript alias must be an object that the JavaScript file adds to the global `window` object.  Since the Sky UX bundle also loads AngularJS, and since AngularJS adds an `angular` object to `window`, we'll use `angular` as the alias.  For the application's JS I've just added the line `window.MYAPP_READY = true;` to the bottom of my application's JS code so I can reference it here.
 
 ###Specifying load order
 

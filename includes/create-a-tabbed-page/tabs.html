@@ -1,17 +1,17 @@
 <div class="container-fluid">
   <h1>Overview</h1>
 </div>
-<tabset class="bb-page-tabs">
-  <tab>
-    <tab-heading>
+<uib-tabset class="bb-page-tabs">
+  <uib-tab>
+    <uib-tab-heading>
       Constituents <span class="bb-tab-header-count">\{{tabbedPage.constituentCount}}</span>
-    </tab-heading>
+    </uib-tab-heading>
     <bb-grid bb-grid-options="tabbedPage.constituentGridOptions"></bb-grid>
-  </tab>
-    <tab>
-      <tab-heading>
-        Gifts <span class="bb-tab-header-count">\{{tabbedPage.giftCount}}</span>
-      </tab-heading>
-      <bb-grid bb-grid-options="tabbedPage.giftGridOptions"></bb-grid>
-    </tab>
-</tabset>
+  </uib-tab>
+  <uib-tab>
+    <uib-tab-heading>
+      Gifts <span class="bb-tab-header-count">\{{tabbedPage.giftCount}}</span>
+    </uib-tab-heading>
+    <bb-grid bb-grid-options="tabbedPage.giftGridOptions"></bb-grid>
+  </uib-tab>
+</uib-tabset>
