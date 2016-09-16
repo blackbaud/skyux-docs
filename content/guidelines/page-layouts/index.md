@@ -13,7 +13,7 @@ Our layouts are based on the standard [grid system provided in Bootstrap](http:/
 Using this grid system allows for a variety of page layouts based on need while still conforming to our design and coding standards. 
 
 ## Responsive design
-Currently we are using the Column Drop pattern for our responsive design. This method utilizes a multi-column layout and full-width of the device screen. Column drop simply stacks the columns vertically as the window width becomes too narrow for the content. Eventually this results in all of the columns being stacked vertically. Choosing breakpoints for this layout pattern is dependent on the content and will change for each design.
+Currently we are using the [column drop pattern](https://developers.google.com/web/fundamentals/design-and-ui/responsive/patterns/column-drop) for our responsive design. This method utilizes a multi-column layout and full-width of the device screen. Column drop simply stacks the columns vertically as the window width becomes too narrow for the content. Eventually this results in all of the columns being stacked vertically. Choosing breakpoints for this layout pattern is dependent on the content and will change for each design.
 
 The overall size of elements in this layout tend to stay consistent. Adapting to various screen sizes instead relies on stacking columns. When and how is each column is stacked at different resolution breakpoints differs for each design, but generally either navigation or content is placed at the top of narrow screens.
 
@@ -25,8 +25,14 @@ Below is a list of the standard page layouts that can be used when designing wit
 ### Work center 
 The work center layout is a [tile-based](../../components/tiles) page that is used to surface time sensitive information and allows users to quickly navigate to the timeliest information within the application. It might optionally contain a [page summary](../../components/pagesummary) highlighting the most important information, a [tabbed layout](../../components/tabset) that supports different tasks and a [carousel](../../components/carousel) featuring high-priority items.
 
-## List page
+![Work center page wireframe](../../../static/assets/img/guidelines/pagelayout/workcenter.png)
+
+### List page
 The list page is used when you want to display a large amount of similar data. Lists present multiple line items vertically as a single continuous element. Common controls available include choosing columns, sorting, filtering, searching, and view switching. They may use a tabbed layout to allow the user to switch between different lists, or different pre-filtered instances of the same list.
 
-## Record page
+![List page wireframe](../../../static/assets/img/guidelines/pagelayout/list.png)
+
+### Record page
 The record page is a tile-based page that consists of a summary section and a main content area. A page summary resides at the top of the page to provide a general overview of a record.  The main content area usually consists of two columns of tiles (or one column for extra small screen sizes like mobile phones) that displays more information about a record in logical sections. The exact content to include in each of these areas will depend on your primary use case.
+
+![Record page wireframe](../../../static/assets/img/guidelines/pagelayout/record.png)
