@@ -22,7 +22,6 @@ module.exports = function (grunt) {
             },
             pages: [{
                 url: skySrcPath + '<%= stache.config.latest_sky_release %>.json',
-                layout: 'layouts/custom-jsdoc.hbs',
                 dest: 'components/',
                 type: 'jsdoc'
             }]
