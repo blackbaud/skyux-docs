@@ -15,14 +15,29 @@ module.exports = function (grunt) {
             hooks: {
                 preStache: [
                     'getLatestSkyRelease'
+                ],
+                preAssemble: [
+                    'setModalFullLayout'
                 ]
             },
             pages: [{
                 url: skySrcPath + '<%= stache.config.latest_sky_release %>.json',
+                layout: 'layouts/custom-jsdoc.hbs',
                 dest: 'components/',
                 type: 'jsdoc'
             }]
         }
+    });
+
+    /**
+    * Sets the layout of the modalfull example.
+    **/
+    grunt.registerTask('setModalFullLayout', function () {
+        var key = 'assemble.custom.options.pages',
+            pages = grunt.config.get(key);
+        pages['components/modalfull/index.md'].data.layout =
+            '../../../../includes/bb-page-layout';
+        grunt.config.set(key, pages);
     });
 
     /**
