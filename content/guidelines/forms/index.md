@@ -7,7 +7,7 @@ layout: layout-container
 
 # Forms
 
-{{ stache.config.product_name_short }} provides various form patterns to accommodate various scenarios and workflow requirements.  
+{{ stache.config.product_name_short }} provides various form patterns to accommodate different scenarios and workflow requirements.  
 
 ## Inline panel
 An inline panel is appropriate for simple forms that meet the following criteria:
@@ -35,7 +35,7 @@ An inline panel is appropriate for simple forms that meet the following criteria
 
 ## Wizard
 [A wizard](../../components/wizard) is appropriate for forms that meet the following criteria:
-* You want to break up a large task into discrete steps.
+* The task can be divided into discrete steps.
 * The order of the steps is important.
 * User actions in earlier steps affect later steps.
 * Users should complete or review the fields in every step.
