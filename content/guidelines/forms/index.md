@@ -1,42 +1,42 @@
 ---
 name: Forms
-description: Describes different approaches to using forms depending on the context.
+description: Form patterns determine the type of form to use to meet different workflow requirements.
 markdown: true
 layout: layout-container
 ---
 
 # Forms
 
-There are various form patterns available in {{ stache.config.product_name_short }} to accommodate scenarios of varying complexity and workflow requirements.  
+{{ stache.config.product_name_short }} provides various form patterns to accommodate different scenarios and workflow requirements.  
 
-## Inline
-Consider using an inline panel if your scenario meets one or more of the following criteria:
-* The form is simple in terms of a small # of fields and low complexity of input controls 
-* The surrounding content will not distract the user from the task  
-* Adding/editing records in a subsection of a larger modal dialog 
-* There is a high likelihood the user would need to add multiple records in succession
-* It’s ok if the user abandons the task while the form is open (i.e. the task is functionally non-modal) 
+## Inline panel
+An inline panel is appropriate for simple forms that meet the following criteria:
+* The form has few fields, and its input controls are not complex.
+* The content that surrounds the form will not distract users.
+* The form adds or edits records from a subsection of a larger modal dialog.
+* Users likely will use the form to add multiple records in succession.
+* The task is functionally non-modal, and users can abandon it while the form is open.
 
 ## Modal dialog
-Use a [modal](../../components/modal) dialog when:
-* You want the user to have to finish the task before doing anything else (i.e. the task is functionally modal)
-* The form would lead to a large amount of page morphing or a user needing to scroll to ccomplete the form if shown inline 
-* Adding records from a paginated or infinite scroll list of items 
+[A modal dialog](../../components/modal) is appropriate for forms that meet the following criteria:
+* The task is functionally modal, and users must finish it before doing anything else.
+* Displaying the form inline would lead to a large amount of page morphing or require users to scroll to complete the form.
+* The form adds records from [a paginated list](../../components/pagination) or [an infinite scroll list](../../components/infinitescroll).
 
 ## Full-page modal
-Use a full-page [modal](../../components/modal) when:
-* You want the user to have to finish the task before doing anything else (i.e. the task is functionally modal)
-* The task is usually done in a large viewport and the UI can be optimized to use the space 
-* The context of the task is self-contained 
-* Need to display ancillary information or previews (e.g. running totals or an email being constructed) 
-* Need to perform a complex task for a list of objects (e.g. filling out report cards for a class) 
-* The task has subtasks that may need to be completed in context
-* The form needs a unique URL  
+[A full-page modal](../../components/modal) is appropriate for forms that meet the following criteria:
+* The task is functionally modal, and users must finish it before doing anything else.
+* Users usually perform the task in a large viewport, and a full-page modal can optimize the use of space.
+* The context of the task is self-contained.
+* The form displays ancillary information or previews such as running totals or an email being constructed.
+* The form performs a complex task for a list of objects such as filling out report cards for a class.
+* The task includes subtasks that need to be completed in context.
+* The form requires a unique URL.  
 
 ## Wizard
-Use a [wizard](../../components/wizard) if your scenario meets the following criteria:
-* You want to break up a larger task into discrete steps 
-* The order of the steps in important 
-* Choices you make in earlier steps can have effects in later steps
-* You expect that the user will complete (or at least review) the fields in every step 
-* There’s a chance the user might want to leave the workflow but save their progress to return at a later time 
+[A wizard](../../components/wizard) is appropriate for forms that meet the following criteria:
+* The task can be divided into discrete steps.
+* The order of the steps is important.
+* User actions in earlier steps affect later steps.
+* Users should complete or review the fields in every step.
+* Users might want to save their progress so that they can leave the form and return later.

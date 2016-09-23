@@ -1,35 +1,29 @@
 ---
 name: Filtering
-description: Describes different approaches to filtering that can be used depending on the context.
+description: Filter patterns provide guidance on how to display filter options in various scenarios.
 markdown: true
 layout: layout-container
 ---
 
 # Filtering
 
-There are three filter patterns available in {{ stache.config.product_name_short }}, meant to accommodate increasing levels of filter complexity.  
+{{ stache.config.product_name_short }} provides three filter patterns to accommodate different filter scenarios.  
 
 ## Inline filters
-Always-visible filter controls in a tile header or list header, floated to the right side of the header. The filter is applied/updated immediately as soon as the user makes a selection. Filter controls for this type of filter should be simple interactions only, such as checkboxes or dropdowns. Complex multi-select filters should not be displayed using this pattern.
+Inline filters display always-visible controls to the right of tile or list headers. The filter is applied immediately after users make selections. This pattern only supports simple filter controls such as checkboxes and dropdowns. The pattern should not display complex, multi-select filter controls.
 
-This pattern is appropriate if you have one or two simple filters that could apply. Having filters be persistently displayed allows users to quickly change filters without the additional step of having to invoke the filters through a explicit button.
+This pattern is appropriate for scenarios where users can only apply one or two simple filter options. Since the filter controls are always visible, users can quickly apply filter options without invoking them through a button.
 
 ## Expandable filters
-Filters that are hidden by default but can be shown inline by pressing a “Filter” button in the header of a tile or list. See the example in the [grid](../../components/grids) component.
+Expandable filters hide filter controls by default and allow users to display them inline by clicking "Filter" buttons in tile or list headers. For example, [the grid component](../../components/grids) can display a "Filter" button in the grid header. After users apply filters, the "Filter" button's text and outline change to green to indicate that the data is filtered.
 
-The filter panel can be hidden or shown by clicking the “Filter” button. If filters are applied, the button text and outline color change to green so the user knows the data is filtered.
+The filter is applied immediately after users make selections. This pattern only supports simple filter controls such as checkboxes and dropdowns. The pattern should not display complex, multi-select filters.
 
-Filter is applied/updated immediately as soon as the user makes a selection. Filter controls for this type of filter should be simple interactions only, such as checkboxes or dropdowns. Complex multi-select filters should not be displayed using this pattern.
-
-This pattern is appropriate if you have up to four simple filters that could apply.
+This pattern is appropriate for scenarios where users can apply up to four simple filter options.
 
 ## Filters in a modal
-Filters that are hidden by default but can be shown in a [modal](../../components/modal) by pressing a “Filter” button in the header of a tile or list. See the example in the [filter](../../components/filter) component.
+Filters in a modal hide filter controls by default and allow users to display them in [a modal](../../components/modal) by clicking "Filter" buttons in tile or list headers. For example, [the filter component](../../components/filter) can display a "Filter" button in a list header. After users apply filters, boxes on the page indicate the applied filters and the "Filter" button's text and outline change to green to indicate that the data is filtered.
  
-All the normal filter controls can be placed on this modal, including simple filters as well as more complex multi-select filters that use the [select field](../../components/selectfield) control.
+Filters in a modal can include both simple filter controls and complex, multi-select filter controls such as [the select field component](../../components/selectfield).
 
-When filters are applied using this pattern, a box indicating the applied filters is shown on the page. The button text and outline color is also changed to green so the user knows the data is filtered.
-
-Use this pattern:
-* when there are four or more simple filters that might apply to a list or tile.
-* if one or more of the possible filters is a complex multiselect filter or a filter that requires compound controls.
+This pattern is appropriate for scenarios where users can apply more than four simple filter options, scenarios where at least one complex, multi-select filter controls is necessary, and scenarios where a filter option requires compound controls.
