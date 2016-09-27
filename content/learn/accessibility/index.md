@@ -15,8 +15,9 @@ This page outlines the best practices that you'll need to follow to contribute t
 
 ## Design for users with differing abilities
 
-- Focus on the [four principles that make experiences accessible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head) for people with differing abilities. The design must be **perceivable** to all user senses. User interface components and navigation must be **operable** for users to interact with the interface. Information and the operation of the user interface must be **understandable**. And content must be **robust** enough for a wide variety of user agents, including assistive technologies, to reliably interpret it.
-- Evaluate your design ideas from the perspectives of users with disabilities. [Design issues and solutions for various disabilities](http://webaim.org/articles/userperspective/)
+Focus on the [four principles that make experiences accessible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head) for people with differing abilities. The design must be **perceivable** to all user senses. User interface components and navigation must be **operable** for users to interact with the interface. Information and the operation of the user interface must be **understandable**. And content must be **robust** enough for a wide variety of user agents, including assistive technologies, to reliably interpret it.
+
+Evaluate your design ideas from the perspectives of users with disabilities. Become familiar with the [design issues and solutions for various disabilities](http://webaim.org/articles/userperspective/)
 
 ### SKY UX design evaluation
 

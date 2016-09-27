@@ -4,26 +4,29 @@ layout: layout-sidebar
 markdown: true
 name: Code review
 order: 41
+showHeadings: false
 showInNav: true
 ---
 
 # Code review checklist for accessibility
 
-### Equivalent text
+## Text equivalents for non-text elements
 
-1. Review alt attributes and ensure that the values make sense for the context
-2. Review button text values and ensure the values make sense for purpose/function
-3. Identify any images that are decorative, ensure they have blank alt="" attribute
+1. Ensure that <code>alt</code> attributes on <code>&lt;img&gt;</code> elements accurately reflect the content and/or function of the image in the [context in which the image](http://webaim.org/techniques/alttext/#context) is used.
+2. Ensure that button text values accurately describe the purpose(s) of the buttons.
+3. Ensure that any images that are decorative have <code>role="presentation"</code> attribute.
 
-### Order
+## Order
 
-4. Compare the visual order of elements to the DOM order of elements, they should match.  
+Ensure that the visual order of elements matches the DOM order of elements.
 
-### Link Purpose
+## Link purpose
 
-5. If a link label isn't descriptive itself, its context would communicate its purpose (e.g., enclosing parent element give context)
-If multiple links with same label on page, a link element has a title, aria-label, or aria-labelledby attribute to communicate purpose)
+Ensure links' text is descriptive of its target and purpose and can be distinguished from other links on the page. (See [Methods of indicating the purpose of a link](http://www.ssbbartgroup.com/blog/methods-of-indicating-the-purpose-of-a-link/) and [WCAG 2.0 technique for providing link text](https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H30.html)) If it is not descriptive on its own, ensure one of the following is true:
+   - its surrounding context aids understanding its purpose (e.g., link in sentence, table cell, heading immediately preceding)
+   - it has a programmatic solution to augment the link text (e.g., off-screen text, <code>aria-describedby</code>)   
 
-### Custom controls
+## Custom controls
 
-6. Look for custom interactive controls which are HTML elements, but used in a manner or for a role not part of the HTML standard. Check these have necessary ARIA roles, states, and properties for how the elements are used/scripted to interact.  
+For custom interactive controls that are used in a way that is not part of the HTML standard, ensure that the elements have the necessary ARIA roles, states, and properties.
+(See [WAI-ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/) for how to make components and behaviors accessible with ARIA roles, states and properties)

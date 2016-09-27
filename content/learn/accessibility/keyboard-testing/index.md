@@ -4,6 +4,7 @@ name: Keyboard testing
 layout: layout-sidebar
 markdown: true
 order: 42
+showHeadings: false
 showInNav: true
 ---
 
