@@ -2,7 +2,7 @@
 name: Filtering
 description: Filter patterns provide guidance on how to display filter options in various scenarios.
 markdown: true
-layout: layout-container
+layout: layout-sidebar
 ---
 
 # Filtering
@@ -23,7 +23,7 @@ This pattern is appropriate for scenarios where users can apply up to four simpl
 
 ## Filters in a modal
 Filters in a modal hide filter controls by default and allow users to display them in [a modal](../../components/modal) by clicking "Filter" buttons in tile or list headers. For example, [the filter component](../../components/filter) can display a "Filter" button in a list header. After users apply filters, boxes on the page indicate the applied filters and the "Filter" button's text and outline change to green to indicate that the data is filtered.
- 
+
 Filters in a modal can include both simple filter controls and more complex controls such as [the select field component](../../components/selectfield).
 
 This pattern is appropriate for scenarios where users can apply more than four simple filter options or where one or more complex filter controls are necessary.

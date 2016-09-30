@@ -2,7 +2,7 @@
 name: Forms
 description: Form patterns determine the type of form to use to meet different workflow requirements.
 markdown: true
-layout: layout-container
+layout: layout-sidebar
 ---
 
 # Forms
