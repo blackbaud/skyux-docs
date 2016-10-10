@@ -34,4 +34,4 @@ See [Getting to know HTML](http://learn.shayhowe.com/html-css/getting-to-know-ht
 
 ## Custom controls
 
-For custom interactive controls that are used in ways that are not part of the HTML standard, ensure that the elements have the necessary ARIA roles, states, and properties. For infromation about how to make components and behaviors accessible with ARIA roles, states, and properties, see [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices/).
+For custom interactive controls that are used in ways that are not part of the HTML standard, ensure that the elements have the necessary ARIA roles, states, and properties. For information about how to make components and behaviors accessible with ARIA roles, states, and properties, see [WAI-ARIA Authoring Practices 1.1](https://www.w3.org/TR/wai-aria-practices/).
