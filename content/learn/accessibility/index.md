@@ -8,11 +8,7 @@ order: 4
 # Accessibility
 
 <i class="fa fa-universal-access fa-5x" style="float: right; margin: 0 1em 2em;"></i>
-<<<<<<< HEAD
-An accessible UX framework is an important part of Blackbaud’s commitment to deliver solutions that help drive positive change in the world. We endeavor to meet the W3C’s [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) Level A &amp; AA success criteria. In SKY UX, we build support for accessibility into our components.
-=======
 An accessible UX framework is an important part of Blackbaud’s commitment to deliver solutions that help drive positive change in the world. We endeavor to meet the World Wide Web Consortium’s [Web Content Accessibility Guidelines 2.0](https://www.w3.org/TR/WCAG20/) Level A &amp; AA success criteria. In SKY UX, we build support for accessibility into our components.
->>>>>>> blackbaud/learn
 
 This page outlines the best practices to follow when you to contribute to SKY UX. And since accessibility is a work-in-progress, it also describes some known issues.
 
@@ -20,11 +16,7 @@ This page outlines the best practices to follow when you to contribute to SKY UX
 
 Focus on the [four principles that make experiences accessible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/intro.html#introduction-fourprincs-head) for people with differing abilities. The design must be **perceivable** to all user senses. User interface components and navigation must be **operable** for users to interact with the interface. Information and the operation of the user interface must be **understandable**. And content must be **robust** enough for a wide variety of user agents, including assistive technologies, to reliably interpret it.
 
-<<<<<<< HEAD
-Evaluate your design ideas from the perspectives of users with disabilities. Become familiar with the [design issues and solutions for various disabilities](http://webaim.org/articles/userperspective/)
-=======
 Evaluate your design ideas from the perspectives of users with disabilities. Become familiar with the [design issues and solutions for various disabilities](http://webaim.org/articles/userperspective/).
->>>>>>> blackbaud/learn
 
 ### SKY UX design evaluation
 
@@ -58,17 +50,12 @@ You can help make SKY UX accessible for everyone.
 - Help fix [an existing accessibility issue](https://github.com/blackbaud/skyux/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility).
 - Highlight an accessibility issue on the [SKY UX Slack channel](https://blackbaud-skyux-slackin.herokuapp.com/), or file an issue with an accessibility label on the [SKY UX GitHub repository](https://github.com/blackbaud/skyux/issues).
 
-
 ## Known issues
 
-<<<<<<< HEAD
-We are currently in the process of auditing existing components and logging the [issues we identify in github](https://github.com/blackbaud/skyux/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility). Additionally, we are working to update the SKY UX color system to meet color contrast criteria. The following elements do not currently meet the criteria:
-
-=======
 We are currently in the process of auditing existing components and logging the [issues that we identify in GitHub](https://github.com/blackbaud/skyux/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility).
 
 In addition, we are working to update the SKY UX color system to meet color contrast criteria. The following elements do not currently meet the criteria:
->>>>>>> blackbaud/learn
+
 1. Link color
 2. Primary buttons
 3. Table headers
