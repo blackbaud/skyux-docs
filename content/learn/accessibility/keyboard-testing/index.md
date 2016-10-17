@@ -44,5 +44,5 @@ Ensure that navigation with the Tab key meets the following criteria:
 2. The Tab key places focus on all focusable elements.
 3. The Tab key does not place focus on elements that cannot receive focus.
 4. Focus remains in the modal and does not return to the page.
-5. When the Tab key places focus on an element that closes the modal, pressing Enter closes the modal. 
+5. When the Tab key places focus on an element that closes the modal, pressing Enter closes the modal.
 6. When the modal closes, focus returns to the element that opened the modal or goes to a logical place based on actions within the modal. Focus does not return the top of the underlying page.

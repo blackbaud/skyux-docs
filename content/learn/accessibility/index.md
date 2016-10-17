@@ -50,12 +50,12 @@ You can help make SKY UX accessible for everyone.
 - Help fix [an existing accessibility issue](https://github.com/blackbaud/skyux/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility).
 - Highlight an accessibility issue on the [SKY UX Slack channel](https://blackbaud-skyux-slackin.herokuapp.com/), or file an issue with an accessibility label on the [SKY UX GitHub repository](https://github.com/blackbaud/skyux/issues).
 
-
 ## Known issues
 
 We are currently in the process of auditing existing components and logging the [issues that we identify in GitHub](https://github.com/blackbaud/skyux/issues?q=is%3Aopen+is%3Aissue+label%3Aaccessibility).
 
 In addition, we are working to update the SKY UX color system to meet color contrast criteria. The following elements do not currently meet the criteria:
+
 1. Link color
 2. Primary buttons
 3. Table headers
