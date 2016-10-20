@@ -1,7 +1,7 @@
 ---
 layout: layout-sidebar
 markdown: true
-description: SKY UX performs manual and automated accessibility testing.  Learn about the testing and why we care about accessibility.
+description: Learn about SKY UX's accessibility testing and why we care about accessibility.
 order: 4
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: layout-sidebar
 markdown: true
-description: Learn about how SKY UX handles localization for a global user base.
+description: Learn how SKY UX handles localization for a global user base.
 order: 5
 ---
 
@@ -13,7 +13,7 @@ Localization is an important concept to the {{ stache.config.product_name_short 
 
 ## Specify a locale
 
-To set the locale in {{ stache.config.product_name_short }}, an additional JavaScript file must be included in the page. For example, on the [Start a project](../getting-started/start-a-project) page, the `<script>` section would look include an additional entry
+To set the locale in {{ stache.config.product_name_short }}, an additional JavaScript file must be included in the page. For example, on the [Start a project](../getting-started/start-a-project) page, the `<script>` section would include an additional entry for localization.
 
 <pre><code class="language-markup">{{ include "includes/sky-bundle-js.html" escape=true }}
 &lt;script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/locales/sky-locale-en-GB.js"&gt;&lt;/script&gt;
@@ -21,7 +21,7 @@ To set the locale in {{ stache.config.product_name_short }}, an additional JavaS
 
 ## Supported locales
 
-As of 2016-06-24, {{ stache.config.product_name_short }} fully supports the following locales:
+As of October 2016, {{ stache.config.product_name_short }} fully supports the following locales:
 
 - en-AU
 - en-CA

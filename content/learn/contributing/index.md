@@ -10,6 +10,17 @@ order: 3
 
 We highly encourage contributions from all {{ stache.config.product_name_short }} users. We just ask that you follow the coding conventions already established in the existing code and that you write the appropriate documentation and unit tests for your feature.
 
+## Prerequisites
+
+Before you can contribute to {{ stache.config.product_name_short }}, you must have the following prerequisites in place:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/package/blackbaud-skyux)
+- [Grunt](http://gruntjs.com/getting-started)
+- [Ruby SASS](http://sass-lang.com/install)
+
+
 ## Get the code
 
 1. Fork the master branch into your own repo.
