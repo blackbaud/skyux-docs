@@ -2,7 +2,7 @@
 name: Filtering
 description: Filter patterns provide guidance on how to display filter options in various scenarios.
 markdown: true
-layout: layout-sidebar
+layout: layout-container
 ---
 
 # Filtering

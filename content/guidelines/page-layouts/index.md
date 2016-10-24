@@ -2,7 +2,7 @@
 name: Page layouts
 description: Responsive, mobile-first page layouts provide flexibility while conforming to SKY UX standards.
 markdown: true
-layout: layout-sidebar
+layout: layout-container
 ---
 
 # Page layouts

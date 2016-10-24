@@ -2,7 +2,7 @@
 name: Content containers
 description: Describes the contexts in which to use different types of content containers.
 markdown: true
-layout: layout-sidebar
+layout: layout-container
 ---
 
 # Content containers

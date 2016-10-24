@@ -1,17 +1,19 @@
 ---
 layout: layout-sidebar
 markdown: true
-description: Learn about how SKY UX handles localization for a global user base.
+description: Learn how SKY UX handles localization for a global user base.
 order: 5
 ---
 
-Localization is an important concept to the SKY UX framework.  Any text displayed in the framework is ended to support localization.
+# Localization
+
+Localization is an important concept to the {{ stache.config.product_name_short }} framework. Any text that is displayed in the framework should support localization.
 
 <!-- more -->
 
-## Specifying a locale
+## Specify a locale
 
-In order to set the locale in SKY UX, an additional JavaScript file must be included in the page.  For example, following along with the [Start a project](../getting-started/start-a-project) page, our new `<script>` section would look like the following:
+To set the locale in {{ stache.config.product_name_short }}, an additional JavaScript file must be included in the page. For example, on the [Start a project](../getting-started/start-a-project) page, the `<script>` section would include an additional entry for localization.
 
 <pre><code class="language-markup">{{ include "includes/sky-bundle-js.html" escape=true }}
 &lt;script src="{{ stache.config.cdn }}{{ stache.config.latest_sky_release }}/js/locales/sky-locale-en-GB.js"&gt;&lt;/script&gt;
@@ -19,7 +21,7 @@ In order to set the locale in SKY UX, an additional JavaScript file must be incl
 
 ## Supported locales
 
-As of 2016-06-24, the following locales are fully supported in SKY UX:
+As of October 2016, {{ stache.config.product_name_short }} fully supports the following locales:
 
 - en-AU
 - en-CA
@@ -28,6 +30,6 @@ As of 2016-06-24, the following locales are fully supported in SKY UX:
 
 We are actively working to increase the available locales.
 
-## Using Moment
+## Use Moment.js
 
-Setting the current locale using the technique described above, also automatically includes and globally initializes the matching [bbMoment module](../../components/moment) locale.
+When you set the current locale with the technique above, you also automatically include and globally initialize the matching [bbMoment module](../../components/moment) locale.
