@@ -7,6 +7,9 @@ order: 2
 ---
 
 # Consume {{ stache.config.product_name_short }}
+{{ stache.config.product_name_short }} brings a consistent, cohesive experience to Blackbaud products, and you can use it to bring that same consistent experience to your own customizations and applications.
+
+<p class="alert alert-info">{{ stache.config.product_name_short }} supports Microsoft Edge and Internet Explorer 11 on Windows; the latest version of Firefox and Chrome on both Windows and Mac; the latest verion of Safari on Mac; the latest version of Mobile Safari on IOS; and the latest version of Chrome on Android.</p>
 
 ## CDN
 
