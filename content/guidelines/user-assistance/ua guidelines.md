@@ -18,7 +18,7 @@ You should limit persistent inline help to one or two sentences because blocks o
 
 ## Invoked inline assistance
 
-For scenarios where inline help text should not be persistent, you can provide options for users to invoke it. For example, in scenarios where explanatory text is useful when users first perform tasks but the ramifications of mistakes are small, you can provide a [help button](../../components/helpbutton/) to invoke explanatory help text. Depending on the complexity of the help text, you can display it in a [popover](../../components/popover/) or the [help panel](../../components/help/). Invoked inline help text allows users to access to the help text as necessary but avoids most of the visual clutter from persistent inline help.
+For scenarios where inline help text should not be persistent, you can provide the ability for users to invoke it. For example, in scenarios where explanatory text is useful when users first perform tasks but the ramifications of mistakes are small, you can provide a [help button](../../components/helpbutton/) to invoke explanatory help text. Depending on the complexity of the help text, you can display it in a [popover](../../components/popover/) or the [help panel](../../components/help/). Invoked inline help text allows users to access to the help text as necessary but avoids most of the visual clutter from persistent inline help.
 
 ## Page- and modal-level help
 
