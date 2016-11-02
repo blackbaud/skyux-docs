@@ -1,6 +1,6 @@
 ---
 name: User assistance
-description: Describes the ways in which the user can access help documentation or other explanatory content.
+description: User assistance patterns facilitate access to help documentation and other explanatory content.
 markdown: true
 layout: layout-container
 ---
@@ -10,14 +10,16 @@ layout: layout-container
 
 ## Persistent inline assistance
 
-Sometimes a small amount of explanatory text can help users understand the task they are about to perform. This can be especially helpful if the impact of the user’s decisions will have a system-wide impact that might not be obvious from the controls in the immediate task the user is performing, or if the task is complex and infrequently performed. Limit this text to a sentence or two. A wall of text is almost always going to be ignored.
+Sometimes a small amount of persistent inline explanatory text can help users understand the tasks they perform. For example, inline help can be very useful for tasks that are complex and infrequently performed. It can also be helpful for tasks where user actions have far-reaching consequences that may not be obvious.
 
-Persistent blocks of text can become cluttering, particularly on an interface that will see heavy traffic. If you are designing for a frequently-done task, consider another approach. Over time, that text will have minimal value but will still be taking up screen space. To help avoid visual clutter use [text styling](../../design/typography) to de-emphasize the text.
+However, scenarios that require persistent help text are fairly rare. For example, persistent inline help text is not appropriate for frequently performed tasks because the value of the text diminishes over time even though the text continues to take up screen space.
+
+You should limit persistent inline help to one or two sentences because blocks of persistent text can clutter pages and because users almost always ignore large blocks of text. And to minimize visual clutter, use [text styling](../../design/typography) to de-emphasize persistent inline text.
 
 ## Invoked inline assistance
 
-It should be fairly rare to need persistent text explanations on the screen. For cases where explanatory text will be useful the first couple of times a user does a task but the ramifications of a mistake are small you can use an [assistance button](../../components/helpbutton/) to invoke explanatory documentation. Depending on the complexity of the documentation it may be shown in a [popover](../../components/popover/) or in the [help panel](../../components/help/). This will allow the user access to the assistance when needed but avoid most of the visual clutter associated with persistent text.
+For scenarios where inline help text should not be persistent, you can provide options for users to invoke it. For example, in scenarios where explanatory text is useful when users first perform tasks but the ramifications of mistakes are small, you can provide a [help button](../../components/helpbutton/) to invoke explanatory help text. Depending on the complexity of the help text, you can display it in a [popover](../../components/popover/) or the [help panel](../../components/help/). Invoked inline help text allows users to access to the help text as necessary but avoids most of the visual clutter from persistent inline help.
 
 ## Page- and modal-level help
 
-A user performing a complex task may benefit from more comprehensive documentation that covers the task as a whole and the components of the task. Since this documentation is applicable to more than a single field it should be invoked at the page or modal level,depending on the context. In Blackbaud products this is done using the [help service](../../components/help/) invoked from the [omnibar](../../components/omnibar/) or a [modal](../../components/modal/) header bar.
+When users perform complex tasks, they may require comprehensive documentation for the entire task instead of inline help for individual components of the task. Since this documentation applies to more than a single field, users should invoke it at the page or modal level, depending on the context. In Blackbaud products, users can invoke the [help service](../../components/help/) from the [omnibar](../../components/omnibar/) or a [modal](../../components/modal/) header bar.
