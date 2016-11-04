@@ -31,7 +31,7 @@ As of November 2016, {{ stache.config.product_name_short }} fully supports the f
 - fr-CA (French &mdash; Canada)
 - fr-FR (French &mdash; France)
 - it-IT (Italian &mdash; Italy)
-- nl_NL (Dutch &mdash; Netherlands)
+- nl-NL (Dutch &mdash; Netherlands)
 
 We are actively working to increase the available locales.
 
