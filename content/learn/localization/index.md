@@ -21,12 +21,17 @@ To set the locale in {{ stache.config.product_name_short }}, an additional JavaS
 
 ## Supported locales
 
-As of October 2016, {{ stache.config.product_name_short }} fully supports the following locales:
+As of November 2016, {{ stache.config.product_name_short }} fully supports the following locales:
 
-- en-AU
-- en-CA
-- en-GB
-- en-US
+- en-AU (English &mdash; Australia)
+- en-CA (English &mdash; Canada)
+- en-GB (English &mdash; Great Britain)
+- en-US (English &mdash; United States)
+- es-ES (Spanish &mdash; Spain)
+- fr-CA (French &mdash; Canada)
+- fr-FR (French &mdash; France)
+- it-IT (Italian &mdash; Italy)
+- nl-NL (Dutch &mdash; Netherlands)
 
 We are actively working to increase the available locales.
 
