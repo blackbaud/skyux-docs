@@ -29,9 +29,9 @@ Ensure that link text describes the target and purpose and that it can be distin
 ## Semantic markup
 
 Ensure that proper semantic HTML elements are used to describe the content of the page or component. For example:
-- <code>&lt;ul&gt;</code> are used for unordered lists
-- <code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code> are used in order for headings
-- <code>fieldset</code> and <code>legend</code> are used to [group related sets of controls](https://www.w3.org/WAI/tutorials/forms/grouping/).
+- Use <code>&lt;ul&gt;</code> for unordered lists.
+- Use <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> in order for headings.
+- Use <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code> to [group sets of related controls](https://www.w3.org/WAI/tutorials/forms/grouping/).
 
 See [Getting to know HTML](http://learn.shayhowe.com/html-css/getting-to-know-html/) and [Extending Semantics and Accessibility](http://learn.shayhowe.com/advanced-html-css/semantics-accessibility/) for details of semantic markup.
 

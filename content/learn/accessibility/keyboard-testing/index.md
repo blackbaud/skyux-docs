@@ -8,13 +8,13 @@ showHeadings: false
 showInNav: true
 ---
 
-# Keyboard & Manual testing procedures for accessibility
+# Keyboard & manual testing procedures for accessibility
 
 ### 1. Use the Tab key to move through a page or component
 
 Ensure that navigation with the Tab key meets the following criteria:
 
-1. The Tab key places focus on all [focusable elements](https://allyjs.io/data-tables/focusable.html) (e.g., form controls, navigation elements).
+1. The Tab key places focus on all [focusable elements](https://allyjs.io/data-tables/focusable.html) such as form controls and navigation elements.
 2. The Tab key does not place focus on elements that cannot receive focus.
 3. A visual indication occurs when each element receives focus.
 4. The order of focus follows the sequence and relationships in the page or component.
@@ -47,8 +47,8 @@ Ensure that navigation with the Tab key meets the following criteria:
 5. When the Tab key places focus on an element that closes the modal, pressing Enter closes the modal.
 6. When the modal closes, focus returns to the element that opened the modal or goes to a logical place based on actions within the modal. Focus does not return the top of the underlying page.
 
-### 4. Increase page zoom to 200%
+### 4. Increase page zoom to 200 percent
 
-1. Ensure that all text of the page has increased in size.
-2. Ensure that content can be read and is not overlapping.
-3. Ensure that functionality can still be accessed with the mouse.
+1. Ensure that all text on the page increases in size.
+2. Ensure that content is legible and does not overlap.
+3. Ensure that functionality is still accessible with the mouse.
