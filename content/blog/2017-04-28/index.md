@@ -6,7 +6,7 @@ pubDate: Friday, April 28th, 2017
 markdown: true
 ---
 
-SKY UX releases 1.13.10 - 1.14.0 and SKY UX 2 releases 2.0.0-beta.16 – 2.0.0-beta.21
+SKY UX releases 1.13.10 - 1.14.0 and SKY UX 2 releases 2.0.0-beta.16 – 2.0.0-beta.22
 
 <!-- more -->
 
