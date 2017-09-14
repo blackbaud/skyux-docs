@@ -31,7 +31,7 @@ files:
 {{# markdown }}
 The omnibar component provides a wrapper for the omnibar service and omnibar widget.  The omnibar features asynchronously loaded UI elements and integrates with user accounts to allow users to sign in and out, manage their accounts, and access purchased products.
 
-<p class="alert alert-info"><strong><em>Note:</em></strong> You can implement the omnibar with the `bb-omnibar` directive or as a native JavaScript component outside of SKY UX. This SKY UX tab describes the `bb-omnibar` directive, and the Standalone tab describes additional steps for a native JavaScript component.</p>
+<bb-alert bb-alert-type="info"><strong><em>Note:</em></strong> You can implement the omnibar with the `bb-omnibar` directive or as a native JavaScript component outside of SKY UX. This SKY UX tab describes the `bb-omnibar` directive, and the Standalone tab describes additional steps for a native JavaScript component.</bb-alert>
 
 ### Omnibar Placement
 

@@ -30,7 +30,7 @@ The steps necessary to clone and contribute to the {{ stache.config.product_name
 
 0. Code coverage results are sent to [Coveralls.io](https://coveralls.io/github/blackbaud/skyux), which in turn updates the status of the pull request.  Based on our settings, we require 100% code coverage.  Anything below this will cause the pull request to fail.
 
-<p class="alert alert-info">If the pull request is coming from a fork, our [Savage Fork](https://github.com/blackbaud-sky-savage/sky) implementation takes over and runs the tests in Travis CI.  This is necessary in order to maintain environment security in Travis CI and is [well documented](https://github.com/twbs/savage).</p>
+<bb-alert bb-alert-type="info">If the pull request is coming from a fork, our [Savage Fork](https://github.com/blackbaud-sky-savage/sky) implementation takes over and runs the tests in Travis CI.  This is necessary in order to maintain environment security in Travis CI and is [well documented](https://github.com/twbs/savage).</bb-alert>
 
 ### Releasing
 
