@@ -9,7 +9,7 @@ order: 2
 # Consume {{ stache.config.product_name_short }}
 {{ stache.config.product_name_short }} brings a consistent, cohesive experience to Blackbaud products, and you can use it to bring that same consistent experience to your own customizations and applications.
 
-<p class="alert alert-info">{{ stache.config.product_name_short }} supports Microsoft Edge and Internet Explorer 11 on Windows; the latest version of Firefox and Chrome on both Windows and Mac; the latest verion of Safari on Mac; the latest version of Mobile Safari on IOS; and the latest version of Chrome on Android.</p>
+<bb-alert bb-alert-type="info">{{ stache.config.product_name_short }} supports Microsoft Edge and Internet Explorer 11 on Windows; the latest version of Firefox and Chrome on both Windows and Mac; the latest verion of Safari on Mac; the latest version of Mobile Safari on IOS; and the latest version of Chrome on Android.</bb-alert>
 
 ## CDN
 
@@ -26,7 +26,7 @@ If you wish to host {{ stache.config.product_name_short }} yourself, you can ins
 
 `npm install blackbaud-skyux`
 
-<p class="alert alert-info">Before you install with Bower or NPM, you must install <a href="https://git-scm.com/">Git</a>.</p>
+<bb-alert bb-alert-type="info">Before you install with Bower or NPM, you must install <a href="https://git-scm.com/">Git</a>.</bb-alert>
 
 If you install with Bower or NPM, you must include the same files indicated in the [Getting started](../getting-started/start-a-project/#create-a-page) guide, but you point the URL to your own web server instead of the CDN. You may also use a hybrid approach where you load SKY UX with the CDN and fall back to a version hosted by your web server if the CDN is unavailable.
 

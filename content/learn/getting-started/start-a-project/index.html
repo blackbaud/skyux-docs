@@ -11,7 +11,7 @@ showNavDropdown: true
 
 <p>This walkthrough guides you through the process to create a basic application with {{ stache.config.product_name_short }}. We’ll start with a blank HTML page and proceed to a fully functioning {{ stache.config.product_name_short }} application.</p>
 
-<p class="alert alert-info"><strong><em>Prerequisite:</em></strong> Keep in mind that the heart of {{ stache.config.product_name_short }} is <a href="https://angularjs.org/" class="alert-link" target="blank">AngularJS</a> and <a href="http://getbootstrap.com/" class="alert-link" target="blank">Bootstrap</a>, so you need to be familiar with these technologies to build with {{ stache.config.product_name_short }}.</p>
+<bb-alert bb-alert-type="info"><strong><em>Prerequisite:</em></strong> Keep in mind that the heart of {{ stache.config.product_name_short }} is <a href="https://angularjs.org/" class="alert-link" target="blank">AngularJS</a> and <a href="http://getbootstrap.com/" class="alert-link" target="blank">Bootstrap</a>, so you need to be familiar with these technologies to build with {{ stache.config.product_name_short }}.</bb-alert>
 
 <h2>Create a page</h2>
 
@@ -24,14 +24,14 @@ showNavDropdown: true
 
 <p>Next, to add {{ stache.config.product_name_short }} to the page, point to {{ stache.config.product_name_short }} via the Blackbaud SKY CDN.</p>
 
-<p class="alert alert-info">If you wish to host {{ stache.config.product_name_short }} yourself, you may install it via <a href="http://bower.io/" class="alert-link" target="blank">Bower</a> or <a href="https://www.npmjs.com/package/blackbaud-skyux" class="alert-link" target="blank">NPM</a> instead of pointing to the CDN. See the <a href="{{ stache.config.github }}" class="alert-link" target="blank">{{ stache.config.product_name_short }} GitHub page</a> for instructions on installing via Bower.</p>
+<bb-alert bb-alert-type="info">If you wish to host {{ stache.config.product_name_short }} yourself, you may install it via <a href="http://bower.io/" class="alert-link" target="blank">Bower</a> or <a href="https://www.npmjs.com/package/blackbaud-skyux" class="alert-link" target="blank">NPM</a> instead of pointing to the CDN. See the <a href="{{ stache.config.github }}" class="alert-link" target="blank">{{ stache.config.product_name_short }} GitHub page</a> for instructions on installing via Bower.</bb-alert>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/html-with-sky.html" escape=true }}</code></pre>
 
 <p>You should now be able to spin up a web server in your project's directory (the NPM package <a href="https://www.npmjs.com/package/http-server" target="blank"><code>http-server</code></a> is very handy for this) and browse to it in a web browser.</p>
 
 <!--
-<p class="alert alert-info">You can also open the file directly in a browser, but the browser will put restrictions on how JavaScript runs when you do that.</p>
+<bb-alert bb-alert-type="info">You can also open the file directly in a browser, but the browser will put restrictions on how JavaScript runs when you do that.</bb-alert>
 -->
 
 <h2>Add content to the page</h2>
@@ -42,7 +42,7 @@ showNavDropdown: true
 
 <p>Add a <code>div</code> tag within your page's <code>&#60;body&#62;</code> element and use the <code>class</code> attribute to wrap the button in the Bootstrap CSS class <code>.container-fluid</code> and the {{ stache.config.product_name_short }} CSS class <code>.bb-page-content</code>. These classes separate the content from the navbar and the edges of the browser window.</p>
 
-<p class="alert alert-info">For brevity, the remaining code samples omit the boilerplate HTML and just show the code to add to your page's <code>&#60;body&#62;</code> element.</p>
+<bb-alert bb-alert-type="info">For brevity, the remaining code samples omit the boilerplate HTML and just show the code to add to your page's <code>&#60;body&#62;</code> element.</bb-alert>
 
 <pre><code class="language-markup">{{ include "includes/start-a-project/hello-world-button.html" escape=true }}</code></pre>
 

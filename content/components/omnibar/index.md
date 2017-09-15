@@ -12,17 +12,14 @@ files:
   # Omnibar
 {{/markdown }}
 
-<div class="alert alert-warning">
+<bb-alert bb-alert-type="warning">
   <div class="media">
-    <div class="media-left">
-      <span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-flag fa-stack-1x fa-inverse"></i></span>
-    </div>
     <div class="media-body">
       <h4 class="media-heading" id="advanced-users-only">For Blackbaud Internal Use Only</h4>
       The omnibar component and omnibar service are not currently available for third-party custom applications.
     </div>
   </div>
-</div>
+</bb-alert>
 
 <div ng-controller="OmnibarDocsController as omnibarDocsCtrl">
   <uib-tabset>
@@ -31,7 +28,7 @@ files:
 {{# markdown }}
 The omnibar component provides a wrapper for the omnibar service and omnibar widget.  The omnibar features asynchronously loaded UI elements and integrates with user accounts to allow users to sign in and out, manage their accounts, and access purchased products.
 
-<p class="alert alert-info"><strong><em>Note:</em></strong> You can implement the omnibar with the `bb-omnibar` directive or as a native JavaScript component outside of SKY UX. This SKY UX tab describes the `bb-omnibar` directive, and the Standalone tab describes additional steps for a native JavaScript component.</p>
+<bb-alert bb-alert-type="info"><strong><em>Note:</em></strong> You can implement the omnibar with the `bb-omnibar` directive or as a native JavaScript component outside of SKY UX. This SKY UX tab describes the `bb-omnibar` directive, and the Standalone tab describes additional steps for a native JavaScript component.</bb-alert>
 
 ### Omnibar Placement
 
