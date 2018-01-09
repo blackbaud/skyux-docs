@@ -303,6 +303,10 @@ pre[class*="language-"] {
   flex: 1;
 }
 
+.legacy-warning {
+  padding: 5px;
+}
+
 @media (min-width: 479px) {
   .definition-table,
   .definition-props {
