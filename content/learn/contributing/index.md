@@ -6,6 +6,8 @@ description: We encourage contributions from all SKY UX users. Learn about our c
 order: 3
 ---
 
+<bb-alert bb-alert-type="warning">This site describes <a href="https://angularjs.org/">the AngularJS (1.x) implementation</a> of the SKY UX framework. We still support this version, but it is in maintenance mode. We no longer develop features for this version, and we recommend the latest version of SKY UX instead. For more information, see <a href="https://developer.blackbaud.com/skyux">developer.blackbaud.com/skyux</a>.</bb-alert>
+
 # Contribute
 
 We highly encourage contributions from all {{ stache.config.product_name_short }} users. We just ask that you follow the coding conventions already established in the existing code and that you write the appropriate documentation and unit tests for your feature.

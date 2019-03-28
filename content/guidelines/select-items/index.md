@@ -5,6 +5,8 @@ markdown: true
 layout: layout-container
 ---
 
+<bb-alert bb-alert-type="warning">This site describes <a href="https://angularjs.org/">the AngularJS (1.x) implementation</a> of the SKY UX framework. We still support this version, but it is in maintenance mode. We no longer develop features for this version, and we recommend the latest version of SKY UX instead. For more information, see <a href="https://developer.blackbaud.com/skyux">developer.blackbaud.com/skyux</a>.</bb-alert>
+
 <h1 class="bb-page-heading">Select items from lists</h1>
 
 To provide a consistent experience for users to select items from lists, follow these guidelines to determine which control to use to create a list.

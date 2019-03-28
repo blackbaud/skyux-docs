@@ -6,6 +6,9 @@ pubDate: Thursday, January 7, 2016
 markdown: true
 ---
 
+<bb-alert bb-alert-type="warning">This site describes <a href="https://angularjs.org/">the AngularJS (1.x) implementation</a> of the SKY UX framework. We still support this version, but it is in maintenance mode. We no longer develop features for this version, and we recommend the latest version of SKY UX instead. For more information, see <a href="https://developer.blackbaud.com/skyux">developer.blackbaud.com/skyux</a>.</bb-alert>
+
+
 As the {{ stache.config.product_name_short }} codebase is now officially Open Source and in a public GitHub repository, I wanted to walk through what a typical contribution and release look like.  
 
 This is meant to be a fairly high-level overview.  The example workflow shown on the Travis CI homepage is almost identical to our implementation, aside from the deployment endpoint used.  It still makes for a nice visual representation of our processes.

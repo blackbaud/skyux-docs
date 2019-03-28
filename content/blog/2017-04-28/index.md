@@ -6,6 +6,9 @@ pubDate: Friday, April 28th, 2017
 markdown: true
 ---
 
+<bb-alert bb-alert-type="warning">This site describes <a href="https://angularjs.org/">the AngularJS (1.x) implementation</a> of the SKY UX framework. We still support this version, but it is in maintenance mode. We no longer develop features for this version, and we recommend the latest version of SKY UX instead. For more information, see <a href="https://developer.blackbaud.com/skyux">developer.blackbaud.com/skyux</a>.</bb-alert>
+
+
 SKY UX releases 1.13.10 - 1.14.0 and SKY UX 2 releases 2.0.0-beta.16 – 2.0.0-beta.22
 
 <!-- more -->

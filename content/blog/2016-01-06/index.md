@@ -6,6 +6,9 @@ pubDate: Wednesday, January 6, 2016
 markdown: true
 ---
 
+<bb-alert bb-alert-type="warning">This site describes <a href="https://angularjs.org/">the AngularJS (1.x) implementation</a> of the SKY UX framework. We still support this version, but it is in maintenance mode. We no longer develop features for this version, and we recommend the latest version of SKY UX instead. For more information, see <a href="https://developer.blackbaud.com/skyux">developer.blackbaud.com/skyux</a>.</bb-alert>
+
+
 There are [many advantages](http://www.sitepoint.com/7-reasons-to-use-a-cdn/) to hosting static resources on a CDN.  However, nothing's perfect, and CDNs can and do become unavailable leaving the need to employ a fallback strategy when loading any static assets from a CDN.  This article provides guidance on how to use the [Fallback JS](http://fallback.io/) library to load Sky UX via a CDN and from a local version if the CDN fails.
 
 <!-- more -->

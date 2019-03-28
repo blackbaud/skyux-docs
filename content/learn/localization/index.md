@@ -5,6 +5,8 @@ description: Learn how SKY UX handles localization for a global user base.
 order: 5
 ---
 
+<bb-alert bb-alert-type="warning">This site describes <a href="https://angularjs.org/">the AngularJS (1.x) implementation</a> of the SKY UX framework. We still support this version, but it is in maintenance mode. We no longer develop features for this version, and we recommend the latest version of SKY UX instead. For more information, see <a href="https://developer.blackbaud.com/skyux">developer.blackbaud.com/skyux</a>.</bb-alert>
+
 # Localization
 
 Localization is an important concept to the {{ stache.config.product_name_short }} framework. Any text that is displayed in the framework should support localization.
