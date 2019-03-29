@@ -304,7 +304,9 @@ pre[class*="language-"] {
 }
 
 .legacy-warning {
-  padding: 5px;
+  padding: 20px;
+  background-color: #fbb034;
+  font-size: 110%
 }
 
 @media (min-width: 479px) {
